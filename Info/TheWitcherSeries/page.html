@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHall -</title>
+</head>
+
+
+<body>
+    <h1>         
+        <b>MOVIES</b> <small>HALL</small>
+        <br>
+        <small>
+            The Witcher
+            <br>
+            (مسلسل)
+        </small>
+    </h1>
+    <p align="center"><img class="poster" src="https://wallpaperaccess.com/full/2052705.jpg" alt="image"></p>
+
+    <br>
+
+    <h2>طاقم التمثيل</h2>
+
+    <h3>
+        هنري كافيل
+        <br>
+        ميانا بورنج
+        <br>
+        جو بيت
+        <br>
+        لارس ميكلسن
+    </h3>
+
+    <br>
+
+    <h4>معلومات</h4>
+
+    <h5>
+        الفئة :
+        ﺩﺭاﻣﺎ
+        <br>
+        الانتاج :
+        2019
+        <br>
+        اللغة :
+         الانكليزية
+        <br>
+        الترجمة :
+         العربية
+        <br>
+        المدة :
+        8 حلقات
+        <br>
+        الاخراج :
+        أليك ساخاروف 
+    </h5>
+
+    <br> <br>
+
+    <h6>
+        يكافح الويتشر الشهير صائد الوحوش ليثبت نفسه في العالم, ليكتشف ان خطر البشر أكبر بكثير من خطر المخلوقات الأخرى، ويصادفه في طريقه ساحرة قوية وأميرة صغيرة ذات موهبةبة خاصة.
+    </h6>
+
+    <div class="choose">
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630080863/6127bddfe1c78/The.Witcher.S01E01.720p.NF.WEBRip.akwam.net.mp4">1</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630081300/6127bf94d61f4/The.Witcher.S01E02.720p.NF.WEBRip.akwam.net.mp4">2</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083312/6127c7709baf2/The.Witcher.S01E03.720p.NF.WEBRip.akwam.net.mp4">3</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083366/6127c7a6c46e9/The.Witcher.S01E04.720p.NF.WEBRip.akwam.net.mp4">4</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083423/6127c7df03f30/The.Witcher.S01E05.720p.NF.WEBRip.akwam.net.mp4">5</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083468/6127c80cd6548/The.Witcher.S01E06.720p.NF.WEBRip.akwam.net.mp4">6</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083510/6127c836e68db/The.Witcher.S01E07.720p.NF.WEBRip.akwam.net.mp4">7</button>
+        <button class="btn" data-video-url="https://s315d2.akwam.link/download/1630083551/6127c85f135d7/The.Witcher.S01E08.720p.NF.WEBRip.akwam.net.mp4">8</button>    
+    </div>
+
+
+    <p align="center" >
+        <video class="movie" id="player" controls></video>
+    </p>
+
+
+    <script>
+    function swapVideo() {
+        player.src = this.getAttribute("data-video-url");
+        player.load();
+        player.play();
+    }
+    
+    var videoPlayButtons = document.querySelectorAll("button"),
+        player = document.getElementById("player");
+    
+    for (var i=0; i<videoPlayButtons.length; i++){
+        videoPlayButtons[i].addEventListener('click', swapVideo);
+    }</script>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        @media only screen and (max-width: 450px){
+
+        body{
+            background-color: rgb(15, 14, 14);
+        }
+
+        .poster{
+            width: 85vw;
+            height: 55vw;
+            border-radius: 10vw;
+            margin-top: 5vw;
+        }
+        h1{
+            font-family: 'Marcellus', serif;
+            font-size: 7.5vw;
+            text-align: center;
+            float: center;
+            color: white;
+        }
+        h2{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h3{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: center;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h4{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h5{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h6{
+            font-family: 'Markazi Text', serif;
+            font-size: 4.5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 4vw;
+            margin-top: -2.5vw;
+        }
+        .movie{
+            width: 80vw;
+            height: 50vw;
+            border-style: solid;
+            border-color: white;
+            border-width: 0.5vw;
+        }
+        .choose{
+            max-height: 50%;
+            border: 1x solid white;
+            display: flex;
+            overflow-x: auto;
+            overflow-y: auto;
+            margin: 0 auto;
+            margin-top: 60vw;
+        }
+        .choose::-webkit-scrollbar{
+            width: 0px;
+        }
+        .btn{
+            font-family: 'Harmattan', sans-serif;
+            width: 25vw;
+            height: 5vw;
+            color: white;
+            margin: 10px;
+            margin-left: 8vw;
+            font-size: 7.5vw;
+            text-align: left;
+            background-color: rgba(255, 0, 0, 0.116);
+            border: none;
+            border-radius: 10vw;
+            transition: 1.5s;
+            cursor: pointer;
+        }
+        .btn:hover{
+            transform: scale(0.9);
+            color: red;
+        }
+    }
+    </style>
+</body>
+</html>
