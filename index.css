@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 body{
         background-color: rgb(12, 11, 11);
     }
@@ -109,21 +110,21 @@ h1:hover{
         margin: 0 auto;
     }
     .scrollbar .item{
-        width:150px;
-        height:225px;
+        width:110px;
+        height:170px;
     }
     .scrollbartext{
         font-size: 5vw;
-    }
-    .slidetext{
-        text-align: center;
         color: white;
-        font-family: 'Marcellus', serif;
+        font-family: 'Tajawal',sans-serif;
+
+    }
     }
     h1{
         font-size: 7.5vw;
         color: white;
         text-align: left;
+        font-family: 'Rampart One', cursive;
     }
 
 
@@ -135,7 +136,7 @@ h1:hover{
         width: 100%;
         height: 20vw;
         margin-bottom: 5vw;
-        background-color: rgb(29, 28, 28);
+        background-color: black;
         color: white;
         text-align: center;
         border-radius: 25vw;
@@ -154,8 +155,3 @@ h1:hover{
         transform: scale(0.95);
         color: royalblue;
     }
-
-
-
-
-}
