@@ -40,51 +40,11 @@ h1:hover{
     color: royalblue;
     transform: scale(1.01);
 }
-h2{
-    font-family: 'Tajawal', sans-serif;
-    font-size: 2vw;
-    margin-left: 20px;
-    transition: 1.25s;
-    color: whitesmoke;
-}
-h2:hover{
-    color: royalblue;
-    transform: scale(1.01);
-}
-header{
-    width: 100%;
-    height: 100%;
-}
 
 
 
 
 
-ul {
-    margin-top: 10px;
-    width: auto;
-    text-align: center;
-}
-
-li{
-    display: inline-block;
-    padding: 0px 0px;
-}
-li:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
-a{
-    text-align: center;
-    color: whitesmoke;
-    text-decoration: none;
-    font-size:5vw;
-    font-family: 'Tajawal', sans-serif;
-}
-a:hover{
-    color: cornflowerblue;
-}
 
 
 @media only screen and (max-width:450px) and (min-width:250px){
@@ -112,7 +72,7 @@ a:hover{
         padding: 16px;
         color: white;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 35px;
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
@@ -140,14 +100,6 @@ a:hover{
         to {opacity: 1}
       }
 
-    .logo{
-        text-align: center;
-        font-size: 7.5vw;
-        color: whitesmoke;
-        font-family: 'Tajawal',sans-serif;
-        transition: 1.25s;
-        margin-top: -1s5vw
-    }
     .scrollbar{
         max-height: 50%;
         border: 1x solid white;
@@ -169,28 +121,38 @@ a:hover{
         font-family: 'Marcellus', serif;
     }
     h1{
-        font-size: 4vw;
+        font-size: 7.5vw;
         color: white;
         text-align: left;
     }
 
-    ul {
-    margin-top: -35px;
-    margin-right: 10px;
-    width: auto;
-    float: right;
-}
 
-    li{
-    display: inline-block;
-    padding: 5px;
-    width: auto;
+    .footer{
+        position: fixed;
+        display: inline-flex;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 20vw;
+        margin-bottom: 5vw;
+        background-color: rgb(29, 28, 28);
+        color: white;
+        text-align: center;
+        border-radius: 25vw;
     }
-
-    a{
-    font-size:4vw;
-    text-align: right;
-    color: white;
+    .footertext{
+        font-size: 6vw;
+        margin: 0 auto;
+        text-align: center;
+        border: none;
+        color: white;
+        background-color: transparent;
+        transition: 0.9s;
+        font-family: 'Tajawal',sans-serif;
+    }
+    .footertext:hover{
+        transform: scale(0.95);
+        color: royalblue;
     }
 
 
