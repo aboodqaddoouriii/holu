@@ -90,7 +90,7 @@ a:hover{
 @media only screen and (max-width:450px) and (min-width:250px){
 
     body{
-        background-color: rgb(12, 11, 11);
+        background-color: black;
     }
 
     .slideshow-container{
