@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHall -</title>
+</head>
+
+
+<body>
+    <h1>         
+        <b>MOVIES</b> <small>HALL</small>
+        <br>
+        <small>
+            The Amazing World of Gumball
+            <br>
+            عالم غامبول المدهش
+        </small>
+    </h1>
+    <p align="center"><img class="poster" src="https://images.alphacoders.com/829/thumb-1920-829612.jpg" alt="image"></p>
+
+    <br>
+
+    <h2>طاقم التمثيل</h2>
+
+    <h3>
+
+        <br>
+
+        <br>
+         
+        <br>
+
+    </h3>
+
+    <br>
+
+    <h4>معلومات</h4>
+
+    <h5>
+        الفئة :
+        كارتون
+        <br>
+        الانتاج :
+        2011
+        <br>
+        اللغة :
+         الانكليزية
+        <br>
+        الترجمة :
+         العربية
+        <br>
+        المدة :
+        3 مواسم
+        <br>
+        الاخراج :
+
+    </h5>
+
+    <br> <br>
+
+    <h6>
+        يدخل القط غامبول وسمكته الذهبية ، داروين ، في جميع أنواع المواقف المجنونة في سلسلة الرسوم المتحركة الجذابة هذه من كارتون نتورك
+    </h6>
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">اختار الحلقة</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 1</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 2</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 3</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 4</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 5</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 6</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 7</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 8</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 9</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 10</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 11</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 12</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 13</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 14</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 15</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 16</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 17</a>
+          <a class="dropdown-text" href="https://userload.co/embed/4a9b141df9c1/">الحلقة 18</a>
+        </div>
+      </div>
+
+      <script>
+
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                 var dropdowns = document.getElementsByClassName("dropdown-content");
+                 var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                         var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+
+
+    function swapVideo() {
+        player.src = this.getAttribute("data-video-url");
+        player.load();
+        player.play();
+    }
+    
+    var videoPlayButtons = document.querySelectorAll("button"),
+        player = document.getElementById("player");
+    
+    for (var i=0; i<videoPlayButtons.length; i++){
+        videoPlayButtons[i].addEventListener('click', swapVideo);}
+
+      </script>
+
+
+    <p align="center" >
+        <iframe class="movie" id="player" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    </p>
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        @media only screen and (max-width: 450px){
+
+        body{
+            background-color: rgb(15, 14, 14);
+        }
+
+        .poster{
+            width: 85vw;
+            height: 55vw;
+            border-radius: 10vw;
+            margin-top: 5vw;
+        }
+        h1{
+            font-family: 'Marcellus', serif;
+            font-size: 7.5vw;
+            text-align: center;
+            float: center;
+            color: white;
+        }
+        h2{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h3{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: center;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h4{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h5{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h6{
+            font-family: 'Markazi Text', serif;
+            font-size: 4.5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 4vw;
+            margin-top: -2.5vw;
+        }
+        .movie{
+            width: 80vw;
+            height: 50vw;
+            border-style: solid;
+            border-color: white;
+            border-width: 0.5vw;
+            background-color: silver;
+        }
+
+        .dropbtn {
+             background-color: #3498DB;
+             color: white;
+             padding: 16px;
+             font-size: 16px;
+             border: none;
+             cursor: pointer;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+             background-color: #2980B9;
+        }
+
+        .dropdown {
+             position: relative;
+             display: inline-block;
+        }
+
+        .dropdown-text{
+            padding: 16px;
+            font-size: 5vw;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Markazi Text', serif;
+        }
+
+        .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: #f1f1f1;
+             min-width: 160px;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+        }  
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .show {display:block;}
+
+        
+    }
+    
+    </style>
+</body>
+</html>
