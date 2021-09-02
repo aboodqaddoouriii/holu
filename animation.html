@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="ICON.png"/>
+    <title>Animation</title>
+</head>
+<body>
+    <p align="center">
+
+        
+        <input type="image" src="Poster/Shrek.jpg" name="Watch" class="item" onclick="window.location.href='Info/Shrek/page.html'">
+        <input type="image" src="Poster/Shrek2.jpg" name="Watch" class="item" onclick="window.location.href='Info/Shrek2/page.html'">
+        <input type="image" src="Poster/Shrek3.jpg" name="Watch" class="item" onclick="window.location.href='Info/Shrek3/page.html'">
+        <input type="image" src="Poster/Soul.jpg" name="Watch" class="item" onclick="window.location.href='Info/Soul/page.html'">
+        <input type="image" src="Poster/Coco.jpg" name="Watch" class="item" onclick="window.location.href='Info/Coco/page.html'">
+        <input type="image" src="Poster/HotelTransylvania1.jpg" name="Watch" class="item" onclick="window.location.href='Info/HotelTransylvania1/page.html'">
+        <input type="image" src="Poster/HotelTransylvania2.jpg" name="Watch" class="item" onclick="window.location.href='Info/HotelTransylvania2/page.html'">        
+        <input type="image" src="Poster/HotelTransylvania3.jpg" name="Watch" class="item" onclick="window.location.href='Info/HotelTransylvania3/page.html'">
+        <input type="image" src="Poster/PussInBoots.jpg" name="Watch" class="item" onclick="window.location.href='Info/PussInBoots/page.html'">
+        <input type="image" src="Poster/MonsterHouse.jpg" name="Watch" class="item" onclick="window.location.href='Info/MonsterHouse/page.html'">
+        <input type="image" src="Poster/MeetTheAdams.jpg" name="Watch" class="item" onclick="window.location.href='Info/MeetTheAdmas/page.html'">
+        <input type="image" src="Poster/Barnyard.jpg" name="Watch" class="item" onclick="window.location.href='Info/Barnyard/page.html'">
+
+        <br> <br> <br> <br> <br> <br> <br> 
+    </p>
+</body>
+
+
+    <style>
+
+        @media only screen and (min-width:500px) and (max-width: 1920px){
+            .item{
+            width: 15vw;
+            height: 20vw;
+        }
+            .item:hover{
+            transform: scale(0.9);
+        }
+    }
+
+        @media only screen and (max-width:450px) and (min-width: 50px){
+
+            body{
+            background-color: black;
+        }
+
+            .item{
+            width: 30vw;
+            height: 45vw;
+            margin-top: 5vw;
+            margin-right: 1vw;
+            border-radius: 1vw;
+            vertical-align: top;
+            display: inline-block;
+            transition: 1.25s;
+        }
+
+            .item:hover{
+            transform: scale(0.9);
+        }
+
+    }
+    </style>
+
+</html>
