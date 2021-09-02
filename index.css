@@ -4,43 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-body{
-        background-color: rgb(12, 11, 11);
-    }
 
-.scrollbar{
-    max-height: 100%;
-    border: 1x solid white;
-    display: flex;
-    overflow-x: visible;
-    margin: 0 auto;
-
-}
-.scrollbar::-webkit-scrollbar{
-    width: 0px;
-}
-.scrollbar .item{
-    margin-right: 2px;
-    width:15vw;
-    height:20vw;
-    border-radius: 25px;
-    transition: 1.25s;
-    padding: 5px;
-}
-.scrollbar .item:hover{
-    transform: scale(1.025);
-}
-h1{
-    font-family: 'Marcellus', serif;
-    font-size: 2vw;
-    margin-left: 20px;
-    transition: 1.25s;
-    color: whitesmoke;
-}
-h1:hover{
-    color: royalblue;
-    transform: scale(1.01);
-}
 
 
 
@@ -112,9 +76,12 @@ h1:hover{
     .scrollbar .item{
         width:110px;
         height:170px;
+        padding: 1vw;
+        padding-top: 10px;
+        border-radius: 20px;
     }
     .scrollbartext{
-        font-size: 5vw;
+        font-size: 4vw;
         color: white;
         font-family: 'Tajawal',sans-serif;
 
@@ -127,31 +94,16 @@ h1:hover{
         font-family: 'Rampart One', cursive;
     }
 
-
-    .footer{
-        position: fixed;
-        display: inline-flex;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 20vw;
-        margin-bottom: 5vw;
-        background-color: black;
-        color: white;
-        text-align: center;
-        border-radius: 25vw;
-    }
-    .footertext{
-        font-size: 6vw;
-        margin: 0 auto;
-        text-align: center;
+    .btn{
         border: none;
         color: white;
+        font-size: 14px;
         background-color: transparent;
-        transition: 0.9s;
         font-family: 'Tajawal',sans-serif;
+        transition: 1.1s;
+        position: relative;
+        left: 80vw;
     }
-    .footertext:hover{
-        transform: scale(0.95);
-        color: royalblue;
+    .btn:hover{
+        transform: scale(0.9);
     }
