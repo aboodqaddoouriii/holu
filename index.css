@@ -103,7 +103,7 @@
         font-family: 'Tajawal',sans-serif;
         transition: 1.1s;
         position: relative;
-        left: 80vw;
+        left: 77.5vw;
     }
     .btn:hover{
         transform: scale(0.9);
