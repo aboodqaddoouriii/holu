@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoviesHall -</title>
+</head>
+
+
+<body>
+    <h1>         
+        <b>MOVIES</b> <small>HALL</small>
+        <br>
+        <small>
+            The Amazing World of Gumball
+            <br>
+            عالم غامبول المدهش
+        </small>
+    </h1>
+    <p align="center"><img class="poster" src="https://images.alphacoders.com/829/thumb-1920-829612.jpg" alt="image"></p>
+
+    <br>
+
+    <h2>طاقم التمثيل</h2>
+
+    <h3>
+
+        <br>
+
+        <br>
+         
+        <br>
+
+    </h3>
+
+    <br>
+
+    <h4>معلومات</h4>
+
+    <h5>
+        الفئة :
+        كارتون
+        <br>
+        الانتاج :
+        2011
+        <br>
+        اللغة :
+         الانكليزية
+        <br>
+        الترجمة :
+         العربية
+        <br>
+        المدة :
+        3 مواسم
+        <br>
+        الاخراج :
+
+    </h5>
+
+    <br> <br>
+
+    <h6>
+        يدخل القط غامبول وسمكته الذهبية ، داروين ، في جميع أنواع المواقف المجنونة في سلسلة الرسوم المتحركة الجذابة هذه من كارتون نتورك
+    </h6>
+
+
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">اختار الحلقة</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a class="dropdown-text" href="https://www.youtube.com/embed/ke9Nahy-hWk">الحلقة 1</a>
+          <a class="dropdown-text" href="https://www.youtube.com/embed/f5WjmkvNukc">الحلقة 2</a>
+          <a class="dropdown-text" href="https://www.youtube.com/embed/dsm3xEwAOv4">الحلقة 3</a>
+          <a class="dropdown-text" href="https://www.youtube.com/embed/UFbiX8Hih2c">الحلقة 4</a>
+          <a class="dropdown-text" href="https://www.youtube.com/embed/h2a4rL3DAow">الحلقة 5</a>
+
+        </div>
+      </div>
+
+      <script>
+
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.dropbtn')) {
+                 var dropdowns = document.getElementsByClassName("dropdown-content");
+                 var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                         var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+
+      </script>
+
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+        @media only screen and (max-width: 450px){
+
+        body{
+            background-color: rgb(15, 14, 14);
+        }
+
+        .poster{
+            width: 85vw;
+            height: 55vw;
+            border-radius: 10vw;
+            margin-top: 5vw;
+        }
+        h1{
+            font-family: 'Marcellus', serif;
+            font-size: 7.5vw;
+            text-align: center;
+            float: center;
+            color: white;
+        }
+        h2{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h3{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: center;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h4{
+            font-family: 'Markazi Text', serif;
+            font-size: 4vw;
+            float: center;
+            text-align: right;
+            color: gainsboro;
+            margin-right: 2.5vw;
+            margin-top: -2.5vw;
+        }
+        h5{
+            font-family: 'Markazi Text', serif;
+            font-size: 5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 5vw;
+            margin-top: -2.5vw;
+        }
+        h6{
+            font-family: 'Markazi Text', serif;
+            font-size: 4.5vw;
+            float: right;
+            text-align: right;
+            color: white;
+            margin-right: 4vw;
+            margin-top: -2.5vw;
+        }
+        .movie{
+            width: 80vw;
+            height: 50vw;
+            border-style: solid;
+            border-color: white;
+            border-width: 0.5vw;
+            background-color: silver;
+        }
+
+        .dropbtn {
+             background-color: #3498DB;
+             color: white;
+             width: 50vw;
+             padding: 16px;
+             font-size: 16px;
+             border: none;
+             border-radius: 5vw;
+             cursor: pointer;
+             margin-left: 25vw;
+             font-family: 'Markazi Text', serif;
+        }
+
+        .dropbtn:hover, .dropbtn:focus {
+             background-color: #5f717e;
+        }
+
+        .dropdown {
+             position: relative;
+             display: inline-block;
+        }
+
+        .dropdown-text{
+            padding: 16px;
+            font-size: 5vw;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Markazi Text', serif;
+        }
+
+        .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: #6666662d;
+             min-width: 160px;
+             max-height: 50vw;
+             overflow-y: auto;
+             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+             z-index: 1;
+             border-radius: 5vw;
+             text-align: center;
+             float: center;
+        }  
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: whitesmoke;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .show {display:block;}
+
+        
+    }
+    
+    </style>
+</body>
+</html>
