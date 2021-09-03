@@ -29,6 +29,14 @@
         display: none;
     }
 
+    .name{
+        font-size: 3.25vw;
+        margin-left: 2vw;
+        color: white;
+        float: center;
+        text-align: center;
+        font-family: 'Tajawal',sans-serif;
+    }
     .prev, .next {
         cursor: pointer;
         position: absolute;
@@ -42,6 +50,11 @@
         transition: 0.6s ease;
         border-radius: 0 3px 3px 0;
         user-select: none;
+    }
+
+    .imdb{
+        width: 5vw;
+        margin-left: 2vw;
     }
 
     .next {
