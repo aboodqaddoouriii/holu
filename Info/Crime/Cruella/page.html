@@ -1,152 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="all.min.js"></script>
     <title>Cruella</title>
 </head>
 
-
 <body>
-    <h1>         
-        <br>
-        <small>
-            Cruella
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://www.xtrafondos.com/wallpapers/emma-stone-como-cruella-8079.jpg" alt="image"></p>
+    <div class="info">
+        <img class="poster" src="https://i2.wp.com/www.thepanthertech.com/wp-content/uploads/2021/05/Cruella_Payoff_Digital_KeyArt_horiz.jpg?fit=1600%2C900&ssl=1">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+    <h1 calss="name">Cruella</h1>
 
-    <br>
+    
+    <div class="info">
+        <h2>2021</h2>
+        <h2>●</h2>
+        <h2>Crime</h2> 
+        <h2>●</h2>
+        <h2>2h 17m</h2>
+    </div>
+    
+    <div class="info">
+        <img class="star" src="C:\Users\T-REX\Desktop\Website\MoviePageAndPoster\Star.png">
+        <img class="star" src="C:\Users\T-REX\Desktop\Website\MoviePageAndPoster\Star.png">
+        <img class="star" src="C:\Users\T-REX\Desktop\Website\MoviePageAndPoster\Star.png">
+        <img class="star" src="C:\Users\T-REX\Desktop\Website\MoviePageAndPoster\Star.png">
+    </div>
+    
 
-    <h2>طاقم التمثيل</h2>
 
-    <h3>
-        إيما ستون
-        <br>
-        إيما تومسون
-        <br>
-        جويل فراي
-        <br>
-        بول والتر هوزر
-    </h3>
 
-    <br>
+    <h3>القصة</h3>
 
-    <h4>معلومات</h4>
-
-    <h5>
-        الفئة :
-        جريمة \ كوميدي
-        <br>
-        الانتاج :
-        2021
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        134 دقيقة
-        <br>
-        الاخراج :
-        كريج جيليسبي
-    </h5>
-
-    <br> <br>
-
-    <h6>
+    <p>
         تدور أحداث الفيلم في السبعينيات بلندن حول قصة حياة كورلا دي فيل السابقة وطفولتها قبل أن تتحول إلى السيدة الشريرة بفيلم الرسوم المتحركة 101 Dalmatians حيث سنرى العوامل التي أدت إلى هذا التحول.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/arxahdhwqy7r.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h4>الطاقم التمثيلي</h4>
 
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://m.media-amazon.com/images/M/MV5BMjI4NjM1NDkyN15BMl5BanBnXkFtZTgwODgyNTY1MjE@._V1_.jpg" alt="">
+            <span>إيما ستون</span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://static01.nyt.com/images/2019/11/10/arts/10MY-101/merlin_163637340_ab3bf227-ad0d-4a4a-85ae-c677cf69b286-superJumbo.jpg" alt="">
+            <span>إيما تومسون</span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Joel_Fry.jpg/1200px-Joel_Fry.jpg" alt="">
+            <span>جويل فراي</span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/5/52/Paul-walter-hauser.webp" alt="">
+            <span>بول والتر هوزر</span>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <iframe class="movie"src="https://tubesb.com/e/arxahdhwqy7r.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-
         @media only screen and (max-width: 450px){
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+        @font-face {
+            font-family: Assistant;
+            src:local("/MoviePageAndPoster/Assistant.ttf");
+        }
 
         body{
-            background-color: rgb(15, 14, 14);
+            background: rgb(6,0,36);
+            background: linear-gradient(0deg, rgba(6,0,36,1) 0%, rgba(0,0,0,1) 100%);       
+            overflow: auto;
         }
 
         .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
+            width: 100%;
+            height: 75vw;
+            border-radius: 5px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
         }
+        .button{
+            background: url('C:/Users/T-REX/Desktop/Website/MoviePageAndPoster/PlayButton.png');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-color: transparent;
+            background-size: cover;
+            border: none;
+            width: 20vw;
+            height: 20vw;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: 1.5s;
+        }
+        .button:hover{
+            transform: scale(1.25);
+        }
+
+
         h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
+            font-family: 'Be Vietnam', sans-serif;
+            font-weight: 600;
+            font-size: 6vw;
+            color: whitesmoke;
             text-align: center;
-            float: center;
-            color: white;
         }
+
+        .star{
+            width: 5vw;
+            height: 5vw;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        
         h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
+            font-family: 'Assistant', sans-serif;
+            font-weight:500;
             font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
+            margin: 5px;
+            color: grey;
+            display: flex;
+            align-items: left;
+            justify-content: center;
         }
-        .movie{
-            width: 80vw;
-            height: 50vw;
+
+        h3{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 5vw;
+            margin: 5px;
+            color: grey;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+        }
+
+        p{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 4vw;
+            color: white;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        h4{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 5vw;
+            margin: 5px;
+            color: grey;
+            display: flex;
+            align-items: right;
+            justify-content: right;
+        }
+
+        .actor{
+            overflow-x: hidden;
+            width: 20vw;
+            height: 20vw;
+            margin: 5px;
+            border-radius: 50%;
+            border-width: 2px;
             border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
+            border-color: grey;
+            object-fit: cover;
+            object-position: top;
+        }
+        span{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 3.5vw;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .infomation{
+            overflow-x: hidden;
+            width: 20vw;
+            height: 15vw;
+            margin: 15px;
+            border: none;
+        }
+
+        .informationtext{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 7.5vw;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -15px;
+        }
+ 
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: .3s;
+        }
+
+        .trailer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.9);
+            z-index: 10;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .trailer video{
+            max-width: 900px;
+            outline: none;
+            position: relative;
+        }
+        .close{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: #fff;
+            font-size: 42px;
+            cursor: pointer;
+        }
+        @media (max-width: 901px){
+            .trailer video{
+                max-width: 90%;
         }
     }
+}
     </style>
 </body>
 </html>
