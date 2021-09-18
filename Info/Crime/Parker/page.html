@@ -1,152 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="all.min.js"></script>
     <title>Parker</title>
 </head>
 
-
 <body>
-    <h1>         
-        <br>
-        <small>
-            Parker
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://cdn.suwalls.com/wallpapers/movies/parker-17258-1920x1200.jpg" alt="image"></p>
+    <div class="info">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/41HNvux5n7L._AC_.jpg">
+        <img class="poster" src="https://images6.alphacoders.com/341/341342.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+    <!-- Name -->
+    <h1 calss="name">Parker</h1>
 
-    <br>
+    
+    <div class="info">
 
-    <h2>طاقم التمثيل</h2>
+        <!-- Year -->
+        <div class="iconinfo">
+            <h2>2013</h2>
+        </div>
+        <h2 style="font-size: 2.5vw;">●</h2>
 
-    <h3>
-        جيسون ستاثام
-        <br>
-        جينيفر لوبيز
-        <br>
-        مايكل شيكليس
-        <br>
-        وندل بيرس
-    </h3>
+        <!-- Catagory -->
+        <div class="iconinfo">
+            <h2>Crime</h2> 
+        </div>
+        <h2 style="font-size: 2.5vw;">●</h2>
+        <!-- Duration -->
+        <div class="iconinfo">
+            <h2 >1h 58m</h2> 
+        </div>
+    </div>
+    
+    
 
-    <br>
 
-    <h4>معلومات</h4>
 
-    <h5>
-        الفئة :
-        تشويق واثارة
-        <br>
-        الانتاج :
-        2013
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        118 دقيقة
-        <br>
-        الاخراج :
-        تايلور هاكفورد 
-    </h5>
+    <h3>القصة</h3>
 
-    <br> <br>
-
-    <h6>
+    <p>
         بعد تركه ليموت وحيدًا، يقرر لص محترم الاستعانة بمساعدة امرأة من داخل العصابة والتنكر على أمل الانتقام والاستيلاء على عملية السطو الأخيرة لفريقه السابق.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/ni69ov9x0b90.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h4>الطاقم التمثيلي</h4>
 
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jason_Statham_2018.jpg/257px-Jason_Statham_2018.jpg" alt="">
+            <span>
+                جيسون ستاثام
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/TIFF_2019_jlo_%281_of_1%29-2_%2848696671561%29_%28cropped%29.jpg/239px-TIFF_2019_jlo_%281_of_1%29-2_%2848696671561%29_%28cropped%29.jpg" alt="">
+            <span>
+                جينيفر لوبيز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Michael_Chiklis_at_PaleyFest_2014.jpg/640px-Michael_Chiklis_at_PaleyFest_2014.jpg" alt="">
+            <span>
+                مايكل شيكليس
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Bobby_Cannavale_2009.jpg" alt="">
+            <span>
+                بوبي كانافال
+            </span>
+        </div>
+    </div>
+
+
+    <h5>افلام مشابهة</h5>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51GceDUfDcL._AC_.jpg" onclick="window.location.href='/Info/Crime/Faster/page.html'" />
+            <span>Faster</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BODFlMmEwMDgtYjhmZi00ZTE5LTk2NWQtMWE1Y2M0NjkzOGYxXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg" onclick="window.location.href='/Info/Crime/ManOnFire/page.html'" />
+            <span>Man on Fire</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://cdn.traileraddict.com/content/netflix/sweet-girl-poster.jpg" onclick="window.location.href='/Info/Action/SweetGirl/page.html'" />
+            <span>Sweet Girl</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BODBkMTNmMmQtYTNlMy00OTRhLWE5MzgtYTZlMTUyYzY1MzkzXkEyXkFqcGdeQXVyNjY1MTg4Mzc@._V1_.jpg" onclick="window.location.href='/Info/SCI-FI/Reminiscence/page.html'" />
+            <span>Reminiscence</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://tubesb.com/e/nu41e1dlhllj.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
-
         @media only screen and (max-width: 450px){
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
+        @font-face {
+            font-family: Assistant;
+            src:local("/MoviePageAndPoster/Assistant.ttf");
+        }
 
         body{
-            background-color: rgb(15, 14, 14);
+            background: rgb(6,0,36);
+            background: linear-gradient(0deg, rgb(1, 1, 2) 0%, rgba(0,0,0,1) 100%);       
+            overflow: auto;
+        }
+
+        .postersmall{
+            width: 35%;
+            height: 30%;
+            position: absolute;
+            margin-top: 10vw;
+            z-index: 1;
+            border-radius: 10px;
+            
         }
 
         .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
+            width: 100%;
+            height: 75vw;
+            border-radius: 5px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            filter: blur(5px);
+            filter:brightness(10px);
         }
+        .button{
+            display: none;
+            background: url('PlayButton.png');
+            background-position:center;
+            background-repeat:no-repeat;
+            background-color: transparent;
+            background-size: cover;
+            border: none;
+            width: 20vw;
+            height: 20vw;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            transition: 1.5s;
+            z-index: 5;
+        }
+        .button:hover{
+            transform: scale(1.25);
+        }
+
+
         h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
+            font-family: 'Be Vietnam', sans-serif;
+            font-weight: 600;
+            font-size: 6vw;
+            color: whitesmoke;
             text-align: center;
-            float: center;
-            color: white;
         }
+
+        .star{
+            width: 5vw;
+            height: 5vw;
+            margin: 5px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .info{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .iconinfo{
+            display: block;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 15px;
+        }
+        
         h2{
-            font-family: 'Markazi Text', serif;
+            font-family: 'Assistant', sans-serif;
+            background-color: transparent;
+            font-weight:600;
             font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
+            margin: 0px;
+            color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
         }
+
+        .icon{
+            width: 5vw;
+            display: block;
+            margin: auto;
+            margin-top: 50px;
+        }
+
         h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
+            font-family: 'Tajawal', sans-serif;
             font-size: 4.5vw;
-            float: right;
-            text-align: right;
+            margin: 10px;
+            margin-right: 15px;
             color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
+            text-align: right;
         }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
+
+        p{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 3.75vw;
+            font-weight: 900;
+            color: grey;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        h4{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 4.5vw;
+            margin: 25px;
+            margin-right: 15px;
+            color: white;
+            text-align: right;
+        }
+
+        .actor{
+            overflow-x: hidden;
+            width: 20vw;
+            height: 20vw;
+            margin: 5px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+        }
+        span{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 3.75vw;
+            font-weight: 900;
+            color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .infomation{
+            overflow-x: hidden;
+            width: 20vw;
+            height: 15vw;
+            margin: 15px;
+            border: none;
+        }
+
+        .informationtext{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 7.5vw;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -15px;
+        }
+
+        h5{
+            font-family: 'Tajawal', sans-serif;
+            font-size: 4.5vw;
+            margin: 25px;
+            margin-right: 15px;
+            color: white;
+            text-align: right;
+        }
+
+        .relateddiv{
+            display: flex;
+            overflow:scroll;
+        }
+
+        .related{
+            width: 30vw;
+            height: 40vw;
+            margin: 5px;
+            border-radius: 5px;
+            object-fit: cover;
+            object-position: top;
+        }
+ 
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: .3s;
+        }
+
+        .trailer{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,.9);
+            z-index: 10;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .trailer video{
+            max-width: 900px;
+            outline: none;
+            position: relative;
+        }
+        .close{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            color: #fff;
+            font-size: 42px;
+            cursor: pointer;
+        }
+        @media (max-width: 901px){
+            .trailer video{
+                max-width: 90%;
         }
     }
+}
     </style>
 </body>
 </html>
