@@ -1,153 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <script src="all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Greyhound</title>
 </head>
 
-
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            GreyHound
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images8.alphacoders.com/108/thumb-1920-1087670.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png">
+        <img class="icon" src="Like.png">
+    </div>
 
-    <br>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://upload.wikimedia.org/wikipedia/ar/f/f3/Greyhound_poster.jpeg">
+        <img class="poster" src="https://images8.alphacoders.com/108/thumb-1920-1087670.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h2>طاقم التمثيل</h2>
 
-    <h3>
-        توم هانكس
-        <br>
-        لي نوريس
-        <br>
-        ستيفن جراهام
-        <br>
-        إليزابيث شو
-    </h3>
+    <!-- Name -->
+    <h1 calss="name">Greyhound</h1>
 
-    <br>
 
-    <h4>معلومات</h4>
+    <div class="socialmedia">
+        <!--Youtube-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/youtube-play.png"
+            onclick="window.location.href='https://www.youtube.com/watch?v=eyzxu26-Wqk';"
+            />
+        <!--IMDB-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/imdb.png"
+            onclick="window.location.href='https://www.imdb.com/title/tt6048922/?ref_=nv_sr_srsg_0';"
+            />    
+    </div>
+    <p>لا بصلح لمن هم اقل من 13 عام</p>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <img class="icon2" src="Clock.png">
+            <h2>1h 31m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <img class="icon2" src="Category.png">
+            <h2>War</h2>
+        </div>
 
-    <h5>
-        الفئة :
-        حروب
-        <br>
-        الانتاج :
-        2020
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
+        <!--Year-->
+        <div class="info2">
+            <img class="icon2" src="Calendar.png">
+            <h2>2020</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h3>لقطات من الفيلم</h3>
+    <div class="wallpapreshow">
+        <img class="wallpaper" src="https://www.indiewire.com/wp-content/uploads/2020/07/greyhound-1200.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://romesentinel.com/uploads/original/20200731-082229-1929ac1454.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://images.wsj.net/im-206743?width=1280&size=1.33333333" alt="wallpaper">
+    </div>
+    
 
-        <br>
-        الاخراج :
-        آرون شنايدر 
-    </h5>
+    <h3>القصة</h3>
 
-    <br> <br>
-
-    <h6>
+    <p>
         خلال فترة الحرب العالمية الثانية، يصير الكابتن إرنست كروس مسئولًا عن مدمرة أمريكية في وقت مبكر من الحرب، لكنه يصير أمام امتحان صعب حينما تلاحقه قطع بحرية تابعة للقوات النازية عبر شمال اﻷطلنطي.
-    </h6>
-
-
-    <p align="center" >
-        <iframe controls class="movie"src="https://userload.co/embed/88bfc4fe4f77/Greyhound" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h4>الطاقم التمثيلي</h4>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://www.arageek.com/wp-content/uploads/2017/11/tom-hanks.jpg" alt="">
+            <span>
+                توم هانكس
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://millennivm.org/img/actors/90/lee-norris-bio-family.png" alt="">
+            <span>
+                لي نوريس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://img.karohat.com/Images/People/Poster/35/1f77f58c-7831-47b6-8e5c-198a0f6155e3.Webp?w=185&h=273&mode=crop" alt="">
+            <span>
+                ستيفن جراهام
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_b07608c58b5f9c01b5a6126870c7d97a48916afaa087af7ab3c8d506e8b61857.jpg" alt="">
+            <span>
+                إليزابيث شو
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h5>افلام مشابهة</h5>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>

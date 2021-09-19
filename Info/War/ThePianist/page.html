@@ -1,153 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <script src="all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>The Pianist</title>
 </head>
 
-
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            The Pianist
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://wallpapercave.com/wp/wp3724179.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png">
+        <img class="icon" src="Like.png">
+    </div>
 
-    <br>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg">
+        <img class="poster" src="https://wallpapercave.com/wp/wp3724187.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h2>طاقم التمثيل</h2>
 
-    <h3>
-        أدريان برودي
-        <br>
-        إميليا فوكس
-        <br>
-        إد ستوبارد
-        <br>
-        فرانك فينلي
-    </h3>
+    <!-- Name -->
+    <h1 calss="name">The Pianist</h1>
 
-    <br>
 
-    <h4>معلومات</h4>
+    <div class="socialmedia">
+        <!--Youtube-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/youtube-play.png"
+            onclick="window.location.href='https://www.youtube.com/watch?v=BFwGqLa_oAo';"
+            />
+        <!--IMDB-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/imdb.png"
+            onclick="window.location.href='https://www.imdb.com/title/tt0253474/?ref_=nv_sr_srsg_0';"
+            />    
+    </div>
+    <p>لا بصلح لمن هم اقل من 17 عام</p>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <img class="icon2" src="Clock.png">
+            <h2>2h 30m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <img class="icon2" src="Category.png">
+            <h2>War</h2>
+        </div>
 
-    <h5>
-        الفئة :
-        دراما
-        <br>
-        الانتاج :
-        2002
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
-        150
-        <br>
-        الاخراج :
-        رومان بولانسكي
-    </h5>
+        <!--Year-->
+        <div class="info2">
+            <img class="icon2" src="Calendar.png">
+            <h2>2002</h2>
+        </div>
+    </div>
 
-    <br> <br>
+    
+    
+    <h3>لقطات من الفيلم</h3>
+    <div class="wallpapreshow">
+        <img class="wallpaper" src="https://i.pinimg.com/originals/29/a8/8a/29a88abefc5e1eddeadce04265177e45.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://npr.brightspotcdn.com/dims4/default/09a1794/2147483647/strip/true/crop/1168x601+0+0/resize/880x453!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fwosu2%2Ffiles%2F201907%2Fimage_from_the_pianist.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://images2.alphacoders.com/698/thumb-1920-698952.jpg" alt="wallpaper">
+    </div>
 
-    <h6>
+
+    <h3>القصة</h3>
+
+    <p>
         فيلم مقتبس عن قصة حياة عازف البيانو البولندي فالديك سبيلمان في فترة الحرب العالمية الثانية حينما يجتاح الجيش الألماني بولندا ويحتلها، ويعاني سبيلمان هو وأسرته بسبب انتمائه للديانة اليهودية، وتعمد الألمان التنكيل باليهود وكيفية مطاردتهم والتضييق عليهم وتعذيبهم وقتلهم من دون سبب؛ حسب ادعاء الفيلم ذلك. كما يتعرض للمقاومة البولندية للاحتلال الألماني، وتحرير بولندا على يد الجيش الأحمر السوفيتي.
-    </h6>
-
-
-    <p align="center" >
-        <iframe controls class="movie"src="https://userload.co/embed/291272f45db8/The_Pianist" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h4>الطاقم التمثيلي</h4>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_ea6da1c95dd2c74c126e6c1fb813b9fa418d48c30a9919b996fc3fc3a04e4081.jpg" alt="">
+            <span>
+                أدريان برودي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://static.vecteezy.com/system/resources/previews/001/826/248/non_2x/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg" alt="">
+            <span>
+                إميليا فوكس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://static.vecteezy.com/system/resources/previews/001/826/248/non_2x/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg" alt="">
+            <span>
+                إد ستوبارد
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://static.vecteezy.com/system/resources/previews/001/826/248/non_2x/progress-loading-bar-buffering-download-upload-and-loading-icon-vector.jpg" alt="">
+            <span>
+                فرانك فينلي
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h5>افلام مشابهة</h5>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>

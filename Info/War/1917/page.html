@@ -1,153 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <script src="all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>1917</title>
 </head>
 
-<script data-cfasync='false' type='text/javascript' src='//p437009.clksite.com/adServe/banners?tid=437009_855956_6&tagid=2'></script>
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            1917
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images3.alphacoders.com/106/1063819.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png">
+        <img class="icon" src="Like.png">
+    </div>
 
-    <br>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://alternativemovieposters.com/wp-content/uploads/2020/03/curtis_1917.jpg">
+        <img class="poster" src="https://images5.alphacoders.com/107/1070373.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h2>طاقم التمثيل</h2>
-
-    <h3>
-        جورج ماكاي
-        <br>
-        دين تشارلز
-        <br>
-        كولين فيرث
-        <br>
-        مارك سترونج
-    </h3>
-
-    <br>
-
-    <h4>معلومات</h4>
-
-    <h5>
-        الفئة :
-        حروب
-        <br>
-        الانتاج :
-        2019
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
-        119
-        <br>
-        الاخراج :
-        سام ميندز
-    </h5>
-
-    <br> <br>
-
-    <h6>
-        في ذروة الحرب العالمية الأولى خلال ربيع عام 1917 في شمال فرنسا، يتم إعطاء جنديين بريطانيين شابين، شوفيلد وبليك مهمة مستحيلة على ما يبدو لإيصال رسالة تحذر من الكمين خلال واحدة من المناوشات بعد فترة وجيزة من التراجع الألماني إلى خط هيندنبيرغ خلال عملية البيرش
-    </h6>
+    
+    <!-- Name -->
+    <h1 calss="name">1917</h1>
 
 
-    <p align="center" >
-        <iframe controls controls src="https://userload.co/embed/389462576c41/1917" class="movie" allow="autoplay"></iframe>    
+    <div class="socialmedia">
+        <!--Youtube-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/youtube-play.png"
+            onclick="window.location.href='https://www.youtube.com/watch?v=YqNYrYUiMfg&t=2s';"
+            />
+        <!--IMDB-->
+        <img class="icon3" 
+            src="https://img.icons8.com/color/100/000000/imdb.png"
+            onclick="window.location.href='https://www.imdb.com/title/tt8579674/?ref_=nv_sr_srsg_0';"
+            />    
+    </div>
+    <p>لا يصلح لمن هم اقل من 17 عام</p>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <img class="icon2" src="Clock.png">
+            <h2>1h 59m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <img class="icon2" src="Category.png">
+            <h2>War</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <img class="icon2" src="Calendar.png">
+            <h2>2019</h2>
+        </div>
+    </div>
+
+    
+    
+    <h3>لقطات من الفيلم</h3>
+    <div class="wallpapreshow">
+        <img class="wallpaper" src="https://images5.alphacoders.com/107/1070373.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://wallpaperaccess.com/full/2004839.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://images2.alphacoders.com/106/thumb-1920-1063677.jpg" alt="wallpaper">
+    </div>
+
+
+    <h3>القصة</h3>
+
+    <p>
+        خلال الحرب العالمية اﻷولى، يذهب جنديان بريطانيان في مهمة مستحيلة، حيث يتعين عليهما دخول أرض العدو، من إجل ايصال رسالة لمنع قوات الفيلق الثامن مع الاشتباك مع اﻷلمان والوقوع في فخهم.
     </p>
 
+    <h4>الطاقم التمثيلي</h4>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dean-Charles_Chapman.jpg/389px-Dean-Charles_Chapman.jpg" alt="">
+            <span>
+                دين تشارليز تشابمان
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_fab39f67a1682141e403e0ce3367c66a6f5f3ca483207ae69bd3980a77903973.jpg" alt="">
+            <span>
+                جورج ماكاي
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_03c888327229c7ae795bb4a2b70276d048c561781eff8df95ffb12aaa274e517.jpg" alt="">
+            <span>
+                تيريزا ماهوني
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://www.arageek.com/wp-content/uploads/2020/02/Colin_Firth.jpeg" alt="">
+            <span>
+                كولين فيرث
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h5>افلام مشابهة</h5>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.3vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
