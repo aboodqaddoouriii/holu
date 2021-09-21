@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="all.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Hacksaw Ridge</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png">
+        <img class="icon" src="Like.png">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://cdn.shopify.com/s/files/1/0969/9128/products/Hacksaw_Ridge_-_Mel_Gibson_-_Hollywood_War_WW2_Movie_Art_Poster_e188e042-e6a6-4832-a25d-fa764394e510.jpg?v=1582782618">
+        <img class="poster" src="https://images3.alphacoders.com/803/thumb-1920-803166.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Hacksaw Ridge</h1>
+
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 19m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>War</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2016</h2>
+        </div>
+    </div>
+
+    
+    
+    <h3>لقطات من الفيلم</h3>
+    <div class="wallpapreshow">
+        <img class="wallpaper" src="https://s.abcnews.com/images/Entertainment/AP-hacksaw-ridge-ml-161104a_16x9_1600.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://m.media-amazon.com/images/M/MV5BNjIzNjUxMDAxOF5BMl5BanBnXkFtZTgwNDUwNDU0MDI@._V1_.jpg" alt="wallpaper">
+        <img class="wallpaper" src="http://images6.fanpop.com/image/photos/42900000/Hacksaw-Ridge-2016-Still-war-movies-42941289-1600-1000.jpg" alt="wallpaper">
+    </div>
+
+
+    <h3>القصة</h3>
+
+    <p>
+        مُسعف في الجيش الأمريكي خلال الحرب العالمية الثانية، والذي خدم في معركة (أوكيناوا) رافضًا قتل البشر تحت أي مسمى حتى خلال الحرب، كما أصبح أول مستنكف سلمي رافض للقتلتل في تاريخ العسكرية الأمريكية يتسلم ميدالية الكونجرس الشرفية، حيث شارك خلال الحرب العالمية الثانية دون حمل بندقية.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.filfan.com/NewsPics/FilfanNew/large/SEMSHALB1.jpg" alt="">
+            <span>
+                أندرو جارفيلد
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://wikiimg.tojsiabtv.com/wikipedia/commons/6/6c/Sam_Worthington_2013.jpg" alt="">
+            <span>
+                سام ورثينجتون
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_c389cedca5440982c7787b64e60d26b1c604e1d340c971a4589d313c4c3aa9fd.jpg" alt="">
+            <span>
+                جيمس ماكاي
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Firass_Dirani.jpg" alt="">
+            <span>
+                فراس ديراني
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info/'" />
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+    <br> <br> <br> <br> <br> 
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
