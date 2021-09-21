@@ -1,9 +1,6 @@
     @media only screen and (max-width: 450px){
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
-    @font-face {
-        font-family: Assistant;
-        src:local("/MoviePageAndPoster/Assistant.ttf");
-    }
+    @font-face { font-family: Junebug; src: url('Tajawal.ttf'); } 
 
     body{
         background: rgb(6,0,36);
@@ -74,7 +71,7 @@
 
 
     h1{
-        font-family: 'Be Vietnam', sans-serif;
+        font-family: Junebug;
         font-weight: 600;
         font-size: 6vw;
         color: white;
@@ -97,7 +94,7 @@
     }
     
     h2{
-        font-family: 'Be Vietnam', sans-serif;
+        font-family: Junebug;
         background-color: transparent;
         font-weight:600;
         font-size: 5vw;
@@ -107,7 +104,7 @@
     }
 
     h3{
-        font-family: 'Tajawal', sans-serif;
+        font-family: Junebug;
         font-size: 4.5vw;
         margin: 10px;
         margin-right: 15px;
@@ -116,7 +113,7 @@
     }
 
     p{
-        font-family: 'Tajawal', sans-serif;
+        font-family: Junebug;
         font-size: 3.75vw;
         font-weight: 900;
         color: grey;
@@ -148,7 +145,7 @@
         object-position: top;
     }
     span{
-        font-family: 'Tajawal', sans-serif;
+        font-family: Junebug;
         font-size: 3.5vw;
         font-weight: 900;
         color: whitesmoke;
