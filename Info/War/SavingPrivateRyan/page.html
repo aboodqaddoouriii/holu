@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Saving Private Ryan</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png">
+        <img class="icon" src="Like.png">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/51FiFegjEXL._AC_.jpg">
+        <img class="poster" src="https://wallpaperaccess.com/full/1665938.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Saving Private Ryan</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 49m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>War</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>1998</h2>
+        </div>
+    </div>
+
+    
+    
+    <h3>لقطات من الفيلم</h3>
+    <div class="wallpapreshow">
+        <img class="wallpaper" src="https://wallpapercave.com/wp/wp2217172.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://coolwallpapers.me/picsup/5592510-saving-private-ryan-wallpapers.jpg" alt="wallpaper">
+        <img class="wallpaper" src="https://wallpapermemory.com/uploads/573/saving-private-ryan-wallpaper-hd-1080p-421362.jpg" alt="wallpaper">
+    </div>
+
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفلم أثناء الحرب العالمية الثانية في معركة (نورماندي) تحديدا ، حيث يكلف الرئيس الأمريكي كتيبة بقيادة الكابتن ميلر (توم هانكس) بالذهاب إلى قلب المعركة وراء خطوط العدو ، والبحث عن الجندي ريان (مات ديمون) ، والحفاظ على سلامته حتى يعود إلى والدته التي فقدت ثلاثة من أبنائها في الحرب الدائرة ، ولم يتبقَ لها سوى (ريان) . يخوض الكابتن (ميلر) العديد من المعارك أملا في الوصول إلى (ريان) .
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://www.arageek.com/wp-content/uploads/2017/11/tom-hanks.jpg" alt="">
+            <span>
+                توم هانكس
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Edward_Burns_cropped.jpg" alt="">
+            <span>
+                إدوارد بيرنز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_8f6fe079df4e4d8080a5ae9847edca8d7136b03c9955bf1e4b4f35b1c3b2e5fd.jpg" alt="">
+            <span>
+                توم سيزمور
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_315x420_02ef6f5b1b5869134c868cf49f6ec84ec8a501ac6b73fb1bd3b6aa4787789007.jpg" alt="">
+            <span>
+                جيرمي ديفيز
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/61Zf5g-xUxL._AC_SY679_.jpg" onclick="window.location.href='/Info/War/1917/page.html'" />
+            <span>1917</span>
+        </div>
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BOWRiZDIxZjktMTA1NC00MDQ2LWEzMjUtMTliZmY3NjQ3ODJiXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg" onclick="window.location.href='/Info/War/ThePianist/page.html'" />
+            <span>The Pianist</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/71Tpd21hEbL._AC_SY679_.jpg" onclick="window.location.href='/Info/War/HacksawRidge/page.html'" />
+            <span>Hacksaw Ridge</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/516Y2RIPGpL._AC_.jpg" onclick="window.location.href='/Info/War/Fury/page.html'" />
+            <span>Fury</span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://userload.co/embed/e6197f4cb208" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
