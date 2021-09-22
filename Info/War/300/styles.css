@@ -128,7 +128,6 @@
         margin-right: 15px;
         color: white;
         text-align: right;
-        
     }
 
     h4{
@@ -149,6 +148,7 @@
         color: grey;
         text-align: right;
         margin-right: 15px;
+        line-height: 1.75em;
     }
     
     .wallpapreshow{

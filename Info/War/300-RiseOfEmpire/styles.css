@@ -6,7 +6,7 @@
         background: rgb(6,0,36);
         background-image: linear-gradient(0deg, #0C002E 0.1%, rgb(0, 0, 0) 100%);       
         overflow: auto;
-        padding: 2em;
+        padding: 1.5em;
         line-height: 1em;
     }
 
@@ -128,6 +128,16 @@
         margin-right: 15px;
         color: white;
         text-align: right;
+    }
+
+    h4{
+        font-family: Junebug;
+        font-size: 3.5vw;
+        margin: 5vw;
+        margin-right: 15px;
+        color: white;
+        text-align: center;
+        color: grey;
         
     }
 
@@ -138,6 +148,7 @@
         color: grey;
         text-align: right;
         margin-right: 15px;
+        line-height: 1.75em;
     }
     
     .wallpapreshow{
@@ -165,7 +176,7 @@
     }
     span{
         font-family: Junebug;
-        font-size: 2.75vw;
+        font-size: 3.25vw;
         font-weight: 900;
         color: whitesmoke;
         display: flex;

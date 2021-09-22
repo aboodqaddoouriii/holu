@@ -1,15 +1,29 @@
     @media only screen and (max-width: 450px){
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
-    @font-face {
-        font-family: Assistant;
-        src:local("/MoviePageAndPoster/Assistant.ttf");
-    }
+    @font-face { font-family: Junebug; src: url('Tajawal.ttf'); } 
 
     body{
         background: rgb(6,0,36);
         background-image: linear-gradient(0deg, #0C002E 0.1%, rgb(0, 0, 0) 100%);       
         overflow: auto;
-        padding: 5vw;
+        padding: 1.5em;
+        line-height: 1em;
+    }
+
+    img{
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    h1, h2, h3, p{
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     .main{
@@ -37,18 +51,18 @@
     }
 
     .postersmall{
-        width: 40%;
-        height: 30%;
+        width: 35%;
+        height: 27.5%;
         position: absolute;
         z-index: 1;
-        border-radius: 10px;
-        
+        border-radius: 10px;    
     }
 
     .poster{
-        width: 100vw;
-        height: 75vw;
+        max-width: 100vw;
+        max-height: 75vw;
         padding: 0;
+        z-index: -1;
         filter: blur(25px);
         border-radius: 10px;
     }
@@ -74,11 +88,12 @@
 
 
     h1{
-        font-family: 'Be Vietnam', sans-serif;
+        font-family: Junebug;
         font-weight: 600;
         font-size: 6vw;
         color: white;
         text-align: center;
+        
     }
 
 
@@ -97,7 +112,7 @@
     }
     
     h2{
-        font-family: 'Be Vietnam', sans-serif;
+        font-family: Junebug;
         background-color: transparent;
         font-weight:600;
         font-size: 5vw;
@@ -107,21 +122,33 @@
     }
 
     h3{
-        font-family: 'Tajawal', sans-serif;
-        font-size: 4.5vw;
-        margin: 10px;
+        font-family: Junebug;
+        font-size: 4vw;
+        margin: 5vw;
         margin-right: 15px;
         color: white;
         text-align: right;
     }
 
+    h4{
+        font-family: Junebug;
+        font-size: 3.5vw;
+        margin: 5vw;
+        margin-right: 15px;
+        color: white;
+        text-align: center;
+        color: grey;
+        
+    }
+
     p{
-        font-family: 'Tajawal', sans-serif;
+        font-family: Junebug;
         font-size: 3.75vw;
         font-weight: 900;
         color: grey;
         text-align: right;
         margin-right: 15px;
+        line-height: 1.75em;
     }
     
     .wallpapreshow{
@@ -131,8 +158,8 @@
         overflow: scroll;
     }
     .wallpaper{
-        width: 60vw;
-        height: 40vw;
+        max-width: 60vw;
+        max-height: 40vw;
         margin: 5px;
         border-radius: 20px;
         object-fit: cover;
@@ -140,16 +167,16 @@
 
     .actor{
         overflow-x: hidden;
-        width: 17.5vw;
-        height: 17.5vw;
-        margin: 15px;
+        width: 15vw;
+        height: 15vw;
+        margin: 10px;
         border-radius: 50%;
         object-fit: cover;
         object-position: top;
     }
     span{
-        font-family: 'Tajawal', sans-serif;
-        font-size: 3.5vw;
+        font-family: Junebug;
+        font-size: 3.25vw;
         font-weight: 900;
         color: whitesmoke;
         display: flex;
@@ -214,5 +241,6 @@
         .trailer video{
             max-width: 90%;
         }
+
     }
 }
