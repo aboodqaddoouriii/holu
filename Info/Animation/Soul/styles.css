@@ -3,8 +3,8 @@
     @font-face { font-family: Junebug; src: url('Tajawal.ttf'); } 
 
     body{
-        background: rgb(6,0,36);
-        background-image: linear-gradient(0deg, #660108 0.1%, rgb(0, 0, 0) 100%);       
+        background: rgb(38, 37, 39);
+        background-image: linear-gradient(0deg, #262729 0.1%, rgb(0, 0, 0) 100%);       
         overflow: auto;
         padding: 1.5em;
         line-height: 1em;
@@ -131,12 +131,12 @@
 
     h4{
         font-family: Junebug;
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 5vw;
         margin-right: 15px;
         color: white;
         text-align: center;
-        color: #D90917;
+        color: #c02832;
         
     }
 
