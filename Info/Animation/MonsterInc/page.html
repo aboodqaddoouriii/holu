@@ -4,150 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Monster INC.</title>
 </head>
 
-
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            Monster, INC
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://wallpaperaccess.com/full/1395346.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <br>
-
-    <h2>طاقم التمثيل</h2>
-
-    <h3>
-        جيمس كوبورن
-        <br>
-        بوب بيرجن
-        <br>
-        بوني هانت
-        <br>
-        فرانك أوز
-    </h3>
-
-    <br>
-
-    <h4>معلومات</h4>
-
-    <h5>
-        الفئة :
-        كوميدي
-        <br>
-        الانتاج :
-        2001
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
-        92
-        <br>
-        الاخراج :
-        بيتي دوكتر
-    </h5>
-
-    <br> <br>
-
-    <h6>
-        تدور الأحداث داخل شركة للمرعبين ، تعمل على توليد الطاقة للمدينة من خلال إخافة الأطفال الصغار ، والاعتماد على صرخاتهم في توليد هذه الطاقة ، لكن دخول الطفلة الصغيرة (بو) إلى الشركة عن طريق المرعب الشرير (راندال) يحول مسارات الشركة ، وبالأخص المرعب الأكثر شعبية داخل الشركة (سولي) . 
-    </h6>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
 
-    <p align="center" >
-        <iframe class="movie"src="https://userload.co/embed/28944c8d0ca6/Monster_INC" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <!-- Name -->
+    <h1 calss="name"></h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 36m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Comedy/Fantasy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2001</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور الأحداث داخل شركة للمرعبين ، تعمل على توليد الطاقة للمدينة من خلال إخافة الأطفال الصغار ، والاعتماد على صرخاتهم في توليد هذه الطاقة ، لكن دخول الطفلة الصغيرة (بو) إلى الشركة عن طريق المرعب الشرير (راندال) يحول مسارات الشركة ، وبالأخص المرعب الأكثر شعبية داخل الشركة (سولي) .
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6959dc6f17c43ae5ea2e9771d688c5a0a805257e2adfd262b93d7b7b290b080b.jpg" alt="Cast">
+            <span>
+                جيمس كوبورن
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_018b2e652afc911084d951168637661a1f41752b1ef12409541917cb2c648d59.jpg" alt="Cast">
+            <span>
+                بوني هانت
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_44fccc509c6635f256df50ac1e01b9c23514ed67175dcd4d5e161dc034ec0ab3.jpg" alt="Cast">
+            <span>
+                فرانك أوز
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5d1b6585a7ff3015448982a0b0de68240d4aeb3f1191b973defee6feb7606a4f.jpg" alt="Cast">
+            <span>
+                بوب بيترسون
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7fc157e89f83fcbf5464c003aff0742fa100d86e0b79510e25ff72b9d2120da2.jpg" alt="Cast">
+            <span>
+                ستيف بوسيمي
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
