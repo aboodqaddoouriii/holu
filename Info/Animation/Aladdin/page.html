@@ -4,149 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Aladdin</title>
 </head>
 
-
 <body>
-    <h1>         
-        <br>
-        <small>
-            Aladdin
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images6.alphacoders.com/114/thumb-1920-1144486.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <br>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71liEu4AGtL._AC_SL1458_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71liEu4AGtL._AC_SL1458_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h2>طاقم التمثيل</h2>
 
-    <h3>
-        سكوت وينجر
-        <br>
-        روبن ويليامز
-        <br>
-        ليا سالونجا
-        <br>
-        جيم كامينجز
-    </h3>
+    <!-- Name -->
+    <h1 calss="name">Aladdin</h1>
 
-    <br>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 8m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Animation</h2>
+        </div>
 
-    <h4>معلومات</h4>
+        <!--Year-->
+        <div class="info2">
+            <h2>1992</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
 
-    <h5>
-        الفئة :
-        عائلي
-        <br>
-        الانتاج :
-        1992
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
-        90 دقيقة
-        <br>
-        الاخراج :
-        جون ماسكر
-    </h5>
+    <h3>القصة</h3>
 
-    <br> <br>
-
-    <h6>
+    <p>
         علاء الدين هو طفل شوارع يعيش في مدينة كبيرة مزدحمة مع صديقه المخلص القرد (آبو)، ليصادف في المدينة الأميرة ياسمين، ويحبها، فيذهب إلى السجن ويتورط في مؤامرة لحكم الأرض من تخطيط مستشار السلطان (جعفر) بمساعدة مصباح غامض.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/ztm0nqt459z9.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_1bdab4743f49bb6aeea9cedb2e3ed15fb1d6cbda4401b38630e5093f5fd41fd7.jpg" alt="Cast">
+            <span>
+                سكوت وينجر
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ec2c9161590fa69a082b3bb257c200fe501a73df0ad9e70dd6ec3ae5b0a86863.jpg" alt="Cast">
+            <span>
+                روبن ويليامز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_3ee9142158fc8fb67dd852863cf31ef1e3fada307169085e9ab5e796e5f6673b.jpg" alt="Cast">
+            <span>
+                ليا سالونجا
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9ed206f096426f81237e5dfac16f6b054da21e60757a43e25fc914e5a076cb1c.jpg" alt="Cast">
+            <span>
+                جيم كامينجز
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://cultureposters.com/wp-content/uploads/2020/10/shreck-movie-poster-1.jpg" onclick="window.location.href='/Info/Animation/Shrek/page.html'" alt="Related"/>
+            <span>Shrek</span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/91uEVM-injL._AC_SY679_.jpg" onclick="window.location.href='/Info/Animation/TheLionKing2019/page.html'" alt="Related"/>
+            <span>The Lion King</span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="https://www.redheadbabymama.com/wp-content/uploads/2021/03/1-1-666x999.jpg" onclick="window.location.href='/Info/Animation/Soul/page.html'" alt="Related"/>
+            <span>Soul</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51fK4PJ11HL._AC_.jpg" onclick="window.location.href='/Info/Animation/CorpseBride/page.html'" alt="Related"/>
+            <span>Corpse Bride</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>

@@ -4,150 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Ice Age</title>
 </head>
 
-
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            ICE AGE
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images5.alphacoders.com/678/678130.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <br>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://www.iceposter.com/thumbs/MOV_iqrfhbuu_b.jpg">
+        <img class="poster" src="https://www.iceposter.com/thumbs/MOV_iqrfhbuu_b.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h2>طاقم التمثيل</h2>
 
-    <h3>
-        راي رومانو
-        <br>
-        جون ليجويزامو
-        <br>
-        دينيس ليري
-        <br>
-        سيدريك ذا انترتينر
-    </h3>
+    <!-- Name -->
+    <h1 calss="name">Ice Age</h1>
 
-    <br>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 21m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Comedy</h2>
+        </div>
 
-    <h4>معلومات</h4>
+        <!--Year-->
+        <div class="info2">
+            <h2>2002 </h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يقترح الرقابة الابوية</h4>
+    
 
-    <h5>
-        الفئة :
-        عائلي
-        <br>
-        الانتاج :
-        2002
-        <br>
-        اللغة :
-         الانكليزية
-        <br>
-        الترجمة :
-         العربية
-        <br>
-        المدة :
-        51
-        <br>
-        الاخراج :
-        كريس ويدج 
-    </h5>
+    <h3>القصة</h3>
 
-    <br> <br>
-
-    <h6>
+    <p>
         تنتظر الأرض قدوم العصر الجليدي، ويسود شك حول فناء الأرض من قبل الكتل الجليدية، ثلاثة حيوانات هي ماموث يدعى (ماني)، ونمر يدعى (دييجو)، وكسلان يدعى (سيد)، يجدون طفلا صغيرا تائها من أهله، فيصممون على إرجاعه إلى أبيه، قاطعين رحلة مليئة بالمخاطر والأهوال بكل جسارة.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://userload.co/embed/160ecdcf7f02/ICE_AGE_1" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_35766cf855201c43c220b4236bfddbe8abbac191e23ecb1c0ace94fb6d67eafd.jpg" alt="Cast">
+            <span>
+                راي رومانو
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_bc09d3073a87b1f784eb88a4f929aaaf7d4f75fac30a135f7e443c1e91ff8770.jpg" alt="Cast">
+            <span>
+                جون ليجويزامو
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_54be46ef901f771b9d8fa10b416d16c0d8431f509ad93460a06187a5b84d1fcf.jpg" alt="Cast">
+            <span>
+                دينيس ليري
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_e9cf25bbe0f072966fa098ba573d5944507ad0cf174cd174a91bc749a5631f12.jpg" alt="Cast">
+            <span>
+                سيدريك ذا انترتينر
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_09b5c9e99c8c85bee8807d6cea2e16c676a6fff9a5a5ad91bc3bed6a84ef48ee.jpg" alt="Cast">
+            <span>
+                جاك بلاك
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
