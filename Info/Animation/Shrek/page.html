@@ -4,150 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MoviesHall -</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Shrek</title>
 </head>
 
-
 <body>
-    <h1>         
-        <b>MOVIES</b> <small>HALL</small>
-        <br>
-        <small>
-            Shrek
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://i.pinimg.com/originals/53/7d/18/537d1808504de7c2cca183fcb4d3561e.jpg" alt="image"></p>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <br>
-
-    <h2>طاقم التمثيل</h2>
-
-    <h3>
-        إيدي ميرفي
-        <br>
-        مايك مايرز
-        <br>
-        كاميرون دياز
-        <br>
-        جون ليثجو
-    </h3>
-
-    <br>
-
-    <h4>معلومات</h4>
-
-    <h5>
-        الفئة :
-        كوميدي
-        <br>
-        الانتاج :
-        2001
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        90
-        <br>
-        الاخراج :
-        أندرو أدمسون 
-    </h5>
-
-    <br> <br>
-
-    <h6>
-        (شريك) غول أخضر يعيش في المستنقع وحيدًا مستمتعًا بعزلته، إلى أن يجد في يوم ما كل شخصيات القصص الخيالية ينامون في مستنقعه، فيذهب إلى اللورد فركواد ومعه الحمار مساعده كي يأمرهم بالرحيل، فيطلب منه فركواد أن يذهب لعرين التنين لينقذ الأميرة فيونا.
-    </h6>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71HPEO8IJTL._AC_SY679_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71HPEO8IJTL._AC_SY679_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
 
-    <p align="center" >
-        <iframe controls class="movie"src="https://userload.co/embed/70647d7d8b54/Shrek_1" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
+    <!-- Name -->
+    <h1 calss="name">Shrek</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 30m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Comedy/Fantasy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2001</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يقترح الرقابة الابوية</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        غول أخضر يعيش في المستنقع وحيدًا مستمتعًا بعزلته، إلى أن يجد في يوم ما كل شخصيات القصص الخيالية ينامون في مستنقعه، فيذهب إلى اللورد فركواد ومعه الحمار مساعده كي يأمرهم بالرحيل، فيطلب منه فركواد أن يذهب لعرين التنين لينقذ الأميرة فيونا.
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_010df56524f14fcb5b0ae262d697e4c84d03aa708b27ecc8f69e78214a34e497.jpg" alt="Cast">
+            <span>
+                إيدي ميرفي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d93ccd3dacb8aa9c120ba58a28aa64b8668b1895169a8f0c552902b2ce0e8a54.jpg" alt="Cast">
+            <span>
+                مايك مايرز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c6ac68151dc16265595cfce3852c2582e017b832809b8b838cca77af91db8019.jpg" alt="Cast">
+            <span>
+                كاميرون دياز
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4339999f970ac1b6d007336a28833d0d998346ccf8bc56fb0c84823e238833cc.jpg" alt="Cast">
+            <span>
+                جون ليثجو
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
