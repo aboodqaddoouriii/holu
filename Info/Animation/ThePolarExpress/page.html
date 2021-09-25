@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Polar Express</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMTM1NTU0NTE4MV5BMl5BanBnXkFtZTcwMTQ0MjEzMw@@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Polar Express</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 40m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>خيالي/عائلي</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2004</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تحكي القصة عن فتى صغيرٍ تراوده الشكوك حول وجود سانتا كلوز، في عشية عيد الميلاد يجد البطل الصغير نفسه دون مقدمات على متن قطارٍ سحري متجه إلى القطب الشمالي حيث منزل سانتا كلوز. خلال تلك الرحلة المثيرة، يواجه الفتى الكثير من المفاجآت ويخوض العديد من المغامرات، يكتشف عن نفسه الكثير بواسطة تلك المغامرة المثيرة التي توضح له أن أكثر العجائب غرابة في الدنيا قابلة للحدوث ولكن فقط مع من يؤمنون بها.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7376550fbf92f1fe218729c5360ec3805450c8e9cbac21687b9b2d6879df3fef.jpg" alt="Cast">
+            <span>
+                نونا غاي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_faf32f25cbfebcf7b312a48b9bcb3aee87b8c5d4283ce8359faaedf1796bbd8b.jpg" alt="Cast">
+            <span>
+                توم هانكس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ddaf554f44575951a22f78bdb458e31b61c35c5a4cc91c85fc6d8b04508ab968.jpg" alt="Cast">
+            <span>
+                إدي ديزين
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_841739dbbd277bd0942d49e189057976791f7bb0088207a7fc22406091903778.jpg" alt="Cast">
+            <span>
+                داريل سابارا
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                جوش ايلي
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://vupload.com/e/4ph2orlraiif" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

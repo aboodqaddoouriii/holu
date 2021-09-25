@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Spongebob Sponge On The Run</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71btFzNMEuL._AC_SY741_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71btFzNMEuL._AC_SY741_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Spongebob Sponge On The Run</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 23m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Comedy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2020</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يقترح الرقابة الابوية</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        قبل أحداث المسلسل التلفزيوني، يذهب (سبونج بوب) في رحلة إلى كامب كورال من أجل مقابلة أصدقاء جدد، وحينما يتعرض حيوانه الأليف للإختطاف، يقرر (سبونج بوب) وصديقه (باتريك) الذهاب في مهمة إنقاذ.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                كارولين لورانس
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_fcdfdcf3544463b8008331cdc06bc60e7cf8630d786ea6f76e75f53c21127e28.jpg" alt="Cast">
+            <span>
+                جيل تالي
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                رودجر بامباس
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                السيد لاورينس
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                لوري آلان
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://thenichollsworth.com/wp-content/uploads/2021/03/images-1-600x900.jpeg" onclick="window.location.href='/Info/Animation/TomAndJerry/page.html'" alt="Related"/>
+            <span>Tom And Jerry</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://vupload.com/e/w0zplrstvzte" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

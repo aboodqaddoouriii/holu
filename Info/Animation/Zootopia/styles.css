@@ -89,10 +89,11 @@
     h1{
         font-family: Junebug;
         font-weight: 600;
-        font-size: 6vw;
+        font-size: 5vw;
         color: white;
         text-align: center;
         margin: 25px;   
+        line-height: 1em;
     }
 
 
@@ -113,8 +114,8 @@
     h2{
         font-family: Junebug;
         background-color: transparent;
-        font-weight:600;
-        font-size: 5vw;
+        font-weight:500;
+        font-size: 4.5vw;
         margin: 5px;
         color: whitesmoke;
         text-align: left;
@@ -168,7 +169,7 @@
         overflow-x: hidden;
         width: 15vw;
         height: 15vw;
-        margin: 10px;
+        margin: 20px;
         border-radius: 50%;
         object-fit: cover;
         object-position: top;

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Grinch</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/61YFMDPPRGL._AC_SL1008_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/61YFMDPPRGL._AC_SL1008_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Grinch</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 30m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>عائلي/كوميدي</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2018</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم عن (جرينش) الغاضب الذي يخطط لتدمير موسم عيد الكريسماس لقاطني القرية المجاورة لـ(هوفيل)، إلى أن تتغير عواطفه نحو العيد على يد فتاة صغيرة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8e672f948af1c062c888944347846fe9353deac1efc94104b495007775f8f3bd.jpg" alt="Cast">
+            <span>
+                بنديكت كومبرب
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_122563e5ed027f645e13586fceb5bdd8c73515e4abc2d2aaa285f89d4316751b.jpg" alt="Cast">
+            <span>
+                فاريل ويليامز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_75d750d0bf0990343ea69608a3b6fc0bfab1b7ed203a1de40a6c4b8bb9b12fa3.jpg" alt="Cast">
+            <span>
+                كينان تومبسون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6cc59bca97622f7d2903d2cac93c81f1c72177e12013536c4d395805c26b08e5.jpg" alt="Cast">
+            <span>
+                أنجيلا ﻻنسبيري
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_29e5d4f754b05bba1ee65df7eff8a8513a44678e1cedb856badf6b4d5e99e97c.jpg" alt="Cast">
+            <span>
+                رشيدة جونس
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/41vR8flMPOL._AC_.jpg" onclick="window.location.href='/Info/Animation/TheLorax/page.html'" alt="Related"/>
+            <span>The Lorax</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51jPjlApjfL._AC_.jpg" onclick="window.location.href='/Info/Animation/PeterRabbit-One/page.html'" alt="Related"/>
+            <span>Peter Rabbit</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51STWheAr3L._AC_.jpg" onclick="window.location.href='/Info/Animation/Frankenweenie/page.html'" alt="Related"/>
+            <span>Frankenweenie</span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://vupload.com/e/ddwhp02io7fc" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
