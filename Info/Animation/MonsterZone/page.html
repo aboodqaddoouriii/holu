@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Monster Zone</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BZGQyMTdkNzctOGYwMS00ZmQxLTg0ODItNzM1MmIzYzlmNmRhXkEyXkFqcGdeQXVyMjgzNjA3Mw@@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BZGQyMTdkNzctOGYwMS00ZmQxLTg0ODItNzM1MmIzYzlmNmRhXkEyXkFqcGdeQXVyMjgzNjA3Mw@@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Monster Zone</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 20m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Comedy/Fantasy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2020</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 7 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تسير الأمور في حياة طفل ذكي بالمدرسة الثانوية بشكل غريب ومفاجئ حينما يُنقل لمدرسة جديدة داخلية، وتزداد الأمور غرابة حينما يفتح بوابة للوحوش من بُعد زمني آخر.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_38f22412d07b2edaa0b15f5ac6fdbcf8a99680def50835ac9f90070d0bd947be.jpg" alt="Cast">
+            <span>
+                جيمي بيل
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7a5e3a9c2568820d87dd1b769094bdd7acfd7e85ba6afd7e39e79765dd0faf6c.jpg" alt="Cast">
+            <span>
+                روبي روز
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51exsQkdIXL._AC_.jpg" onclick="window.location.href='/Info/Animation/MonsterHouse/page.html'" alt="Related"/>
+            <span>Monster House</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BMjIzNzUxMjMzNl5BMl5BanBnXkFtZTgwNzg0MTY2NDM@._V1_.jpg" onclick="window.location.href='/Info/Animation/MonsterFamily/page.html'" alt="Related"/>
+            <span>Monster Family</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BODBjOTAzZmMtNGJkOC00M2M3LWI1MTctZjZlMzdiODBkMzc0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg" onclick="window.location.href='/Info/Animation/TheAddamsFamily/page.html'" alt="Related"/>
+            <span>The Addams Family</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/Pr31w78gbpU0K4e" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

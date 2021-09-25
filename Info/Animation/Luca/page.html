@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LUCA</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/61TiJ45kd7S._AC_SL1481_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/61TiJ45kd7S._AC_SL1481_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">LUCA</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 35m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Comedy/Adventure</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يقترح الرقابة الابوية</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        في إطار من المغامرة والخيال، تلتقي فتاة إيطالية مع كائن بحري يُشار له بوحش البحر يتنكر في هيئة إنسان، فتنشأ بينهما علاقة صداقة قوية تتحدى كل الظروف على الشواطئ الإيطالية الساحرة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_198db0e9c8f88473ee38226cac936dc84f7035865b7597e6530fd3680adc1420.jpg" alt="Cast">
+            <span>
+                جاكوب ترمبلي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_dd667ebd5cad9865db97e969616b5f86b892b391a394ba24b26f00532e4d0033.jpg" alt="Cast">
+            <span>
+                مايا رودولوف
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8c77fee6cd63f680d0fb88a4498203d3b890778fe5d4b2f1a1317459e690a5df.jpg" alt="Cast">
+            <span>
+                جاك ديلان
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4eb7042e7432f9394e8c95ade69f7f439e87f05dbcb349ceb64ef84f690904c5.jpg" alt="Cast">
+            <span>
+                جيم جافيجان
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_aae656b35f5c261a863aea6d590787a4a7349e8501768bb1362cfc88a4d62ffe.jpg" alt="Cast">
+            <span>
+                ساشا بارون
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/0WPdKp2d2bcA8G" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
