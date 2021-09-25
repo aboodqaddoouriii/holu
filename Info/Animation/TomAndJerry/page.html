@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tom And Jerry</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BYzE3ODhiNzAtOWY4MS00NTdiLThmNDctNDM4NjRiNGFmYjI1XkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BYzE3ODhiNzAtOWY4MS00NTdiLThmNDctNDM4NjRiNGFmYjI1XkEyXkFqcGdeQXVyMTI2ODM1ODUw._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Tom And Jerry</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 41m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Comedy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        في عالم توم وجيري، تركز الأحداث على المرة الأولى التي تقابل فيها القط مع الفأر، وكيف تشكلت علاقتهما ما بين الصداقة والعداء بتاريخ طويل من المغامرات والمقالب بين الثنائي.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ec957c0297124eebd3f6fcd76127e66dcc2821b8e8ad546b6ac418dd19a96b8c.jpg" alt="Cast">
+            <span>
+                كلوي جريس
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_973fb6a1b54cc0eabb2afbe642f5b115ca1c67856147e8a5e5efe6eb74435bb6.jpg" alt="Cast">
+            <span>
+                مايكل بينا
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_874f20aeb9b831f2313431d849d4dec7070ecb4f6a52e1510a8777a7a7b1c75a.jpg" alt="Cast">
+            <span>
+                روب ديلاني
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ce8944a2f17dc2561b8e9b2e520d5ab855f4c33d03806a076202c1040586a63d.jpg" alt="Cast">
+            <span>
+                كولن جوست
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_55b432d74bec067fd761eae6d400fcc387158a51d3dd10ef36891e3e53dace5f.jpg" alt="Cast">
+            <span>
+                كين جيونج
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BOTMyOTAyY2YtNTEyZS00NGEwLTg5YWMtOTBkNmJlYTM0YTc0XkEyXkFqcGdeQXVyMTA3MDk2NDg2._V1_.jpg" onclick="window.location.href='/Info/Animation/SpongeOnThRun/page.html'" alt="Related"/>
+            <span>Sponge On The Run</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/4AGO2x29MDTKQm0" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
