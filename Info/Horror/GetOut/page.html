@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Get Out</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71A-EPdSNaL._AC_SY741_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71A-EPdSNaL._AC_SY741_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Get Out</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 44m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2017</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 15 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم حول شاب أفريقي أمريكي يقوم بزيارة عائلة حبيبته البيضاء في عزبة مملوكة لهم، لكنه يكتشف أن العزبة التي يقيم بها أهل حبيبته قد وقعت بها عدد من الحوادث المريبة، ومن هنا ينذره أحد قاطني العزبة بضرورة الخروج بأقصى سرعة، لكنه يدرك أن القول أيسر كثيرًا من الفعل. 
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7e819267da9c9607110718288cf6d6052bbc51458060deff51a7dac580eb5718.jpg" alt="Cast">
+            <span>
+                دانيال كالويا
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_248d9fc34ed79f16d8bf8ebe4899f6642c809692d9623f3fc73fad0fc27e5fda.jpg" alt="Cast">
+            <span>
+                أليسون ويليامز
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9ec96e17dedb62d16849b54b4067b934947ecf5365c5cb7c5cf30fe7457b6f3f.jpg" alt="Cast">
+            <span>
+                كاثرين كينر
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8d7052add55d69a22ec7d5d76c569cf05de110332ad02a63327b0560b1792b6c.jpg" alt="Cast">
+            <span>
+                برادلي ويتفورد
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9f4386ac8e4bfd09b195192932563a4801a3c2b53afec8d22e90678e5c7df73e.jpg" alt="Cast">
+            <span>
+                ماركوس هندرسون
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
