@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Small Foot</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BNWI5OWJiYTgtNGU4MS00ZTZkLWI1NzEtMmYwMzExYzJjZGYzXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNWI5OWJiYTgtNGU4MS00ZTZkLWI1NzEtMmYwMzExYzJjZGYzXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Small Foot</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 49m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Comedy</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2018</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        ميجو هو أحد مخلوقات الـيتي، لديه قناعة تامة بأن المخلوقات بعيدة المنال والمعروفة بإسم (البشر)، موجودين بالفعل ويمكن الوصول إليهم، وذلك بمساعدة ميشي وجمعية سمول فوت.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_87af900d7ba1e64149b3c8291b13138e289ee15b8c8df4fb70f490ec9f445373.jpg" alt="Cast">
+            <span>
+                زندايا
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_811358dc43823735ab728d11b57bd29a055f276cf938b7cf1c9a9a584be17471.jpg" alt="Cast">
+            <span>
+                تشانينج تاتوم
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_15e5e2327df1b659e4be13e686fadf6bfa461bc139a621985c69f2599aab3a20.jpg" alt="Cast">
+            <span>
+                داني ديفيتو
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_e78738435f2485e05fb30b192654dcbae038c9be45fe354520a29f96cb66ffa3.jpg" alt="Cast">
+            <span>
+                جينا رودريجز
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_0a5771440000c28e92b6fba6166a0be3e9111f77d0c5fdaf09898d4e64da5dbe.jpg" alt="Cast">
+            <span>
+                جيمس كوردن
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/81PWF-yAEyL._AC_SL1100_.jpg" onclick="window.location.href='/Info/Animation/Frozen-I/page.html'" alt="Related"/>
+            <span>Frozen</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://cdn.europosters.eu/image/750/posters/frozen-2-magic-i83468.jpg" onclick="window.location.href='/Info/Animation/Frozen-II/page.html'" alt="Related"/>
+            <span>Frozen 2</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://www.redheadbabymama.com/wp-content/uploads/2021/03/1-1-666x999.jpg" onclick="window.location.href='/Info/Animation/Soul/page.html'" alt="Related"/>
+            <span>Soul</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/81G6xX1AlxL._AC_SL1500_.jpg" onclick="window.location.href='/Info/Animation/Tangled/page.html'" alt="Related"/>
+            <span>Tangled</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/wd0XJqrWXWfJmoj" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
