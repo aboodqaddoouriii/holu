@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frozen</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/81PWF-yAEyL._AC_SL1100_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/81PWF-yAEyL._AC_SL1100_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Frozen</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 42m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Musical</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2013</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 8 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        أميرتان إلسا (إيدنا مينزل) الملكة القادمة وآنا (كرستين بيل). إلسا كانت تمتلك قوةً خارقةً وفريدةً من نوعها ،حيث كان بإمكانها خلق الثلج والجليد، ولكنها قمعت تلك القوة بسبب حادثةٍ أصابتها بصدمة. أثناء حفل تنصيب إلسا كملكةٍ تَخرج الأمور عن السيطرة وتسلك نحو طريقٍ من التعقيدات ويبدأ كل شيء في الانهيار، بناءً عليه تهرب إلسا. تقرر آنا مصاحبة كريستوف (جونثان جروف) وأوليف (جوش جاد) في رحلةٍ محفوفةٍ بالمخاطر من أجل إيجاد إلسا وإنقاذ المملكة قبل فوات الأوان.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2bec2c340618a8ba4b62e1386eda3386bfacb96f792a0552c27242cf189e3e27.jpg" alt="Cast">
+            <span>
+                كريستين بيل
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2e5f44eb6a13babadacddcba1d16645c1acc435c306118353b63c3ed75e8555f.jpg" alt="Cast">
+            <span>
+                إدينا مينزيل
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_cfe4c15cfa05e761ac60e3f08435897de028ec4293926da8c1f505e86744cd25.jpg" alt="Cast">
+            <span>
+                جوناثان جروف
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c61deebd2d23f750a893affcb8b2072ac737022818a1096c3071116f29771b58.jpg" alt="Cast">
+            <span>
+                جوش جاد
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_46cc55ac0968defcd38b92dce370d496e5020cb863d7b2dd13deb827023d0f68.jpg" alt="Cast">
+            <span>
+                ألان توديك
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://cdn.europosters.eu/image/750/posters/frozen-2-magic-i83468.jpg" onclick="window.location.href='/Info/Animation/Frozen2/page.html'" alt="Related"/>
+            <span>Frozen 2</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/81G6xX1AlxL._AC_SL1500_.jpg" onclick="window.location.href='/Info/Animation/Tangled/page.html'" alt="Related"/>
+            <span>Tangled</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.WqA8~2eefa/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2021/01/LARE_BS_75.10_v3.0_BusShelter_Mech9.jpg" onclick="window.location.href='/Info/Animation/RayaAndTheLastDragon/page.html'" alt="Related"/>
+            <span>Raya And Th..</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://vupload.com/e/cluou4qhtbx9" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
