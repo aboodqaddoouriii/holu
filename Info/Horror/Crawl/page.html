@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crawl</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/51926KemcFL._AC_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/51926KemcFL._AC_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Crawl</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 27m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/كوارث</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2019</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تتجاهل (هالي) أوامر الإخلاء عندما يضرب إعصار هائل مسقط رأسها في فلوريدا، حيث ذهبت للبحث عن والدها المفقود، وعندما عثرت عليه وجدته مصاب بجروح خطيرة في منزل عائلتهما، ليصبح الإثنان محاصرين بسبب مياه الفيضان وسرعة تدفقها، ومع نفاد الوقت للهروب من العاصفة القوية، تكتشف (هالي) ووالدها أن ارتفاع منسوب المياه هو أقل مخاوفهما.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4a1d489c765d9e5421ef9a93ee7a8ebf55b445d5378d68e3c6c9f6288b28745f.jpg" alt="Cast">
+            <span>
+                كايا سكوديلاريو
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8477eb08c5bbe6a8f056f413b7cf706778e23a95fc32605a7fed4cc4da4b819e.jpg" alt="Cast">
+            <span>
+                باري بيبر
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_1aa89c6109d29f7ccc298033a32f0e1760a22418cce446ed0fc0721fee5b0eba.jpg" alt="Cast">
+            <span>
+                جورج سومنر
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_aa050aeafb904d29c248ac9bb14a703dcb74888a04db7b2ca25a47218f01ec2b.jpg" alt="Cast">
+            <span>
+                امي ميتكالف
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f9d7a8d50907438027ace28e82eb845dd69021422b588b2152258f2b3c62a36e.jpg" alt="Cast">
+            <span>
+                خوسيه بالما
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5a9278c05b0d69763a41b2700d4baf9133caf05c23503d15ad12bff6ba2a04dd.jpg" alt="Cast">
+            <span>
+                روس أندرسون
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_e675b93dcbd66b940803f9c1fcecf7a7fd1017fcd1639b3ddc62f56e1f28c53d.jpg" alt="Cast">
+            <span>
+                مورفيد كلارك
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

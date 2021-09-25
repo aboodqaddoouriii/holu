@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Knock Knock</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BYTQ3MzhlZjQtNWMxOS00NTEzLTgzOWYtNTI3MjhmZGU0ZDM2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BYTQ3MzhlZjQtNWMxOS00NTEzLTgzOWYtNTI3MjhmZGU0ZDM2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Knock Knock</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 36m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>تشويق/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2015</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        إيفان ويبر رجل متزوج وسعيد بحياته الطبيعية، في ليلة ممطرة يجلس فيها وحيدًا في منزله، يفاجأ بفتاتين تطرقان باباه طلبًا للمساعدة، لكنهماتريدان الدخول إلى منزله بأي ثمن، لتأخذ الأمور منعطفًا غير طبيعي على الإطلاق عندئذٍ، ويتحول الأمر برمته إلى مطاردة شرسة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_1d1777a052330b059cd2173c19fabc288139be3c4f44e5e5cc26542fa22ca5df.jpg" alt="Cast">
+            <span>
+                كولين كامب
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_eae2d939bf2451f4561396f95dc27f26f770c1963aec251cf750d9ce9e7b8853.jpg" alt="Cast">
+            <span>
+                آنا دي أرماس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_3835870d3cdb94c13f123f5153fd116679a5493ab7d71d204da602f388554b5e.jpg" alt="Cast">
+            <span>
+                كيانو ريفز
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_fce6c3b73a2f32f31f110db971fed4eee0cb509a061013e83f84453f29f849db.jpg" alt="Cast">
+            <span>
+                لورينزا لزو
+            </span>
+        </div>
+
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hush</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://upload.wikimedia.org/wikipedia/ar/e/e3/Hush_2016_poster.jpg">
+        <img class="poster" src="https://upload.wikimedia.org/wikipedia/ar/e/e3/Hush_2016_poster.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Hush</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 27m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2016</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+    تدور أحداث الفيلم في إطار تشويقي مرعب، حيث امرأة صماء منعزلة في منزلها، تتعرض لمُطاردة مِن قِبَل قاتل مضطرب عقليًا ومُصاب بالذُهان داخل المنزل، فتحاول الهروب منه والنجاة مع الصعوبة التي تواجهها بسبب صممها.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_3067c4779c6d78bb675ee215f3d830f756958885f6255c0a06d94303238527cf.jpg" alt="Cast">
+            <span>
+                جون جالاجار
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f488c5a9f5a31b3a6535e97d2938d935b04d30d45c017b35b5e0076b4ce03c02.jpg" alt="Cast">
+            <span>
+                كيت سيجال
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2d9af6db39c8e5313b2631602d1154c115e7562b23f392dc95b732decf80f554.jpg" alt="Cast">
+            <span>
+                مايكل تروكو
+            </span>
+        </div>
+
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
