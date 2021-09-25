@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Coco</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/A1tyD0nKdhL._AC_SY679_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/A1tyD0nKdhL._AC_SY679_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Coco</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 45m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2017</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>يصلح لجميع الاعمار</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        فتى يبلغ من العمر 12 عامًا، ولديه شغف كبير بالموسيقى حتى مع حظر عائلته لها على مدار أجيال طويلة، ويقرر زيارة المكان الذي يرقد فيه موسيقاره المفضل (إرنستو دي لا كروز) في يوم الموتى الذي يقام سنويًا في المكسيك، وينتهي به الحال في أرض الموتى، حيث يقابل أقربائه الراحلين، ويتعرف على أسرار عائلته.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_1208c8f919c8937fe04f41059a8a3b9c80e45af610b25e62b6a08f328dd7f21a.jpg" alt="Cast">
+            <span>
+                جايل جارسيا
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f360873426e297bea630fe258a29e71d490f5322446c7a7f6391baa0acc31f8f.jpg" alt="Cast">
+            <span>
+                بنجامين برات
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c605a3d5049c0cbf547af6ec361cef0c8c6bbd8a2158959a45ea71aea35b3752.jpg" alt="Cast">
+            <span>
+                رينيه فيكتور
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_75559f05d69c1ef0a322d53480eb422530b8da4bd94ebd77366f30e41b05d869.jpg" alt="Cast">
+            <span>
+                شيش مارين
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://www.redheadbabymama.com/wp-content/uploads/2021/03/1-1-666x999.jpg" onclick="window.location.href='/Info/Animation/Soul/page.html'" alt="Related"/>
+            <span>Soul</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://images-na.ssl-images-amazon.com/images/I/81zbSEXnDOL.jpg" onclick="window.location.href='/Info/Animation/Frozen1/page.html'" alt="Related"/>
+            <span>Frozen</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51Qo2UtcJvL._AC_.jpg" onclick="window.location.href='/Info/Animation/HotelTransylvania1/page.html'" alt="Related"/>
+            <span>Hotel Transylvania</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/61TiJ45kd7S._AC_SL1481_.jpg" onclick="window.location.href='/Info/Animation/Luca/page.html'" alt="Related"/>
+            <span>Luca</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/lGDj8z1OkGu70PM" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
