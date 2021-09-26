@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Life</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71w48e3QLrL._AC_SL1000_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71w48e3QLrL._AC_SL1000_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Life</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 50m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>خيال علمي/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2017</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        يروي الفيلم قصة طاقم المحطة الفضائية الدولية المُكوّن من ستة أفراد، والذين على شفا واحد من أهم الاكتشافات في التاريخ البشري، ألا وهو أول دليل على وجود حياة خارج الأرض على كوكب المريخ، وبمجرد شروعهم في إجراء بحوثهم يبلغون عواقب غير متوقعة ويكتشفون أن شكل الحياة هناك أكثر ذكاءًا من توقعات أي شخص.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_68d16f17af5d649eb86b1d5b6775b7b44521f1f104c67ee56772eebd7d6b496c.jpg" alt="Cast">
+            <span>
+                جيك جيلنهال
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5ae9d8f65965176caf8c1020ce2a1a6c5ca6a020cb9053ee0655002f75c3504f.jpg" alt="Cast">
+            <span>
+                رايان رينولدز 
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_57b0c6eac6c26aa0d575b827e2e1b5d6b0d5771b98e2079db717d62aa75d1120.jpg" alt="Cast">
+            <span>
+                ريبيكا فيرجسون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d91f036acbce0c031bb33db374e1f6252c24e5bf122ef2460f86c34960d8fa84.jpg" alt="Cast">
+            <span>
+                هيرويوكي سانادا
+            </span>
+        </div>
+
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

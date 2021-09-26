@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Invisible Man</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://upload.wikimedia.org/wikipedia/ar/3/3a/The_Invisible_Man_%282020_film%29_-_release_poster.jpg">
+        <img class="poster" src="https://upload.wikimedia.org/wikipedia/ar/3/3a/The_Invisible_Man_%282020_film%29_-_release_poster.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Invisible Man</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 5m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/تشويق</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2020</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تتناول العمل قصة امرأة تدعى سيسيليا، حيث تتلقى خبر انتحار حبيبها السابق، وبينما تحاول بناء حياتها من جديد تكتشف أن حبيبها قد يكون ما يزال على قيد الحياة بصورة أو بأخرى.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_cf3c84935d647723f07d171767e5f3a1eb6921a062fa6d7271dc50df55e61856.jpg" alt="Cast">
+            <span>
+                إليزابيث موس
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4dc7f52a1f811e85c15285056de5d4e3cb79fd992bee7a856351c07c588fba58.jpg" alt="Cast">
+            <span>
+                ستورم ريد
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_889b9f5c5e4758e585f05f718e113d6b1adc21e9e5a9b7e12f4ce02c993168fc.jpg" alt="Cast">
+            <span>
+                أوليفر جاكسون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_137c793bea22bd2836a7ab1f13fe01e890e145f357f742d6855152e08a822471.jpg" alt="Cast">
+            <span>
+                سام سميث
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7eb7bbcc1fa3254068de85f9f9faf3318a15da76bdb4a174f7d28138f9d6f6ed.jpg" alt="Cast">
+            <span>
+                ألديز هودج
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_42250e401d120b6fa0dba6ab200b6dafdd98ef680abfa8d0cc9ddbaf44581756.jpg" alt="Cast">
+            <span>
+                بينديكيت هاردي
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4b8b1d747f29c343094511075e352ceb727f9771c57c3e50880a7f68a76d4f15.jpg" alt="Cast">
+            <span>
+                هارييت داير
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

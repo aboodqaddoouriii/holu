@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Hunt</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BNTY0ZmYyYTktOGEzNS00NDNkLTk2ZWQtYTJiOWEyZTliMzFlXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNTY0ZmYyYTktOGEzNS00NDNkLTk2ZWQtYTJiOWEyZTliMzFlXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Hunt</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 30m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2020</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        يستيقظ مجموعة من الأشخاص في منطقة نائية، ولا يتذكرون متى أو كيف انتهى بهم الأمر إلى هذا المكان، ولكنهم لا يعرفون أنهم تم اختيارهم بعناية من أجل الصيد.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5d550aa60b9576c5641612ad275bebbd68af3c60cf7342ae8f48d4f9426de2d9.jpg" alt="Cast">
+            <span>
+                أليكسندر باربارا
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c526292451b3a5eddb07e8268ee8c94d5f1f1e9cb8baeb56077b1f92c3ddbba7.jpg" alt="Cast">
+            <span>
+                تيري ويبل
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_222557bfae9548a08131cabe3593ba0ed8b5733d62029817be4eeae332f8a578.jpg" alt="Cast">
+            <span>
+                ماكون بلير
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c2a9914b4400cd13d9c766b5845a74032ee30d0a4d54a4efa4521d3078166046.jpg" alt="Cast">
+            <span>
+                إيما روبرتس
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7b80fc469b9a9c01f5fbbf0602dc3a1c3ce12bf59eea2746b0c1f378d53abc7a.jpg" alt="Cast">
+            <span>
+                إيمي ماديجان
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
