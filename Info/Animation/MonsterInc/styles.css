@@ -1,6 +1,6 @@
     @media only screen and (max-width: 450px){
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
-    @font-face { font-family: Junebug; src: url('Tajawal.ttf'); } 
+    @font-face { font-family: Junebug; src: url('Cairo.ttf'); } 
 
     body{
         background: rgb(38, 37, 39);
@@ -116,15 +116,20 @@
         font-family: Junebug;
         background-color: transparent;
         font-weight:500;
-        font-size: 4.5vw;
+        font-size: 4vw;
         margin: 5px;
         color: whitesmoke;
         text-align: left;
+        padding: 2.5vw;
+        border: solid white 1px;
+        border-bottom-left-radius: 2vw;
+        border-top-right-radius: 2vw;
     }
 
     h3{
         font-family: Junebug;
-        font-size: 4vw;
+        font-size: 3.75vw;
+        font-weight: 600;
         margin: 5vw;
         margin-right: 15px;
         color: white;
@@ -133,7 +138,7 @@
 
     h4{
         font-family: Junebug;
-        font-size: 4vw;
+        font-size: 3.5vw;
         margin: 5vw;
         margin-right: 15px;
         color: white;
@@ -144,7 +149,7 @@
 
     p{
         font-family: Junebug;
-        font-size: 3.75vw;
+        font-size: 3.5vw;
         font-weight: 900;
         color: grey;
         text-align: right;
@@ -157,7 +162,7 @@
         overflow-x: hidden;
         width: 15vw;
         height: 15vw;
-        margin: 10px;
+        margin: 15px;
         border-radius: 25%;
         object-fit: cover;
         object-position: top;
@@ -165,7 +170,7 @@
     span{
         font-family: Junebug;
         font-size: 3vw;
-        font-weight: 900;
+        font-weight: 500;
         color: whitesmoke;
         display: flex;
         align-items: center;
@@ -241,7 +246,7 @@
 
 @media only screen and (min-width: 451px){
     @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap');
-    @font-face { font-family: Junebug; src: url('Tajawal.ttf'); } 
+    @font-face { font-family: Junebug; src: url('Cairo.ttf'); } 
 
     body{
         background: rgb(38, 37, 39);
