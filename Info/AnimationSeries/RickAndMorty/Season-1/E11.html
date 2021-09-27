@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rick And Morty</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://cdn.europosters.eu/image/750/posters/rick-morty-portal-i40514.jpg">
+        <img class="poster" src="https://cdn.europosters.eu/image/750/posters/rick-morty-portal-i40514.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Rick And Morty</h1>
+    <span style="color: #41e169;">الموسم الاول - الحلقة 11</span>
+
+    
+    <div class="container">
+        <!--Category-->
+        <div class="info2">
+            <h2>مسلسل كوميدي</h2>
+        </div>
+        <!--Duration-->
+        <div class="info2">
+            <h2>49 حلقة</h2>
+        </div>
+        
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2013 - 2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 14 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث المسلسل حول مغامرات العالم السكير (ريك)، والذي يعد أذكي رجل في العالم. يذهب (ريك) في رحلاته حول المجرة والعوالم الموازيه ويستعين بحفيده (مورتي)، المراهق ذو الأربعة عشر عاما والذي يعد بغبائه ستاره الذي يتخفى ورائه (ريك).
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7e5181ecf0cd6bbcc1b4818e6a23abd00ab82ea6adb72cfbef41a27e5a62206a.jpg" alt="Cast">
+            <span>
+                سارة تشالك
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_52da69582722c26abbbdd9492d4314e645dbd66072f8abe4a8621a9f7fb8881f.jpg" alt="Cast">
+            <span>
+                كاري والجرين
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_e4f29551b53630b6a267eb648e61106cf8bd64f8bd70b4563aeddc5805605c54.jpg" alt="Cast">
+            <span>
+                براندون جونسون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2189c36dcfa6f0d4f2fb1aa4f623b141d82e837dc4ae41a9d4b1718a6890330b.jpg" alt="Cast">
+            <span>
+                سبينسر جرامير
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ce795f7a255643d19ae1b2c00e2e53943025a2bf4997a65e4dfc4a0b55351a33.jpg" alt="Cast">
+            <span>
+                كريس بارنيل
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_40ba907e11f3acdd3bae2367700e4f9a29e85d7629a2c9ff77c5324f8b454fd7.jpg" alt="Cast">
+            <span>
+                توم كيني
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_73fb27848d92b28bbfb0298c4c0f7354ec6e3292c31f25363e9afde01ae0afe4.jpg" alt="Cast">
+            <span>
+                ألفريد مولينا
+            </span>
+        </div>
+
+        <!-- Actor Eight -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d497040abe5da3458daa9c8774384b5f00fd24eef110e54022f80cdf96567046.jpg" alt="Cast">
+            <span>
+                ستيفن كولبيرت
+            </span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/QAy2L1xOyGu0bjZ" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
