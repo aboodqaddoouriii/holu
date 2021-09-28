@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>30 Days Of Night</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/51BnFQpg+1L._AC_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/51BnFQpg+1L._AC_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">30 Days Of Night</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 53m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/تشويق</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2007</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 uhl</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        بعد سقوط بلدة معزولة في ولاية ألاسكا في ظلام دامس لمدة شهر، تعرضت لهجوم من قبل عصابة من مصاصي الدماء المتعطشين للدماء، ويحاول أهل البلدة الدفاع عن بلدتهم.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_abc18ba96089adcff561fd0fbd5607811d604486a1d58f54ea7fad461ed090df.jpg" alt="Cast">
+            <span>
+                ميليسا جورج
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ff28dd55f60bd91e9d77b5077aa417463ee42e5aa16ff0482ca8a1828ece97f1.jpg" alt="Cast">
+            <span>
+                داني هيوستن
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f9d16f18985f1fe8477efd51aedd17d88bf845deb927843f780376feeca4aa56.jpg" alt="Cast">
+            <span>
+                مانو بينيت
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5197938d5cc5032d7a391ea27939e99f0a7f6ab50e10d0c4be0a2eab32dffcce.jpg" alt="Cast">
+            <span>
+                جوش هارتنت
+            </span>
+        </div>
+
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/VmaAWmzg2kTxXm" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

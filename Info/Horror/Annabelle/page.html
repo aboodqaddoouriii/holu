@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Annabelle</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/614rium+zxL._AC_SY679_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/614rium+zxL._AC_SY679_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Annabelle</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 39m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/اثارة</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2014</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم حول جون فورم وزوجته ميا، حيث يوفق جون في العثور على هدية مميزة لزوجته الحامل، وهي عبارة عن عروسة قديمة ونادرة ترتدي فستانًا ناصع البياض. لكن انجذاب ميا لهذه العروسة لم يدم طويلا، ففي ليلة رهيبة يتم احتلال بيتهما بواسطة مجموعة من عبدة الشيطان الذين اعتدوا بعنف عليهما. وهو ليس آخر شيء يفعله هؤلاء؛ حيث يقومون باستحضار إحدى الأرواح الشريرة التي لا تُقهر وهي (أنابيل).
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8d369f0f5d6c347d5504eda48713ddd5b8cdc6ae7ed0c341f3acc3986325c104.jpg" alt="Cast">
+            <span>
+                أنابيلا واليز
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_bfcac23e063217b9baa88325df193ae940c0e4c1289e14b4a9e3f9f7fbd19827.jpg" alt="Cast">
+            <span>
+                جابريل بيتمان
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_28b351cbd8762487d6f9e9b32ba63dfc6f83e96754fa2709bfd1292aeb528d4c.jpg" alt="Cast">
+            <span>
+                كيري أومالي
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_a691b8e882fec0254af10c8b5ed676cc12ff08760c766c1b2c71cf7e9514944b.jpg" alt="Cast">
+            <span>
+                ألفر وودارد
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_06421d31b15f302c2fa15418359c663ec86d8dc350a1d23f3c7cd8b2e5cb50b5.jpg" alt="Cast">
+            <span>
+                توني أميندولا
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/71p1hm5O1iL._AC_SL1392_.jpg" onclick="window.location.href='/Info/Horror/Annabelle-II/page.html'" alt="Related"/>
+            <span>
+                Annabelle: Creation
+            </span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/M/MV5BYmI4NDNiMmQtZTFkYi00ZDVmLThlYTAtMWJlMjU1M2I2ZmViXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg" onclick="window.location.href='/Info/Horror/Annabelle-III/page.html'" alt="Related"/>
+            <span>
+                Annabelle Comes Home
+            </span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

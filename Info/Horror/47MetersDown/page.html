@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>47 Meters Down</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/81H-vcdltgL._AC_SL1500_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/81H-vcdltgL._AC_SL1500_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">47 Meters Down</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 29m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/تشويق</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2017</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تكتشف أربع فتيات مراهقات أثناء ممارسة رياضة الغوص في مدينة مدمرة تحت الماء، أنهن لسن بمفردهن داخل متاهة الكهوف المغمورة بالمياه، وأنهم قد دخلوا في منطقة عامرة بأشرس أنواع أسماك القرش
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_024379c191f35fd07d351db1c4efa6accb6de8bbca343dd842e13fbaa4691f12.jpg" alt="Cast">
+            <span>
+                نيا لونج
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_011b66c4b25e505431ed6f83e74c5dd5914c33eba0131607a30aee021808441d.jpg" alt="Cast">
+            <span>
+                جون كوربيت
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ab2984db420e1159ff455ec2b7f16187c4f904e02210149e34f09989149139ec.jpg" alt="Cast">
+            <span>
+                صوفي نيليس
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4aa3bb35605dd850e0b32bb4710fa58336348709e33cbb2bc08760b7f3178001.jpg" alt="Cast">
+            <span>
+                كارين فكس
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_83fe0d2bf5e99d777e2d367acc6086c760acfdcdc12400da2cc44e80b3f1c7a2.jpg" alt="Cast">
+            <span>
+                آكسيل مانسيلا
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
