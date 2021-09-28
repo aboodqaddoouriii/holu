@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Others</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://static.displate.com/857x1200/displate/2020-05-07/e667b2a5c550636ca958bd300cd51582_f691a4d2e8427dad405d026f3689b6b6.jpg">
+        <img class="poster" src="https://static.displate.com/857x1200/displate/2020-05-07/e667b2a5c550636ca958bd300cd51582_f691a4d2e8427dad405d026f3689b6b6.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Others</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 44m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/تشويق</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2001</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تعيش جريس تلك السيدة المتدينة مع طفليها في قصر بتلك المنطقة النائية، منتظرة زوجها الذي ذهب ليشارك في الحرب العالمية الثانية، وتضطر للاستعانة ببعض الخدم لرعاية طفليها اللذان يعانيان من مرض يمنعهما من التعرض لأشعة الشمس، وتظل حريصة على رعايتهما إلى أن يخرقا أوامرها، فتظهر مفاجأة مذهلة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6e4318ca69d797594b7eee258f86fc34de7720671057568ca1a1068a97d70982.jpg" alt="Cast">
+            <span>
+                نيكول كيدمان
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2caf20c4bbe3fd3218a13ab539e7eef9e7d7943fe842c534afdbe5d5f97c23dc.jpg" alt="Cast">
+            <span>
+                كريستوفر إيكلستون
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_57d945a83110d2d05feec3e9314d0967bf8ab75c2597f3163771c41deea85126.jpg" alt="Cast">
+            <span>
+                ميشيل فايرلي
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ec8468c2728fda7f42d1747208953984322a426274f62dd5572cdef046a1f6f3.jpg" alt="Cast">
+            <span>
+                فيونولا فلانجان
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_102e4abba8abda3376b76af039567b4e8bf936123e22026e2c2b51c768972d60.jpg" alt="Cast">
+            <span>
+                كيث ألان
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5b20a862e7ea086b40bbc7f88a19da863c49b361f59f64cb083385513eccd3f1.jpg" alt="Cast">
+            <span>
+                إليان كاسيدي
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/b18jL7WP2khQAR" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

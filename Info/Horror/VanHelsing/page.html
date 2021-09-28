@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Van Helsing</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://cdn.shopify.com/s/files/1/1416/8662/products/VanHelsing_2004_teaser_original_film_art_1200x.jpg?v=1609956842">
+        <img class="poster" src="https://cdn.shopify.com/s/files/1/1416/8662/products/VanHelsing_2004_teaser_original_film_art_1200x.jpg?v=1609956842">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Van Helsing</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 11m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/اكشن</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2004</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم في أجواء أسطورية. يهدف فان هلسينج (هيو جاكمان) إلى التخلص من كل الشرور في العالم،
+        ويتبع في سبيل ذلك بعض الأساليب التي لا ترضي الجميع.
+        يقوم الفاتيكان بإرسال هلسينج؛ صائد الوحوش، برفقة صديقه وساعده الأيمن (كارل) إلى ترانسلفانيا.
+        يُطلب منهما أن يقفا في وجه الكونت (دراكولا)؛ الذي يعيث فسادًا في المنطقة مع صحبته من مصاصي الدماء.
+        تنضم إليهما الأميرة الغجرية آنا (كيت بيكينسال)؛ التي ترغب في القضاء على مصاصي الدماء، وإنهاء اللعنة التي طالت أسرتها.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c352f4bea790de9e296be1dfd3b5291935996d87b834c28c90b5e12ff000b619.jpg" alt="Cast">
+            <span>
+                هيو جاكمان
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_29191e29606de6cb409984d242a00d850451ad9a2459d46775f4baeab0d3ab5e.jpg" alt="Cast">
+            <span>
+                كيت بيكنسيل
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c0beff49e5b39c6c4ce4781cabf1cfb72fb6941fea19a57a34d82999e4aa51fa.jpg" alt="Cast">
+            <span>
+                ريتشارد روكسبيرج
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_02b32fb5420ff35eafe688fe48e277d118e66cff3999ca040f25553f4722c621.jpg" alt="Cast">
+            <span>
+                ديفيد وينهام
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d89b5880990109ec447259275a9cc8014f5018fd6552c88b10b18639be9c2705.jpg" alt="Cast">
+            <span>
+                صموئيل وست
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/PjwMzyLeeqU0ZeB" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
