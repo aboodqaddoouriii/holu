@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Don't Breathe</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/41QsBqbdIqL._AC_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/41QsBqbdIqL._AC_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Don't Breathe</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 28m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/اثارة</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2016</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        فتاة شابة تحاول أن تبدأ حياة جديدة مع شقيقتها، وتخطط مع حبيبها وصديق آخر لهم لاقتحام وسرقة منزل رجل ضرير ثري، وقد راودهم الظن بأنهم سيقترفوا الجريمة الكاملة التي لا تشوبها شائبة بما أن الرجل ضرير، ولكنهم يكتشفوا خطأهم ويحاولوا أن ينجوا بأرواحهم منه بعد اكتشافهم بأنه قاتل متسلسل.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_16658b9c8f37f1fc235fba783f1f8f8e9739d6aee2458f6d6a414c309cb87032.jpg" alt="Cast">
+            <span>
+                سيرجيج أونوبكو
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_3d00fcf2cf04cd97e0af2e158a69733b5364d2c48842ad5f696a556527543c2e.jpg" alt="Cast">
+            <span>
+                جاين ماين
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_885987b041c727ded836dc83bb408f0fa58737dd1938b25c91b31e6e28569bb0.jpg" alt="Cast">
+            <span>
+                دانييل زوفاتو
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4e1620c6611220cd14eca00bc0d421a1c7417b5228d9ce1a407da2a132c3d965.jpg" alt="Cast">
+            <span>
+                جان ليفي
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_904abae8801cc5a0382991f4834d5d80a2c8dd6959a1e15917afe545a19e501b.jpg" alt="Cast">
+            <span>
+                ستيفن لانج
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_0658fd1b559f795f21bf10fdf122e41bc62fce90fc6e5637235e518df4919842.jpg" alt="Cast">
+            <span>
+                ديلان مينيتي
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2b2c424afaef9d56e7ff9084f600f7f7e062c623b77043a0b67a2d42e83164de.jpg" alt="Cast">
+            <span>
+                جون دوناهو
+            </span>
+        </div>
+
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/9j70DxzVjmSoel" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

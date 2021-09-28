@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Don't Breathe 2</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/dontbreathe2_onesheet_1400x2100_est.jpg?itok=uWzJSvdZ">
+        <img class="poster" src="https://www.sonypictures.com/sites/default/files/styles/max_560x840/public/title-key-art/dontbreathe2_onesheet_1400x2100_est.jpg?itok=uWzJSvdZ">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Don't Breathe 2</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 38m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/اثارة</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        بعد مرور العديد من السنوات، يختبئ نورمان نوردستورم في كوخ رفقة فتاة يتيمة نجت من حريق منزلها، وحينما تأتي عصابة وتختطف الفتاة، يصبح على الرجل الضرير ترك ملاذه الآمن لإنقاذ الفتاة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_904abae8801cc5a0382991f4834d5d80a2c8dd6959a1e15917afe545a19e501b.jpg" alt="Cast">
+            <span>
+                ستيفن لانج
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                مادلين جريس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                ستيفاني ارسيلا
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                بريندان
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                بوبي سكوفيلد
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/lQby2J7wmVI7gmB" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
