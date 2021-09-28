@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Split</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/71rxoNz2LeL._AC_SY679_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/71rxoNz2LeL._AC_SY679_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Split</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 57m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>تشويق/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2016</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        رجل لديه - على الأقل - ثلاث وعشرين شخصية مختلفة في داخله، يقوم باختطاف ثلاث فتيات مراهقات، وبينما هن محتجزات أسرى، تبدأ شخصيته الأخيرة (الوحش) في التحرر من أجل السيطرة والاستحواذ على بقية الشخصيات في حوزة كيفين، حيث تتصارع جميع هذه الشخصيات الداخلية فيما بينها حول مصير الفتيات الثلاث.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_cb682252f4ca5b9e2313364e94d6f1bceb3c167934d73f256757e95da5671b3b.jpg" alt="Cast">
+            <span>
+                جيمس مكافوي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4e1e6ac28e0b4985e2b14c3274b0730b470e6c1ef27a24c32d12d0d7ab4e40ca.jpg" alt="Cast">
+            <span>
+                براد ويليام
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ccad903082e89f6ed1caa6d03f81257fa9af68669515fbe5398f213556063f4a.jpg" alt="Cast">
+            <span>
+                نيل هوف
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_0d95670e886b0a69562884cfeb8239565e49e5f6dd2cdd201f119e7f222615a7.jpg" alt="Cast">
+            <span>
+                هايلي لو
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f8a6679a435c42a06ca8a6c16e02f2678497a000f77b94ae16d59d8af217170d.jpg" alt="Cast">
+            <span>
+                أنيا تايلور
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/A32lqvpj88IXXdA" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

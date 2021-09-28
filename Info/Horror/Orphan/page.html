@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Orphan</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/51HA66JyjlL._AC_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/51HA66JyjlL._AC_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Orphan</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 3m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اثارة/رعب</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2009</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        زوجين يفقدان ابن لهما وهو جنين لذا تمر العائلة في سلسلة من الأزمات لذا يقرران أن يتبنيان طفلة من ملجأ الأيتام وبالفعل يختاران فتاة تدعى (استر) في البداية تبدو الطفلة لطيفة وهادئة، وبعد فترة وجيزة تتصرف (أستر) بشكل سيء ومع مرور الوقت تصبح الفتاة أكثر جنونًا وتصرفاتها مريبة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_22d736cd25e79d440821d136e70ddc3d8041ed092a06913af6749f2bfa82240f.jpg" alt="Cast">
+            <span>
+                فيرا فارميجا
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_cd9276564c940626ad51598b7800664cdbaa7ea84d3d25d7789f0f3134900acb.jpg" alt="Cast">
+            <span>
+                بيتر سارسجارد
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_04cdf67d9ff505cbf597f5a6a7eb3e49d260e72aabcec60db55c87230e3d0f3a.jpg" alt="Cast">
+            <span>
+                إيزابيل فورمان
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f2f29d98e9d8b3fbebcee63199ba88555186fb47a7516be84e868a4b01d40cdb.jpg" alt="Cast">
+            <span>
+                جيمي بينيت
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d7beccd11ca2995e0b782e33fccb5659645266dce3868926d7737eed5856442a.jpg" alt="Cast">
+            <span>
+                مارجو مارتينديل
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2096aef5e663e0af40289b454d661efc48000083ed33873abbfe21a72059cfe6.jpg" alt="Cast">
+            <span>
+                روزماري دونسمور
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/kDZg6VPOLlIOOl1" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
