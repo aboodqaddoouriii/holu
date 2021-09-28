@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inglourious Basterds</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/61PXdxTJGPL._AC_SY741_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/61PXdxTJGPL._AC_SY741_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Inglourious Basterds</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 33m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>حرب/اكشن</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2009</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تشهد (شوشانا دريفس) مقتل عائلتها على يد رجل نازي يدعى الكولونيل (هانزلاند) وذلك بعد احتلال ألمانيا لفرنسا في الحرب العالمية الثانية، وتتحين الفرصة للانتقام من النازيين، في نفس الوقت الذي تتحرك فيه كتيبة عسكرية لنفس الهدف.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_eb9bc7ee40f3cc6dfd07a26077d608538f15412034a28b0407d9f187120ba92e.jpg" alt="Cast">
+            <span>
+                براد بيت
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6e6a78bb167702ee1824d883a9b2d9d9e66c50c8b4e9bfe8423dc8ba4ec134ba.jpg" alt="Cast">
+            <span>
+                ديان كروجر
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f0b9432e8761a3b281b71abf672bc907c85f04c9bd9a72f312f69777eeeae3dd.jpg" alt="Cast">
+            <span>
+                ميلاني لوران
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_b2f8d1f2b1ca412de5eb5aeaa413decf1a4099e364720154932ffed31ba10560.jpg" alt="Cast">
+            <span>
+                كريستوف فالتز
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d93ccd3dacb8aa9c120ba58a28aa64b8668b1895169a8f0c552902b2ce0e8a54.jpg" alt="Cast">
+            <span>
+                مايك مايرز
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_3e29eeacfd653d28b9c57fd6e5c6ce27ab0aa8777cbb7a513f73180d3b12c57d.jpg" alt="Cast">
+            <span>
+                إيلي روث
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_e8ee76ff0ddb75cc8de3c10b721fb41fd1441c12a11cba38282a017ca328083b.jpg" alt="Cast">
+            <span>
+                رود تايلور
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/vo8grkKzZyi4q1R" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

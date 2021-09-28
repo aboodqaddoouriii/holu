@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>War Horse</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BMjExNzkxOTYyNl5BMl5BanBnXkFtZTcwODA0MjU4Ng@@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMjExNzkxOTYyNl5BMl5BanBnXkFtZTcwODA0MjU4Ng@@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">War Horse</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 26m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اكشن/دراما</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2011</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم خلال الحرب العالمية الأولى حيث الشاب (ألبرت) الذي يمتلك حصان يُدعى (جوي)؛ ورغم صغر سن (ألبرت) إلا أن شجاعته تفوق الحد، فعقب أن باع جوي لسلاح الفرسان، يتطوع حتى يتوجه إلى فرنسا ﻹنقاذ صديقه...وتتوالى الأحداث.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2e1a42d3bee2f67db4127c7a71df9cd2906e8e4f9403010e6180d43cca8256d1.jpg" alt="Cast">
+            <span>
+                جيريمى إيرفين
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_06a3496435813f0546dd7bbc7034d03c9ab025108250e4b281a955d406ac1b9f.jpg" alt="Cast">
+            <span>
+                إميلي واتسون
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5af6461c5ddfdc38424c75784cf600fa4b3206cf28419619d6369c1fe4a84905.jpg" alt="Cast">
+            <span>
+                ديفيد ثيوليز
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9af10608a9e397a4daec3c02c514ccce0b4ca7310b95cee64c7828eb9eddac91.jpg" alt="Cast">
+            <span>
+                توم هيدليستون
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_eefca013c627fe7fb6b189c8e21a1eee9bdf8c9eb37a4834993206f71e2e8912.jpg" alt="Cast">
+            <span>
+                سيلين باكنس
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/PkMaM6paAlU0qBJ" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

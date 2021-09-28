@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>1917</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/I/51QTRz4hYxL._AC_SY580_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/I/51QTRz4hYxL._AC_SY580_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">1917</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 59m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>حرب/دراما</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2019</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        خلال الحرب العالمية اﻷولى، يذهب جنديان بريطانيان في مهمة مستحيلة، حيث يتعين عليهما دخول أرض العدو، من إجل ايصال رسالة لمنع قوات الفيلق الثامن مع الاشتباك مع اﻷلمان والوقوع في فخهم.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5c5da86c97a35e4b7b9b0289160732d915c312eee4b5e49ed8fead0d70e9c4c6.jpg" alt="Cast">
+            <span>
+                دين تشارليز
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_fab39f67a1682141e403e0ce3367c66a6f5f3ca483207ae69bd3980a77903973.jpg" alt="Cast">
+            <span>
+                جورج ماكاي
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_03c888327229c7ae795bb4a2b70276d048c561781eff8df95ffb12aaa274e517.jpg" alt="Cast">
+            <span>
+                تيريزا ماهوني
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4f72965227ec57539f741be9b89a7fb3f4c371c959489dbacab99385caa58d51.jpg" alt="Cast">
+            <span>
+                كولين فيرث
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d42d1eb05fef31139e76e977a0fc90951578f1fd1ff96fd6184ce2b5646595ee.jpg" alt="Cast">
+            <span>
+                أندرو سكوت
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/LL61lPpvVRuRwdY" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

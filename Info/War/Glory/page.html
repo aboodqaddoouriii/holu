@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Glory</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://upload.wikimedia.org/wikipedia/en/0/0a/Glory_%281989_film%29_poster.jpg">
+        <img class="poster" src="https://upload.wikimedia.org/wikipedia/en/0/0a/Glory_%281989_film%29_poster.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Glory</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 2m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>حرب/دراما</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>1989</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        خلال الحرب الأهلية الأمريكية، يقوم مجموعة من الجنود السود بالكثير من البطولات التي تعمد التاريخ تجاهلها أثناء اشتراكهم في كتيبة المشاه المتطوعين في ولاية ماساتشوستس. قائد كتيبة المتطوعين هو الكولونيل (روبرت)، وعلى الرغم من قيام الجنود السود بخوض ويلات الحرب، إلا أنهم لا يحظون بأي امتيازات مثل التي ينالها الجنود البيض البشرة. وعلى الرغم أنهم أتيحت لهم الفرصة للفرار فإنهم لم يتخلوا عن كتيبتهم.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7cd3f99a34d3efeefed82be3c519e1e05064e76d8accb25ce9c3dc0833b066ef.jpg" alt="Cast">
+            <span>
+                جين أليكساندر
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9976d26029effba8c1e2b3c06736d9b43aef1e010b5777db8e0be8497a23558e.jpg" alt="Cast">
+            <span>
+                دينزل واشنطن
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_80a169918215c5f3b5c3112c94cdb5d65da77c168b324299e1ac8dc9517a4cca.jpg" alt="Cast">
+            <span>
+                ماثيو بروديريك
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ad4716fe54f96d6f2458c992e56a0081621cb1b16589e84d50ca43234a8f5528.jpg" alt="Cast">
+            <span>
+                مورجان فريمان
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_a69402f2a249beaa1cffc43b8ce02f00b3c886eabefd8e9c4f440c11c2ded196.jpg" alt="Cast">
+            <span>
+                كاري إلويز
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/QaOxQwo2VQT0P82" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
