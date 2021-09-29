@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Witcher</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BOGE4MmVjMDgtMzIzYy00NjEwLWJlODMtMDI1MGY2ZDlhMzE2XkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_FMjpg_UX1000_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">The Witcher</h1>
+    <span style="color: whitesmoke;">موسم 1 - ح 1</span>
+
+    
+    <div class="container">
+        <!--Category-->
+        <div class="info2">
+            <h2>اكشن/دراما</h2>
+        </div>
+        <!--Duration-->
+        <div class="info2">
+            <h2>8 حلقات</h2>
+        </div>
+        <!--Year-->
+        <div class="info2">
+            <h2>2019</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        يكافح (جيرالت أوف ريفا) الويتشر الشهير صائد الوحوش ليثبت نفسه في العالم, ليكتشف ان خطر البشر أكبر بكثير من خطر المخلوقات الأخرى، ويصادفه في طريقه ساحرة قوية وأميرة صغيرة ذات موهبةبة خاصة.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://img.youm7.com/ArticleImgs/2020/1/18/121827-6c618a4c-a0fc-4580-9dbe-966c8ebea339.jpg" alt="Cast">
+            <span>
+                بيورن هلينور
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f051adae9d4e9c62abab080b750294441c8c036a0bc90656ae2608414efc0e90.jpg" alt="Cast">
+            <span>
+                ميانا بورنج
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_4c94277eafc148295036afdfd3124c992e56efaeb83bf6a438a4a64574ad31c8.jpg" alt="Cast">
+            <span>
+                هنري كافيل
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_acce4169395a3ca399e4cb84bb2314e397cd8b72e8fed3aa61e3e88836216d1a.jpg" alt="Cast">
+            <span>
+                لارس ميكلسن
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzIr-sNgbobzJnweprnkcZ0WZes3z-T_38sQ&usqp=CAU" alt="Cast">
+            <span>
+                فريا الان
+            </span>
+        </div>
+
+
+    </div>
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

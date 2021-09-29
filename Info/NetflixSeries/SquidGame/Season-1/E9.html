@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Squid Game</title>
+</head>
+
+<body>
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://0.soompi.io/wp-content/uploads/2021/09/02161811/Squid-Game-2.jpg">
+        <img class="poster" src="https://0.soompi.io/wp-content/uploads/2021/09/02161811/Squid-Game-2.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Squid Game</h1>
+    <span style="color: whitesmoke;">موسم 1 - ح 9</span>
+
+    
+    <div class="container">
+        <!--Category-->
+        <div class="info2">
+            <h2>دراما/اكشن</h2>
+        </div>
+        <!--Duration-->
+        <div class="info2">
+            <h2>موسم واحد</h2>
+        </div>
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 14 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث المسلسل حول لعبة البقاء على قيد الحياة والتي تبدأ بـ 456 متسابقًا وجائزة قدرها 45.6 مليار وون (حوالي 38.7$ مليون دولار أمريكي).
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                لي جونغ جاي
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                بارك هاي سو
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                واي هاي جون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                أوه يونغ سو
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                هويون جونغ
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                هيو سونغ تي
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                أنوبام تريباثي
+            </span>
+        </div>
+
+        <!-- Actor Eight -->
+        <div>
+            <img class="actor" src="https://www.pngitem.com/pimgs/m/522-5220445_anonymous-profile-grey-person-sticker-glitch-empty-profile.png" alt="Cast">
+            <span>
+                كيم جو ريونغ
+            </span>
+        </div>
+
+    </div>
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/BPB0e8Al8AfyXRq" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>

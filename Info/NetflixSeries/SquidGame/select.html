@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game</title>
+</head>
+<body>
+
+    <div class="select">
+        <button class="season" onclick="myFunction()">الموسم الاول</button>
+    </div>
+
+    <hr>   
+
+    <div id="myDIV">
+        <button class="button" onclick="window.location.href='./Season-1/E1.html'">الحلقة 1</button>
+        <button class="button" onclick="window.location.href='./Season-1/E2.html'">الحلقة 2</button>
+        <button class="button" onclick="window.location.href='./Season-1/E3.html'">الحلقة 3</button>
+        <button class="button" onclick="window.location.href='./Season-1/E4.html'">الحلقة 4</button>
+        <button class="button" onclick="window.location.href='./Season-1/E5.html'">الحلقة 5</button>
+        <button class="button" onclick="window.location.href='./Season-1/E6.html'">الحلقة 6</button>
+        <button class="button" onclick="window.location.href='./Season-1/E7.html'">الحلقة 7</button>
+        <button class="button" onclick="window.location.href='./Season-1/E8.html'">الحلقة 8</button>
+        <button class="button" onclick="window.location.href='./Season-1/E9.html'">الحلقة 9</button>
+    </div>
+
+    <div id="myDIV2">
+        <button class="button" onclick="window.location.href=''"></button>
+    </div>
+
+
+
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    body{
+        background-color: #1a1a1a;
+    }
+    
+
+    #myDIV{
+        display: block;
+    }
+    #myDIV2{
+        display: none;
+    }
+
+
+    .select{
+        display: flex;
+    }
+
+    .season{
+        margin: 10px;
+        border: none;
+        border-radius: 10px;
+        background: rgb(37, 33, 39);
+        color: white;
+        font-size: 3.5vw;
+        font-family: 'Cairo', sans-serif;
+        padding: 10px;
+    }
+
+    .season:hover {background-color: #817a8b}
+
+    .season:active {
+        background-color: #817a8b;
+        box-shadow: 0 5px #666;
+        transform: translateY(5px);
+    }
+    
+
+    .button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 3.5vw;
+        font-family: 'Cairo', sans-serif;
+        padding: 10px;
+        transition: all .35s;
+    }
+
+</style>
+
+<script>
+    function myFunction() {
+    var x = document.getElementById("myDIV");
+    var y = document.getElementById("myDIV2");
+
+    if (x.style.display === "none") {
+        x.style.display = "block";
+        y.style.display = "none";
+
+    } else {
+        x.style.display = "block";
+        y.style.display = "none";
+    }
+}
+    function myFunction2() {
+        var x = document.getElementById("myDIV");
+        var y = document.getElementById("myDIV2");
+
+        if (y.style.display === "none") {
+            y.style.display = "block";
+            x.style.display = "none";
+
+        } else {
+            y.style.display = "block";
+            x.style.display = "none";
+        }
+    }
+</script>
+
+</html>
