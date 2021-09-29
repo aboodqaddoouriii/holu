@@ -12,47 +12,41 @@
         <script type="text/javascript" src="index.js"></script>
          <body>
 
-            <!-- Slideshow container -->
-            <div class="slideshow-container">
+            <div class="slidershow middle">
 
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                <img class="picture" src="https://wallpapercave.com/wp/wp9778859.jpg" style="width:100%">
-                <div class="text">Malignant</div>
+                <div class="slides">
+                  <input type="radio" name="r" id="r1" checked>
+                  <input type="radio" name="r" id="r2">
+                  <input type="radio" name="r" id="r3">
+                  <input type="radio" name="r" id="r4">
+                  <input type="radio" name="r" id="r5">
+                  <div class="slide s1">
+                    <img class="showpic" src="https://wallpapercave.com/wp/wp9778859.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img class="showpic" src="https://images8.alphacoders.com/108/thumb-1920-1083765.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img class="showpic" src="https://wallpapercave.com/wp/wp5959213.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img class="showpic" src="https://wallpapercave.com/wp/wp9328449.jpg" alt="">
+                  </div>
+                  <div class="slide">
+                    <img class="showpic" src="https://wallpapercave.com/wp/wp8124945.jpg" alt="">
+                  </div>
                 </div>
-                
-                <div class="mySlides fade">
-                <img class="picture" src="https://wallpapercave.com/wp/wp9938125.jpg" style="width:100%">
-                <div class="text">Squid Game</div>
+          
+                <div class="navigation">
+                  <label for="r1" class="bar"></label>
+                  <label for="r2" class="bar"></label>
+                  <label for="r3" class="bar"></label>
+                  <label for="r4" class="bar"></label>
+                  <label for="r5" class="bar"></label>
                 </div>
+              </div>
 
-                <div class="mySlides fade">
-                <img class="picture" src="https://wallpapercave.com/wp/wp9017368.jpg" style="width:100%">
-                <div class="text">Venom 2 : Coming Soon</div>
-                </div>
-            
-            
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
 
-            <div class="cate">
-                <button type="button" class="category" onclick="window.location.href='Animation.html'">انيميشن</button>
-                <button type="button" class="category" onclick="alertfun()">اكشن</button>
-                <button type="button" class="category" onclick="alertfun()">رومانسي</button>
-                <button type="button" class="category" onclick="alertfun()">جريمة</button>
-                <button type="button" class="category" onclick="alertfun()">كارتون</button>
-                <button type="button" class="category" onclick="window.location.href='Horror.html'">رعب</button>
-            </div>
 
             <h1>War - حربي</h1>
             <div class="MagicScroll">
@@ -85,7 +79,7 @@
                     <span>Glory</span>
                 </div>
             </div>
-            
+            <br>
             <!-- Cartoon-->
             <h1>Animation - كارتوني</h1>
             <div class="MagicScroll">
@@ -130,7 +124,7 @@
                     <span>Tom And Jerry</span>
                 </div>
             </div>
-
+            <br>
             <!-- Horror-->
             <h1>Horror - رعب</h1>
             <div class="MagicScroll">
@@ -175,7 +169,52 @@
                     <span>The Hunt</span>
                 </div>
             </div>
-
+            <br>
+            <!-- SCI-FI-->
+            <h1>Sci-Fi - خيال علمي</h1>
+            <div class="MagicScroll">
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/BirdBox.webp" onclick="window.location.href='Info/SCI-FI/BirdBox/page.html'"/>
+                    <span>Bird Box</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/BlackWidow.webp" onclick="window.location.href='Info/SCI-FI/BlackWidow/page.html'"/>
+                    <span>Black Widow</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/FreeGuy.webp" onclick="window.location.href='Info/SCI-FI/FreeGuy/page.html'"/>
+                    <span>Free Guy</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Inception.webp" onclick="window.location.href='Info/SCI-FI/Inception/page.html'"/>
+                    <span>Inception</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Interstaller.webp" onclick="window.location.href='Info/SCI-FI/Interstaller/page.html'"/>
+                    <span>Interstaller</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Lucy.webp" onclick="window.location.href='Info/SCI-FI/Lucy/page.html'"/>
+                    <span>Lucy</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Rampage.webp" onclick="window.location.href='Info/SCI-FI/Rampage/page.html'"/>
+                    <span>Rampage</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Reminiscence.webp" onclick="window.location.href='Info/SCI-FI/Reminiscence/page.html'"/>
+                    <span>Reminiscence</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/Tenet.webp" onclick="window.location.href='Info/SCI-FI/Tenet/page.html'"/>
+                    <span>Tenet</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/SCI-FI/TheTomorrowWar.webp" onclick="window.location.href='Info/SCI-FI/TheTomorrowWar/page.html'"/>
+                    <span>The Tomorrow War</span>
+                </div>
+            </div>
+            <br>
             <!--  Netflix-->
             <h1>Netflix - نتفليكس</h1>
             <div class="MagicScroll">
@@ -191,7 +230,6 @@
                     <img class="item" src="../Poster/Netflix/Dark.webp" onclick="alertfun()"/>
                     <span>Dark</span>
                 </div>
-
             </div>
     </body>
     </head>
