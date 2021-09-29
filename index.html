@@ -8,231 +8,188 @@
         <meta name="google-site-verification" content="sX3ZIsOWvcXU0IRJDTEsVr3Kp1uh98y08tHzRkIlmBw" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
         <link rel="shortcut icon" type="image/jpg" href="ICON.png"/>
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
+        <link type="text/css" rel="stylesheet" href="index.css"/>
+        <script type="text/javascript" src="index.js"></script>
          <body>
 
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
 
-                    <!-- Container for the image gallery -->
-        <div class="container">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <img class="picture" src="https://wallpapercave.com/wp/wp9778859.jpg" style="width:100%">
+                <div class="text">Malignant</div>
+                </div>
+                
+                <div class="mySlides fade">
+                <img class="picture" src="https://wallpapercave.com/wp/wp9938125.jpg" style="width:100%">
+                <div class="text">Squid Game</div>
+                </div>
 
-            <!-- Full-width images with number text -->
-            <div class="mySlides">
-                <img src="https://images.wallpapersden.com/image/download/malignant-movie-2021_bG5mbm6UmZqaraWkpJRnbGtprWZqamo.jpg" style="width:100%">
+                <div class="mySlides fade">
+                <img class="picture" src="https://wallpapercave.com/wp/wp9017368.jpg" style="width:100%">
+                <div class="text">Venom 2 : Coming Soon</div>
+                </div>
+            
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-        
-            <div class="mySlides">
-                <img src="https://images8.alphacoders.com/108/thumb-1920-1083765.jpg" style="width:100%">
-            </div>
-        
-            <div class="mySlides">
-                <img src="https://newsfinale.com/wp-content/uploads/2021/05/m-night-shyamalan-is-back-in-the-first-trailer-for-old.jpg" style="width:100%">
-            </div>
-        
-        
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-            <!-- Image text -->
-            <div class="caption-container">
-            <p id="caption"></p>
-            </div>
-        
-            <!-- Thumbnail images -->
-            <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="https://images.wallpapersden.com/image/download/malignant-movie-2021_bG5mbm6UmZqaraWkpJRnbGtprWZqamo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Malignant">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="https://images8.alphacoders.com/108/thumb-1920-1083765.jpg" style="width:100%" onclick="currentSlide(2)" alt="Free Guy">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="https://newsfinale.com/wp-content/uploads/2021/05/m-night-shyamalan-is-back-in-the-first-trailer-for-old.jpg" style="width:100%" onclick="currentSlide(3)" alt="OLD">
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
 
+            <div class="cate">
+                <button type="button" class="category" onclick="window.location.href='Animation.html'">انيميشن</button>
+                <button type="button" class="category" onclick="alertfun()">اكشن</button>
+                <button type="button" class="category" onclick="alertfun()">رومانسي</button>
+                <button type="button" class="category" onclick="alertfun()">جريمة</button>
+                <button type="button" class="category" onclick="alertfun()">كارتون</button>
+                <button type="button" class="category" onclick="window.location.href='Horror.html'">رعب</button>
             </div>
-        </div>
 
-
-            <!-- Animation -->
-            <h2 class="scrollbartext">Animation</h2>
-            <div class="scrollbar">
+            <h1>War - حربي</h1>
+            <div class="MagicScroll">
                 <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/51mWuIm1mML._AC_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Barnyard/page.html'">
-                    <span class="name">Barnyard</span>
+                    <img class="item" src="../Poster/War/Fury.webp" onclick="window.location.href='Info/War/Fury/page.html'"/>
+                    <span>Fury</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/51exsQkdIXL._AC_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/MonsterHouse/page.html'">
-                    <span class="name">Monster House</span>
+                    <img class="item" src="../Poster/War/SavingPrivateRyan.webp" onclick="window.location.href='Info/War/SavingPrivateRyan/page.html'" />
+                    <span>Saving Private Ryan</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/51Qo2UtcJvL._AC_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/HotelTransylvania 1/page.html'">
-                    <span class="name">Hotel Transylvania</span>
+                    <img class="item" src="../Poster/War/Greyhound.webp" onclick="window.location.href='Info/War/Greyhound/page.html'"/>
+                    <span>Greyhound</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/A1tyD0nKdhL._AC_SY679_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Coco/page.html'">
-                    <span class="name">Coco</span>
+                    <img class="item" src="../Poster/War/HacksawRidge.webp" onclick="window.location.href='Info/War/HacksawRidge/page.html'"/>
+                    <span>Hacksaw Ridge</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://www.redheadbabymama.com/wp-content/uploads/2021/03/1-1-666x999.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Soul/page.html'">
-                    <span class="name">Soul</span>
+                    <img class="item" src="../Poster/War/300.webp" onclick="window.location.href='Info/War/300/page.html'"/>
+                    <span>300</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/61itgxDIMHL._AC_SY741_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/PussInBoots/page.html'">
-                    <span class="name">Puss In Boots</span>
+                    <img class="item" src="../Poster/War/WarHorse.webp" onclick="window.location.href='Info/War/WarHorse/page.html'"/>
+                    <span>War Horse</span>
                 </div>
-
                 <div>
-                    <input type="image" src="https://cultureposters.com/wp-content/uploads/2020/10/shreck-movie-poster-1.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Shrek/page.html'">
-                    <span class="name">Shrek</span>
-                </div>
-
-                <div>
-                    <input type="image" src="https://i.pinimg.com/originals/ed/67/f7/ed67f7e6eb40c44c6fce7a49c4b02c2b.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/ICEAGE1/page.html'">
-                    <span class="name">Ice Age</span>
-                </div>
-
-                <div>
-                    <input type="image" src="https://movieposters2.com/images/1510457-b.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/BeeMovie/page.html'">
-                    <span class="name">Bee Movie</span>
-                </div>
-
-                <div>
-                    <input type="image" src="https://movieposters2.com/images/1747227-b.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Rango/page.html'">
-                    <span class="name">Rango</span>
-                </div>
-
-                <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/71-bSJo53DL._AC_SY679_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/FindingNemo/page.html'">
-                    <span class="name">Finding Nemo</span>
-                </div>
-
-                <div>
-                    <input type="image" src="https://m.media-amazon.com/images/I/71xU7YhoDIL._AC_SY741_.jpg" name="Watch" class="item" onclick="window.location.href='Info/Animation/Madagascar1/page.html'">
-                    <span class="name">Madagascar</span>
+                    <img class="item" src="../Poster/War/Glory.webp" onclick="window.location.href='Info/War/Glory/page.html'"/>
+                    <span>Glory</span>
                 </div>
             </div>
-            <button type="button" class="btn" onclick="window.location.href='animation.html'"><strong>.. المزيد</strong></button>
-
-            <!-- Horror -->
-            <!-- رعب -->
-            <h2 class="scrollbartext">Horror</h2>
-            <div class="scrollbar">
-
+            
+            <!-- Cartoon-->
+            <h1>Animation - كارتوني</h1>
+            <div class="MagicScroll">
                 <div>
-                    <input type="image" src="Poster/Horror/Malignant.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/Malignant/page.html'">
-                    <span class="name">Malignant</span>
+                    <img class="item" src="../Poster/Animation/Frankenweenie.webp" onclick="window.location.href='Info/Animation/Frankenweenie/page.html'"/>
+                    <span>Frankenweenie</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/AQuietPlace2.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/AQuietPlace-II/page.html'">
-                    <span class="name">A Quiet Place II</span>
+                    <img class="item" src="../Poster/Animation/MeetTheAdams.webp" onclick="window.location.href='Info/Animation/TheAddamsFamily/page.html'"/>
+                    <span>The Addams Family</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/DontBreathe2.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/DontBreathe2/page.html'">
-                    <span class="name">Don't Breathe 2</span>
+                    <img class="item" src="../Poster/Animation/Soul.webp" onclick="window.location.href='Info/Animation/Soul/page.html'"/>
+                    <span>Soul</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/47MetersDown.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/47MetersDown/page.html'">
-                    <span class="name">47 Meters Down</span>
+                    <img class="item" src="../Poster/Animation/TheGrinch.webp" onclick="window.location.href='Info/Animation/TheGrinch/page.html'"/>
+                    <span>The Grinch</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/Split.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/Split/page.html'">
-                    <span class="name">Split</span>
+                    <img class="item" src="../Poster/Animation/Aladdin.webp" onclick="window.location.href='Info/Animation/Aladdin/page.html'"/>
+                    <span>Aladdin</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/TheConjuring3.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/TheConjuring3/page.html'">
-                    <span class="name">The Conjuring 3</span>
+                    <img class="item" src="../Poster/Animation/HotelTransylvania1.webp" onclick="window.location.href='Info/Animation/HotelTransylvania-I/page.html'"/>
+                    <span>Hotel Transylvania</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/TheUnholy.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/TheUnholy/page.html'">
-                    <span class="name">The Unholy</span>
+                    <img class="item" src="../Poster/Animation/Smallfoot.webp" onclick="window.location.href='Info/Animation/Smallfoot/page.html'"/>
+                    <span>Smallfoot</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/TheNun.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/TheNun/page.html'">
-                    <span class="name">The Nun</span>
+                    <img class="item" src="../Poster/Animation/CorpseBride.webp" onclick="window.location.href='Info/Animation/CorpseBride/page.html'"/>
+                    <span>Corpse Bride</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/Oxygen.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/Oxygen/page.html'">
-                    <span class="name">Oxygen</span>
+                    <img class="item" src="../Poster/Animation/Luca.webp" onclick="window.location.href='Info/Animation/Luca/page.html'"/>
+                    <span>Luca</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/Horror/ThePurge.webp" name="Watch" class="item" onclick="window.location.href='Info/Horror/The Purge/page.html'">
-                    <span class="name">The Purge</span>
+                    <img class="item" src="../Poster/Animation/TomAndJerry.webp" onclick="window.location.href='Info/Animation/TomAndJerry/page.html'"/>
+                    <span>Tom And Jerry</span>
                 </div>
-
-
             </div>
-            <button type="button" class="btn" onclick="window.location.href='horror.html'"><strong>.. المزيد</strong></button>
 
-
-            <!-- War -->
-            <!-- War -->
-            <h2 class="scrollbartext">War</h2>
-            <div class="scrollbar">
-
+            <!-- Horror-->
+            <h1>Horror - رعب</h1>
+            <div class="MagicScroll">
                 <div>
-                    <input type="image" src="Poster/War/Fury.webp" name="Watch" class="item" onclick="window.location.href='Info/War/Fury/page.html'">
-                    <span class="name">Fury</span>
+                    <img class="item" src="../Poster/Horror/AQuietPlace2.webp" onclick="window.location.href='Info/Horror/AQuietPlace-II/page.html'"/>
+                    <span>A Quiet Place II</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/1917.webp" name="Watch" class="item" onclick="window.location.href='Info/War/1917/page.html'">
-                    <span class="name">1917</span>
+                    <img class="item" src="../Poster/Horror/Malignant.webp" onclick="window.location.href='Info/Horror/Malignant/page.html'"/>
+                    <span>Malignant</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/SavingPrivateRyan.webp" name="Watch" class="item" onclick="window.location.href='Info/War/SavingPrivateRyan/page.html'">
-                    <span class="name">Saving Private Ryan</span>
+                    <img class="item" src="../Poster/Horror/TheConjuring3.webp" onclick="window.location.href='Info/Horror/TheConjuring3/page.html'"/>
+                    <span>TheConjuring3</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/Glory.webp" name="Watch" class="item" onclick="window.location.href='Info/War/Glory/page.html'">
-                    <span class="name">Glory</span>
+                    <img class="item" src="../Poster/Horror/DontBreathe2.webp" onclick="window.location.href='Info/Horror/DontBreathe2/page.html'"/>
+                    <span>Don't Breathe 2</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/.webp" name="Watch" class="item" onclick="window.location.href='Info/War/Greyhound/page.html'">
-                    <span class="name">Greyhound</span>
+                    <img class="item" src="../Poster/Horror/KnockKnock.webp" onclick="window.location.href='Info/Horror/KnockKnock/page.html'"/>
+                    <span>KnockKnock</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/InglouriousBasterds.webp" name="Watch" class="item" onclick="window.location.href='Info/War/InglouriousBasterds/page.html'">
-                    <span class="name">Inglourious Bast...</span>
+                    <img class="item" src="../Poster/Horror/Ouija.webp" onclick="window.location.href='Info/Horror/Ouija/page.html'"/>
+                    <span>Ouija</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/300.webp" name="Watch" class="item" onclick="window.location.href='Info/War/300/page.html'">
-                    <span class="name">300</span>
+                    <img class="item" src="../Poster/Horror/Split.webp" onclick="window.location.href='Info/Horror/Split/page.html'"/>
+                    <span>Split</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/300-RiseofanEmpire.webp" name="Watch" class="item" onclick="window.location.href='Info/War/300-RiseOfEmpire/page.html'">
-                    <span class="name">300 - Rise of Emp..</span>
+                    <img class="item" src="../Poster/Horror/TheUnholy.webp" onclick="window.location.href='Info/Horror/TheUnholy/page.html'"/>
+                    <span>The Unholy</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/WarHorse.webp" name="Watch" class="item" onclick="window.location.href='Info/War/WarHorse/page.html'">
-                    <span class="name">War Horse</span>
+                    <img class="item" src="../Poster/Horror/TheGrudge.webp" onclick="window.location.href='Info/Horror/TheGrudge/page.html'"/>
+                    <span>The Grudge</span>
                 </div>
-
                 <div>
-                    <input type="image" src="Poster/War/ThePianist.webp" name="Watch" class="item" onclick="window.location.href='Info/War/ThePianist/page.html'">
-                    <span class="name">The Pianist</span>
+                    <img class="item" src="../Poster/Horror/TheHunt.webp" onclick="window.location.href='Info/Horror/TheHunt/page.html'"/>
+                    <span>The Hunt</span>
+                </div>
+            </div>
+
+            <!--  Netflix-->
+            <h1>Netflix - نتفليكس</h1>
+            <div class="MagicScroll">
+                <div>
+                    <img class="item" src="../Poster/Netflix/SquidGame.webp" onclick="window.location.href='Info/NetflixSeries/SquidGame/select.html'"/>
+                    <span>Squid Game</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/Netflix/PeakyBlinders.webp" onclick="alertfun()"/>
+                    <span>Peaky Blinders</span>
+                </div>
+                <div>
+                    <img class="item" src="../Poster/Netflix/Dark.webp" onclick="alertfun()"/>
+                    <span>Dark</span>
                 </div>
 
             </div>
