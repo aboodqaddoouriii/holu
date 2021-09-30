@@ -4,149 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>The Tomorrow War</title>
 </head>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
-    <h1>         
-        <br>
-        <small>
-            The Tomorrow  War
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images3.alphacoders.com/114/thumb-1920-1144783.jpeg" alt="image"></p>
 
-    <br>
+   <script src="script.js"></script>
 
-    <h2>طاقم التمثيل</h2>
+   <div class="loader">
+       <div class="loader-inner">
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+       </div>
+    </div>
+    
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <h3>
-        كريس برات
-        <br>
-        إيفون ستروفسكي
-        <br>
-        بيتي جيلبين
-        <br>
-        جي كيه سيمونز
-    </h3>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BNTI2YTI0MWEtNGQ4OS00ODIzLWE1MWEtZGJiN2E3ZmM1OWI1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNTI2YTI0MWEtNGQ4OS00ODIzLWE1MWEtZGJiN2E3ZmM1OWI1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UX1000_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <br>
 
-    <h4>معلومات</h4>
+    <!-- Name -->
+    <h1 calss="name">The Tomorrow War</h1>
 
-    <h5>
-        الفئة :
-        خيال علمي
-        <br>
-        الانتاج :
-        2021
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        140 دقيقة
-        <br>
-        الاخراج :
-        كريس مكاي
-    </h5>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 20m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اكشن/خيال علمي</h2>
+        </div>
 
-    <br> <br>
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
 
-    <h6>
+    <h3>القصة</h3>
+
+    <p>
         في إطار من الخيال العلمي، تدور أحداث الفيلم في عام 2051 حول رجل يُدعى دان فورستر والذي يُجند للقتال في حرب مستقبلية، حيث يعتمد مصير الإنسانية على مجموعة من الجنود القادمين من الماضي.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/t44a31awja3m.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_934da72d38bbe091656bb0c0a65b6eadb334da48f48b77aa78a7de4f8b2161d9.jpg" alt="Cast">
+            <span>
+                كريس برات
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_cef92ed59de3fc8338b65a10b75fcfaf16c394ff693e40d5c922e6d9ee6bd842.jpg" alt="Cast">
+            <span>
+                إيفون ستروفسكي
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9eeeece5bc1ca7b5bd66b3bd2d533b7aec81341c6e2bcf04c5298f33e9950b20.jpg" alt="Cast">
+            <span>
+                بيتي جيلبين
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2a1eb71e43b0b0f750d8f33bd7382010c6ee8f43f414260bb9ffbf4a03ed9c65.jpg" alt="Cast">
+            <span>
+                جي كيه سيمونز
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6b47b32acc23c1f7fa4dd28b520c35bbc60962922a07fff826885d2f226cd650.jpg" alt="Cast">
+            <span>
+                سيشيل جابرييل
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
-        @media only screen and (max-width: 450px){
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://userload.co/embed/fa308330a2a4" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>

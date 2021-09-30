@@ -4,151 +4,169 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Black Widow</title>
 </head>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
-    <h1>         
-        <br>
-        <small>
-            Black Widow
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://www.xtrafondos.com/en/descargar.php?id=6085&resolucion=2560x1440" alt="image"></p>
 
-    <br>
+    
+   <script src="script.js"></script>
 
-    <h2>طاقم التمثيل</h2>
+   <div class="loader">
+       <div class="loader-inner">
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+       </div>
+     </div>
+     
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <h3>
-        سكارليت جوهانسون
-        <br>
-        فلورنس بيو
-        <br>
-        ديفيد هاربر
-        <br>
-        ريتشل وايز
-    </h3>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <br>
 
-    <h4>معلومات</h4>
+    <!-- Name -->
+    <h1 calss="name">Black Widow</h1>
 
-    <h5>
-        الفئة :
-        حركة
-        <br>
-        الانتاج :
-        2021
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        133 دقيقة
-        <br>
-        الاخراج :
-        كيت شورتلاند 
-    </h5>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 13m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>اكشن/مغامرات</h2>
+        </div>
 
-    <br> <br>
+        <!--Year-->
+        <div class="info2">
+            <h2>2021</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
 
-    <h6>
+    <h3>القصة</h3>
+
+    <p>
         تواجه ناتاشا رومانوف، الملقبة بالأرملة السوداء الأجزء المظلمة في حياتها السابقة، حيث تجد نفسها داخل مؤامرة خطيرة مرتبطة بماضيها، وتلاحقها قوة كبيرة لن تتوقف عند أي شيء ﻹسقاطها وتدميرها، ويجب على ناتاشا مع تاريخها كجاسوسة على مواجهة كل ذلك، قبل أن تنضم إلى المنتقمون.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/3nigxac2g4qy.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-        <track src="BlackWidow.srt" kind="subtitles" srclang="ar" label="Arabic">
-
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5b2d38c67bb9f22e880bfdaea64ad553364d5d9cf5162929d3e96cd399434333.jpg" alt="Cast">
+            <span>
+                سكارليت جوهانسون
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_94ac4dcadcaf0623b3b9224597eb513fb333712e8715cc2dc5b766080facb598.jpg" alt="Cast">
+            <span>
+                فلورنس بيو
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_93d6e9a8041d81372dcc7a1fcafd64d1f97923f420d64c5aa2fafc617b2be307.jpg" alt="Cast">
+            <span>
+                ديفيد هاربر
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_ea99256bc823d472ecb78be2f935ef303a0b15d3474494ccdf9942d9f0af50a1.jpg" alt="Cast">
+            <span>
+                ريتشل وايز
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f20ca513378282eca50898bf5fa49a825ab16f0c2072003f565aefec57bca690.jpg" alt="Cast">
+            <span>
+                ويليام هارت
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/819UaSNTtHL._AC_SY741_.jpg" onclick="window.location.href='/Info/SCI-FI/FreeGuy/page.html'" alt="Related"/>
+            <span>Free Guy</span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="https://media.services.cinergy.ch/media/box1600/344d64f91d864b8f56adc8d6d76e10b63e26e118.jpg" onclick="window.location.href='/Info/SCI-FI/Reminiscence/page.html'" alt="Related"/>
+            <span>Reminiscence</span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://userload.co/embed/f8bea924ef7e" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
