@@ -4,149 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Bird Box</title>
 </head>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <body>
-    <h1>         
-        <br>
-        <small>
-            Bird Box
-        </small>
-    </h1>
-    <p align="center"><img class="poster" src="https://images3.alphacoders.com/982/thumb-1920-982882.jpg" alt="image"></p>
+   <script>
+       $(window).on('load',function() {
+       $(".loader").fadeOut("slow");
+       $(".content").fadeIn(1000);;
+   });
+   </script>
 
-    <br>
+   <div class="loader">
+       <div class="loader-inner">
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+       </div>
+     </div>
+     
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
 
-    <h2>طاقم التمثيل</h2>
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://m.media-amazon.com/images/M/MV5BMjAzMTI1MjMyN15BMl5BanBnXkFtZTgwNzU5MTE2NjM@._V1_.jpg">
+        <img class="poster" src="https://m.media-amazon.com/images/M/MV5BMjAzMTI1MjMyN15BMl5BanBnXkFtZTgwNzU5MTE2NjM@._V1_.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
 
-    <h3>
-        ساندرا بولوك
-        <br>
-        جون مالكوفيتش
-        <br>
-        روزا سالازار
-        <br>
-        سارة بولسون
-    </h3>
 
-    <br>
+    <!-- Name -->
+    <h1 calss="name">Bird Box</h1>
 
-    <h4>معلومات</h4>
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 4m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>رعب/خيال علمي</h2>
+        </div>
 
-    <h5>
-        الفئة :
-        تشويق واثارة
-        <br>
-        الانتاج :
-        2018
-        <br>
-        اللغة :
-        الانكليزية
-        <br>
-        الترجمة :
-        العربية
-        <br>
-        المدة :
-        117 دقيقة
-        <br>
-        الاخراج :
-        سوزان بيير 
-    </h5>
+        <!--Year-->
+        <div class="info2">
+            <h2>2018</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 17 عام</h4>
+    
 
-    <br> <br>
+    <h3>القصة</h3>
 
-    <h6>
+    <p>
         بعد نهاية العالم، تحاول امرأة مع مجموعة من اﻷطفال وهم معصوبي العينين أن يشقوا طريقهم عبر إحدى اﻷنهار.
-    </h6>
-
-
-    <p align="center" >
-        <iframe class="movie"src="https://tubesb.com/e/y63suj4844x2.html" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
     </p>
 
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_0f4aea95443f1379ef227dca065a5eede313d157c425e0dcad50e3300e1acf40.jpg" alt="Cast">
+            <span>
+                ساندرا بولوك
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_38feb3f04d7bd441f2c410fb987f85e145188ea7e2320c302acd83d9d55446ff.jpg" alt="Cast">
+            <span>
+                جون مالكوفيتش  
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_d7c5ed80c76470ba26f01f3f0d5da6ebdbbebbc9667da79c8dbac726556fa2f1.jpg" alt="Cast">
+            <span>
+                روزا سالازار
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_c6c8bde98559b48a583dfa1ce979f6d49f0252eec876a30dd83c5862baf5e9d0.jpg" alt="Cast">
+            <span>
+                سارة بولسون
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_67e1cef3d5210e46b262c18a2852706d71bebf0e72f22206639c6e7832eea85c.jpg" alt="Cast">
+            <span>
+                توم هولاندر
+            </span>
+        </div>
+    </div>
 
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+    <h3>افلام مشابهة</h3>
 
-        @media only screen and (max-width: 450px){
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/81qlPSElf7L._AC_SY606_.jpg" onclick="window.location.href='/Info/SCI-FI/Lucy/page.html'" alt="Related"/>
+            <span>Lucy</span>
+        </div>
 
-        body{
-            background-color: rgb(15, 14, 14);
-        }
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/911LEyXY5qL._AC_SL1500_.jpg" onclick="window.location.href='/Info/SCI-FI/Rampage/page.html'" alt="Related"/>
+            <span>Rampage</span>
+        </div>
 
-        .poster{
-            width: 85vw;
-            height: 55vw;
-            border-radius: 10vw;
-            margin-top: 5vw;
-        }
-        h1{
-            font-family: 'Marcellus', serif;
-            font-size: 7.5vw;
-            text-align: center;
-            float: center;
-            color: white;
-        }
-        h2{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h3{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: center;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h4{
-            font-family: 'Markazi Text', serif;
-            font-size: 4vw;
-            float: center;
-            text-align: right;
-            color: gainsboro;
-            margin-right: 2.5vw;
-            margin-top: -2.5vw;
-        }
-        h5{
-            font-family: 'Markazi Text', serif;
-            font-size: 5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 5vw;
-            margin-top: -2.5vw;
-        }
-        h6{
-            font-family: 'Markazi Text', serif;
-            font-size: 4.5vw;
-            float: right;
-            text-align: right;
-            color: white;
-            margin-right: 4vw;
-            margin-top: -2.5vw;
-        }
-        .movie{
-            width: 80vw;
-            height: 50vw;
-            border-style: solid;
-            border-color: white;
-            border-width: 0.5vw;
-            background-color: silver;
-        }
-    }
-    </style>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
 </body>
 </html>
