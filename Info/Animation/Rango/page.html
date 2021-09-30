@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rango</title>
+</head>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<body>
+
+    
+   <script src="script.js"></script>
+
+   <div class="loader">
+       <div class="loader-inner">
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+         <div class="loader-line-wrap">
+           <div class="loader-line"></div>
+         </div>
+       </div>
+     </div>
+     
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="https://movieposters2.com/images/1747227-b.jpg">
+        <img class="poster" src="https://movieposters2.com/images/1747227-b.jpg">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Rango</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>1h 47m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>Family/Adventure</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2011</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 اعوام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        حرباء أليف يريد أن يصبح بطلاً، وحين يجد نفسه في بلدة غريبة في الجنوب الأمريكي، يعيش فيها وكأنه شريفها وحاميها من اللصوص، خاصة حين يجد البلدة مستهدفة من بعض قطاع الطرق فيلعبض قطاع الطرق فيلعب - أخيراً - الدور الذي أراده دوماً.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_384ac25273029454f7d45623060aac3c85747f8eaf9393daf5cb9a45b0250c03.jpg" alt="Cast">
+            <span>
+                جوني ديب
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7c44d2888cb950c88ba3719ac2b2b7772b7802fa723a97df96a57b4cc44528ed.jpg" alt="Cast">
+            <span>
+                إيلا فيشر
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_0f612eba274418099d0660efdd6174f68b6c087b043f3355467a3c13d44e49a0.jpg" alt="Cast">
+            <span>
+                أبيجيل بريسلين
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_555f13593e30f8a28190cff3848256b9a62c1d03c804e14eeaa564d2efd91b9e.jpg" alt="Cast">
+            <span>
+                نيد بيتي
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_73fb27848d92b28bbfb0298c4c0f7354ec6e3292c31f25363e9afde01ae0afe4.jpg" alt="Cast">
+            <span>
+                ألفريد مولينا
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51fK4PJ11HL._AC_.jpg" onclick="window.location.href='/Info/Animation/CorpseBride/page.html'" alt="Related"/>
+            <span>Corpse Bride</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/91BqkgZlgsL._AC_SY679_.jpg" onclick="window.location.href='/Info/Animation/SausageParty/page.html'" alt="Related"/>
+            <span>Sausage Party</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/91xg89rcT-L._AC_SY679_.jpg" onclick="window.location.href='/Info/Animation/InsideOut/page.html'" alt="Related"/>
+            <span>Inside Out</span>
+        </div>
+
+        <div>
+            <img class="related" src="https://m.media-amazon.com/images/I/51VG85m8BoL._AC_.jpg" onclick="window.location.href='/Info/Animation/ChickenRun/page.html'" alt="Related"/>
+            <span>Chicken Run</span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="https://streamtape.com/e/RWMaQLWjDvt0Qm" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
