@@ -10,42 +10,41 @@
         <link rel="shortcut icon" type="image/jpg" href="ICON.png"/>
         <link type="text/css" rel="stylesheet" href="index.css"/>
         <script type="text/javascript" src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
          <body>
+            <script>
+                $(window).on('load',function() {
+                $(".loader").fadeOut("slow");
+                $(".content").fadeIn(1000);;
+	        });
+            </script>
 
-            <div class="slidershow middle">
-
-                <div class="slides">
-                  <input type="radio" name="r" id="r1" checked>
-                  <input type="radio" name="r" id="r2">
-                  <input type="radio" name="r" id="r3">
-                  <input type="radio" name="r" id="r4">
-                  <input type="radio" name="r" id="r5">
-                  <div class="slide s1">
-                    <img class="showpic" src="https://wallpapercave.com/wp/wp9778859.jpg" alt="">
+            <div class="loader">
+                <div class="loader-inner">
+                  <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                   </div>
-                  <div class="slide">
-                    <img class="showpic" src="https://images8.alphacoders.com/108/thumb-1920-1083765.jpg" alt="">
+                  <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                   </div>
-                  <div class="slide">
-                    <img class="showpic" src="https://wallpapercave.com/wp/wp5959213.jpg" alt="">
+                  <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                   </div>
-                  <div class="slide">
-                    <img class="showpic" src="https://wallpapercave.com/wp/wp9328449.jpg" alt="">
+                  <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                   </div>
-                  <div class="slide">
-                    <img class="showpic" src="https://wallpapercave.com/wp/wp8124945.jpg" alt="">
+                  <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                   </div>
-                </div>
-          
-                <div class="navigation">
-                  <label for="r1" class="bar"></label>
-                  <label for="r2" class="bar"></label>
-                  <label for="r3" class="bar"></label>
-                  <label for="r4" class="bar"></label>
-                  <label for="r5" class="bar"></label>
                 </div>
               </div>
 
+              <div class="cate">
+                <button class="category" onclick="window.location.href='animation.html'">انيميشن</button>
+                <button class="category" onclick="window.location.href='horror.html'">رعب</button>
+                <button class="category" onclick="window.location.href='Sci-Fi.html'">خيال علمي</button>
+                <button class="category" onclick="window.location.href='crime.html'">جريمة</button>
+              </div>
 
 
             <h1>War - حربي</h1>
