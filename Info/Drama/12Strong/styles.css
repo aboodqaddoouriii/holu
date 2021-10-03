@@ -1,0 +1,202 @@
+
+    @font-face { font-family: Junebug; src: url('Markaz.ttf'); } 
+    @font-face { font-family: Junebug2; src: url('Circular.otf'); } 
+    @font-face { font-family: Junebug3; src: url('Tajawal.ttf'); }
+
+    *{
+        padding: 0;
+        margin: 0;
+        transition: 0.5s;
+    }
+
+    body{
+        background: rgb(0,0,0);
+    }
+
+    .poster{
+        width: 100%;
+        min-height: 100vw;
+        max-height: 100vw;
+        filter: brightness(75%);
+        object-fit: cover;
+    }
+
+    .color-overlay{
+        position: sticky;
+        background-image: linear-gradient(transparent, black);
+        width: 100vw;
+        height: 100vw;
+        margin-top: -100vw;
+        z-index: 1;
+    }
+
+    .container{
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cast{
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        overflow: auto;
+    }
+    
+    /*  for information   */
+    .information{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        z-index: 2;
+    }
+
+    .play{
+        margin: 10px;
+        position: sticky;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*  play button   */
+    .button{
+        position: relative;
+        font-family: Junebug3;
+        font-weight: 900;
+        font-size: 5vw;
+        border-radius: 5px;
+        border: none;
+        width: 30vw;
+        height: 10vw;
+        transition: 1.5s;
+        z-index: 5;
+    }
+    .button:hover{
+        transform: scale(1.15);
+    }
+
+    
+    /*  name   */
+    h1{
+        font-family: Junebug2;
+        font-weight: 500;
+        font-size: 7.5vw;
+        color: white;
+        text-align: left;
+    }
+
+    /*  details   */
+    h2{
+        position: sticky;
+        font-family: Junebug3;
+        background-color: transparent;
+        font-weight:700;
+        font-size: 4vw;
+        color: #bdbdbd;
+        text-align: left;
+        direction: rtl;
+    }
+
+    h3{
+        font-family: Junebug;
+        font-size: 4.5vw;
+        font-weight: 600;
+        margin: 5vw;
+        margin-right: 15px;
+        color: white;
+        text-align: right;
+    }
+
+    h4{
+        font-family: Junebug;
+        font-size: 4.5vw;
+        margin: 5vw;
+        margin-right: 15px;
+        color: white;
+        text-align: center;
+        color: #c02832;
+        
+    }
+
+    p{
+        font-family: Junebug;
+        font-size: 4vw;
+        font-weight: 900;
+        color: rgb(206, 206, 206);
+        text-align: right;
+        margin-right: 15px;
+        line-height: 1.75em;
+        padding: 1.5vw;
+    }
+
+    .actor{
+        overflow-x: hidden;
+        width: 15vw;
+        height: 15vw;
+        margin: 15px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: top;
+    }
+    span{
+        font-family: Junebug3;
+        font-size: 2.75vw;
+        font-weight: 600;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .relateddiv{
+        display: flex;
+        overflow:scroll;
+        padding: 1vw;
+    }
+
+    .related{
+        width: 30vw;
+        height: 40vw;
+        margin: 5px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .trailer{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,.9);
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .trailer video{
+        max-width: 900px;
+        outline: none;
+        position: relative;
+    }
+    .close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        font-size: 42px;
+        cursor: pointer;
+    }
+    @media (max-width: 901px){
+        .trailer video{
+            max-width: 90%;
+        }
+
+    }
