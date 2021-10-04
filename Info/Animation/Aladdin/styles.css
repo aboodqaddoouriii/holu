@@ -6,7 +6,7 @@
         padding: 0;
         margin: 0;
         transition: 0.5s;
-        line-height: 2em;
+        line-height: 1em;
     }
 
     h1, p{
@@ -60,16 +60,16 @@
     h1{
         font-weight: 900;
         color: black;
-        font-size: 6vw;
-        text-align: center;
-        font-family: Junebug3
+        font-size: 7vw;
+        text-align: right;
+        font-family: Junebug;
     }
     p{
         font-weight: 900;
-        font-size: 3.75vw;
-        text-align: center;
+        font-size: 4vw;
+        text-align: right;
         color: #141414;
-        font-family: Junebug3;
+        font-family: Junebug;
         line-height: 2em;
     }
 
