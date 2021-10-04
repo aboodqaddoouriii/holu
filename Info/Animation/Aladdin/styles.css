@@ -21,7 +21,6 @@
     }
 
     .container{
-        position: relative;
         display: flex;
         align-items: right;
         justify-content: right;
@@ -35,6 +34,7 @@
         display: flex;
         align-items: right;
         justify-content: right;
+        z-index: 1;
     }
     h1{
         font-family: Junebug3;
