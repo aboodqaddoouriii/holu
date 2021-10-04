@@ -1,7 +1,6 @@
     @media only screen and (max-width: 1024px){
-    @font-face { font-family: Junebug; src: url('Markaz.ttf'); } 
+    @font-face { font-family: Junebug; src: url('Markazi.ttf'); } 
     @font-face { font-family: Junebug2; src: url('Circular.otf'); } 
-    @font-face { font-family: Junebug3; src: url('Tajawal.ttf'); }
 
     body{
         margin: 0;
@@ -46,16 +45,16 @@
         text-align: center;
         font-weight: 500;
         font-size: 5vw;
-        font-family: Junebug3;
+        font-family: Junebug;
     }
 
     h2{
         color: white;
         text-align: center;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 7.5vw;
-        font-family: Junebug3;
-        margin-top: -15px;
+        font-family: Junebug2;
+        margin-top: -5px;
     }
 
     .details{
@@ -65,11 +64,11 @@
     }
 
     h3{
-        font-family: Junebug3;
+        font-family: Junebug;
         color: grey;
         text-align: center;
         font-weight: 700;
-        font-size: 4vw;
+        font-size: 5vw;
         margin-right: 10px;
         direction: rtl;
         margin-top: -15px;
@@ -83,13 +82,13 @@
         justify-content: center;
     }
     button{
-        font-family: Junebug3;
-        font-size: 4.5vw;
+        font-family: Junebug;
+        font-size: 4vw;
         font-weight: 700;
         background-color: white;
         border-radius: 5px;
         border: none;
-        width: 35vw;
+        max-width: 50vw;
         height: 7.5vw;
         color: black;
         display: flex;
@@ -105,7 +104,7 @@
     }
     
     h4{
-        font-family: Junebug3;
+        font-family: Junebug;
         display: flex;
         text-align: center;
         align-items: center;
@@ -124,11 +123,11 @@
     }
 
     p{
-        font-family: Junebug3;
+        font-family: Junebug;
         color: grey;
         text-align: center;
         font-weight: 700;
-        font-size: 3.5vw;
+        font-size: 4vw;
         margin-top: -15px;
         direction: rtl;
         padding: 5vw;
