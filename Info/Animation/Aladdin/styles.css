@@ -6,11 +6,11 @@
         padding: 0;
         margin: 0;
         transition: 0.5s;
-        line-height: 2em;
+        line-height: 1.25em;
     }
 
     h1, h2, h3, p{
-        padding: 1vw;
+        padding: 2vw;
     }
 
     body{
@@ -69,18 +69,20 @@
         font-weight: 700;
         padding: 20px;
         font-size: 4vw;
-        text-align: right;
+        text-align: center;
         color: #141414;
         font-family: Junebug3;
+        line-height: 2em;
     }
 
     h2{
-        color: rgb(70, 70, 70);
+        color: #272727;
         font-size: 5vw;
         text-align: center;
         direction: rtl;
         font-family: Junebug3;
-        margin: 2.5vw;
+        margin: 2.5px;
+        margin-top: -10px;
     }
 
     h3{
@@ -130,8 +132,8 @@
     }
 
     .related{
-        width: 60vw;
-        height: 75vw;
+        width: 35vw;
+        height: 50vw;
         margin-right: 5px;
         border-radius: 5px;
         object-fit: cover;
