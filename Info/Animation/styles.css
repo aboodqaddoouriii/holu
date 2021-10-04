@@ -1,0 +1,176 @@
+    @font-face { font-family: Junebug; src: url('Markaz.ttf'); } 
+    @font-face { font-family: Junebug2; src: url('Circular.otf'); } 
+    @font-face { font-family: Junebug3; src: url('Tajawal.ttf'); }
+
+    *{
+        padding: 0;
+        margin: 0;
+        transition: 0.5s;
+        line-height: 2em;
+    }
+
+    h1, h2, h3, p{
+        padding: 2vw;
+    }
+
+    body{
+        background: whitesmoke;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .poster{
+        z-index: -1;
+        padding: 0vw;
+        width: 100%;
+        min-height: 100vw;
+        max-height: 100vw;
+        filter: blur(30px);
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .smallposter{
+        width: 50vw;
+        min-height: 75vw;
+        max-height: 75vw;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 1em;
+    }
+
+    .color-overlay{
+        position: sticky;
+        background-image: linear-gradient(transparent, hsl(0, 0%, 50%));
+        width: 100vw;
+        height: 100vw;
+        margin-top: -102.55vw;
+        z-index: 1;
+    }
+
+    .information{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-weight: 900;
+        color: black;
+        margin-right: 5vw;
+        font-size: 6vw;
+        text-align: right;
+        font-family: Junebug3
+    }
+    p{
+        font-weight: 700;
+        padding: 20px;
+        font-size: 3.5vw;
+        text-align: right;
+        color: #141414;
+        font-family: Junebug3;
+        line-height: 2em;
+    }
+
+    h2{
+        color: #272727;
+        font-size: 5vw;
+        text-align: center;
+        direction: rtl;
+        font-family: Junebug3;
+        margin: 2.5px;
+        margin-top: -10px;
+    }
+
+    h3{
+        color: black;
+        font-size: 5vw;
+        text-align: center;
+        direction: rtl;
+        font-family: Junebug3;
+        margin: 2.5vw;
+    }
+
+    span{
+        font-weight: 700;
+        color: black;
+        font-size: 5vw;
+        text-align: center;
+        font-family: Junebug3;
+        margin: 1vw;
+    }
+
+    .play{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .button{
+        font-family: Junebug3;
+        font-weight: 700;
+        color: white;
+        font-size: 5vw;
+        text-align: center;
+        background-color: rgb(231, 0, 0);
+        width: 50vw;
+        height: 12.5vw;
+        border: none;
+        border-radius: 10px;
+        margin: 5vw;
+    }
+
+    .relateddiv{
+        display: flex;
+        overflow:scroll;
+        padding: 1vw;
+    }
+
+    .related{
+        width: 35vw;
+        height: 50vw;
+        margin-right: 5px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .trailer{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0,0,0,.9);
+        z-index: 10;
+        visibility: hidden;
+        opacity: 0;
+    }
+    .trailer video{
+        max-width: 900px;
+        outline: none;
+        position: relative;
+    }
+    .close{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: #fff;
+        font-size: 42px;
+        cursor: pointer;
+    }
+    @media (max-width: 901px){
+        .trailer video{
+            max-width: 90%;
+        }
+
+    }
