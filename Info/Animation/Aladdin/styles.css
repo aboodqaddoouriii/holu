@@ -32,6 +32,9 @@
         max-width: 40vw;
         max-height: 70vw;
         border-radius: 5vw;
+        display: flex;
+        align-items: right;
+        justify-content: right;
     }
     h1{
         font-family: Junebug3;
