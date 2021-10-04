@@ -9,158 +9,162 @@
     }
 
     body{
-        background: #000000;
+        background: whitesmoke;
     }
 
-    .poster{
-        position: sticky;
+    .background{
         width: 100%;
-        min-height: 100vw;
-        max-height: 100vw;
-        z-index: -2;
+        min-height: 50vw;
+        max-height: 50vw;
         object-fit: cover;
-        object-position: top;
-        filter: brightness(90%);
+        filter: brightness(25%);
     }
 
-    .color-overlay{
+    .container{
+        position: relative;
+        display: flex;
+        align-items: right;
+        justify-content: right;
+        margin: 2.5vw;
+        margin-top: -10vw;
+    }
+    .poster{
+        max-width: 40vw;
+        max-height: 70vw;
+        border-radius: 5vw;
+        float: right;
+    }
+    h1{
+        font-family: Junebug3;
+        font-size: 6vw;
+        font-weight: 900;
+        margin: 2.5vw;
+        margin-top: 10vw;
+        padding-top: 2.5vw;
+    }
+    h2{
+        color: #3f3f3f;
+        font-family: Junebug3;
+        font-size: 5vw;
+        font-weight: 500;
+        margin: 2.5vw;
+        direction: rtl;
+    }
+    h3{
         position: sticky;
-        background-image: linear-gradient(transparent, #000000);
-        width: 100vw;
-        height: 100vw;
-        margin-top: -100vw;
-        z-index: -1;
+        color: black;
+        font-family: Junebug3;
+        font-size: 5vw;
+        font-weight: 700;
+        margin: 2.5vw;
+        margin-top: -10vw;
+        direction: rtl;
+        display: inline-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: hsl(46, 100%, 50%);
+        border-radius: 2.5vw;
+        max-width: 16vw;
+        max-height: 4vw;
+        padding: 1vw;
+        filter: brightness(50%);
+    }
+    .imdb{
+        max-width: 10vw;
+        max-height: 10vw;
     }
 
-    .information{
+    h4{
+        text-align: right;
+        font-family: Junebug3;
+        font-size: 3.5vw;
+        font-weight: 900;
+        margin: 2.5vw;
+        color:red
+    }
+
+    p{
+        margin-top: 25px;
+        font-size: 4vw;
+        padding: 3vw;
+        text-align: right;
+        font-family: Junebug3;
+    }
+
+    h5{
+        text-align: center;
+        font-family: Junebug3;
+        font-size: 5vw;
+        font-weight: 900;
+        margin: 2.5vw;
+        margin-top: 10vw;
+        padding-top: 2.5vw;
+    }
+    
+    .playbutton{
+        margin: 10px;
+        position: sticky;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-
-    h1{
-        font-weight: 500;
-        color: white;
-        font-size: 7vw;
-        margin: 10px;
-        margin-top: 10vw;
-        text-align: center;
-        font-family: Junebug;
-    }
-    .imdb{
-        width: 15vw;
-        max-height: 2.75vw;
-        font-size: 3.5vw;
-        margin: 5px;
-        padding: 2vw;
-        border-radius: 2.5px;
+    /*  play button   */
+    .button{
+        position: relative;
         font-family: Junebug3;
-        background-color: #fcac00;
-        color: black;
-        text-align: center;
-        direction: rtl;
-        width: auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .youtube{
-        width: 15vw;
-        max-height: 2.75vw;
-        font-size: 3.5vw;
-        margin: 5px;
-        padding: 2vw;
-        border-radius: 2.5px;
-        font-family: Junebug3;
-        background-color: hsl(0, 0%, 100%);
-        color: black;
-        text-align: center;
-        direction: rtl;
-        width: auto;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .icon{
-        max-width: 10vw;
-        max-height: 10vw;
-        margin-right: 2.5vw;
-    }
-
-    .icon2{
-        max-width: 7vw;
-        max-height: 7vw;
-    }
-
-    .icon3{
-        max-width: 4vw;
-        max-height: 4vw;
-        margin-left: 2.5vw;
-    }
-
-    .agerating{
-        max-height: 2.5vw;
+        font-weight: 900;
         font-size: 4vw;
+        border-radius: 5px;
+        border: none;
+        width: 30vw;
+        height: 10vw;
+        transition: 1.5s;
+        z-index: 5;
+        padding: 1vw;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 31, 31);
+        filter:brightness(100%);
         margin: 5px;
-        padding: 2vw;
-        border-radius: 2.5px;
-        font-family: Junebug3;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        text-align: center;
-        direction: rtl;
-        width: auto;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    h3{
-        color: whitesmoke;
-        font-size: 3.5vw;
-        font-weight: 500;
-        margin: 5px;
-        text-align: center;
-        direction: rtl;
-        font-family: Junebug3;
-    }
-
-    p{
-        padding: 7.5vw;
-        font-weight: 700;
-        font-size: 3.5vw;
-        text-align: center;
-        color: #aaaaaa;
-        font-family: Junebug3;
-        line-height: 2em;
     }
 
     .play{
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
+        max-width: 5vw;
+        max-height: 5vw;
+        margin-left: 2.5vw;
     }
-
-    .button{
-        font-family: Junebug3;
-        font-weight: 700;
-        color: white;
+    
+    .relateddiv{
+        display: flex;
+        overflow:scroll;
+        padding: 1vw;
+    }
+    
+    .related{
+        width: 30vw;
+        height: 40vw;
+        margin: 10px;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: top;
+    }
+    span{
+        font-family: Junebug;
         font-size: 4vw;
-        text-align: center;
-        background-color: rgb(231, 0, 0);
-        width: 35vw;
-        height: 7.5vw;
-        border: none;
-        border-radius: 10px;
-        display: inline-flex;
+        font-weight: 600;
+        color: black;
+        display: flex;
         align-items: center;
         justify-content: center;
     }
 
+    
+    
 
     .trailer{
         position: fixed;

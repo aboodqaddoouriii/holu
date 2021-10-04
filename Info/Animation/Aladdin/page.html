@@ -5,61 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>The Witcher</title>
+    <title>Aladdin</title>
 </head>
 <body>
-
-    
-    <div align="center">
-        <img class="poster" src="../$$$$$/Aladdin.jpg">
-        <div class="color-overlay"></div>
-    </div>
-
-    <h1>
-        ALADDIN
-    </h1>
-
-    <div class="information">
-        
-        <!--Youtube-->
-        <div>
-            <h2 class="youtube">
-                شاهد اعلان الفيلم
-            </h2>
-        </div>
-        
-        <!--Age Rateing-->
-        <h2 class="agerating">16+</h2>
-
-        <!--IMDb-->
-        <div>
-            <h2 class="imdb">
-                <b>7.5</b>
-                <img src="IMDB.png" class="icon">
-            </h2>
-        </div>
-    </div>
-
-    <div class="information">
-        <h3>138 دقيقة</h3>
-        <h3>∘</h3>
-        <h3>مغامرات</h3>
-        <h3>∘</h3>
-        <h3>2019</h3>
-    </div>
-
-    <hr style="background-color: red; filter: blur(2px);">
-    
     <div>
-        <p>
-            علاء الدين هو طفل شوارع يعيش في مدينة كبيرة مزدحمة مع صديقه المخلص القرد (آبو)، ليصادف في المدينة الأميرة ياسمين، ويحبها، فيذهب إلى السجن ويتورط في مؤامرة لحكم الأرض من تخطيط مستشار السلطان (جعفر) بمساعدة مصباح غامض.        </p>
+        <img class="background" src="../$$$$$/Aladdin.jpg">
+        <h3>8.0<img class="imdb" src="./IMDb.png"></h3>
+    </div>
+    
+
+    <div class="container">
+        <div class="information">
+            <h1>Aladdin</h1>
+            <h2>1992</h2>
+            <h2>كوميدي</h2>
+            <h2>90 دقيقة</h2>
+        </div>
+
+        <img class="poster" src="../$$$$$/Aladdin.jpg">
+    </div>
+    <h4>التصنيف العمري: يصلح لجميع الاعمار</h4>
+
+    <hr>
+
+    <p>
+        علاء الدين هو طفل شوارع يعيش في مدينة كبيرة مزدحمة مع صديقه المخلص القرد آبو، ليصادف في المدينة الأميرة ياسمين، ويحبها، فيذهب إلى السجن ويتورط في مؤامرة لحكم الأرض من تخطيط مستشار السلطان جعفر بمساعدة مصباح غامض.
+    </p>
+
+    <div class="playbutton">
+        <button id="close" class="button" onclick="lightbox_open();">شاهد الان <img class="play" src="Play.png"></button>
     </div>
 
-    <div class="play">
-        <button id="close" class="button"> شاهِد الان <img class="icon3" src="Play.png"></button>
+    <h5>قد يعجبك ايضاً ..</h5>
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="../$$$$$/Barnyard.webp" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span>Barnyard</span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/Shrek2.webp" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span>Shrek 2</span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/HotelTransylvania1.webp" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span>Hotel Transylvania</span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/Zootopia.webp" onclick="window.location.href='/Info///page.html'" alt="Related"/>
+            <span>Zootopia</span>
+        </div>
     </div>
 
-    <br> <br> <br>
+    <br> 
 
     <div class="trailer">
         <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
