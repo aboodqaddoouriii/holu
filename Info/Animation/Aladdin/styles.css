@@ -9,8 +9,8 @@
         line-height: 2em;
     }
 
-    h1, h2, h3, p{
-        padding: 2vw;
+    h1, p{
+        padding: 5vw;
     }
 
     body{
@@ -60,16 +60,14 @@
     h1{
         font-weight: 900;
         color: black;
-        margin-right: 5vw;
         font-size: 6vw;
-        text-align: right;
+        text-align: center;
         font-family: Junebug3
     }
     p{
-        font-weight: 700;
-        padding: 20px;
-        font-size: 3.5vw;
-        text-align: right;
+        font-weight: 900;
+        font-size: 3.75vw;
+        text-align: center;
         color: #141414;
         font-family: Junebug3;
         line-height: 2em;
@@ -83,6 +81,7 @@
         font-family: Junebug3;
         margin: 2.5px;
         margin-top: -10px;
+        padding: 1vw;
     }
 
     h3{
