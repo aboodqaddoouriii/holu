@@ -3,38 +3,52 @@
     @font-face { font-family: Junebug3; src: url('Tajawal.ttf'); }
 
     *{
-        padding: 0vw;
+        padding: 0;
         margin: 0;
         transition: 0.5s;
-        line-height: 2.5em;
+        line-height: 2em;
+    }
+
+    h1, h2, h3, p{
+        padding: 1vw;
     }
 
     body{
         background: whitesmoke;
     }
 
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .poster{
+        z-index: -1;
+        padding: 0vw;
         width: 100%;
         min-height: 100vw;
-        max-height: 110vw;
-        filter: brightness(100%);
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-        border-top-left-radius: 1vw;
-        border-top-right-radius: 1vw;
+        max-height: 100vw;
+        filter: blur(30px);
         object-fit: cover;
         object-position: top;
     }
 
+    .smallposter{
+        width: 50vw;
+        min-height: 75vw;
+        max-height: 75vw;
+        object-fit: cover;
+        position: absolute;
+        border-radius: 1em;
+    }
+
     .color-overlay{
         position: sticky;
-        background-image: linear-gradient(transparent, hsla(0, 0%, 100%, 0.25));
+        background-image: linear-gradient(transparent, hsl(0, 0%, 50%));
         width: 100vw;
         height: 100vw;
-        margin-top: -100vw;
+        margin-top: -102.55vw;
         z-index: 1;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
     }
 
     .information{
@@ -53,7 +67,7 @@
     }
     p{
         font-weight: 700;
-        padding: 2.5vw;
+        padding: 20px;
         font-size: 4vw;
         text-align: right;
         color: #141414;
@@ -117,7 +131,7 @@
 
     .related{
         width: 60vw;
-        height: 40vw;
+        height: 75vw;
         margin-right: 5px;
         border-radius: 5px;
         object-fit: cover;
