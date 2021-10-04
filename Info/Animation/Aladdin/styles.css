@@ -1,37 +1,35 @@
-    @font-face { font-family: Junebug; src: url('Markaz.ttf'); } 
+    @font-face { font-family: Junebug; src: url('Alegreya.ttf'); } 
     @font-face { font-family: Junebug2; src: url('Circular.otf'); } 
     @font-face { font-family: Junebug3; src: url('Tajawal.ttf'); }
 
     *{
-        padding: 0;
+        padding: 0vw;
         margin: 0;
         transition: 0.5s;
-        line-height: 1.25em;
-    }
-
-    h1, p{
-        padding: 5vw;
     }
 
     body{
-        background: #f5f5f5;
+        background: #000000;
     }
 
     .poster{
+        position: sticky;
         width: 100%;
         min-height: 100vw;
         max-height: 100vw;
+        z-index: -2;
         object-fit: cover;
         object-position: top;
+        filter: brightness(90%);
     }
 
     .color-overlay{
         position: sticky;
-        background-image: linear-gradient(transparent, #f5f5f5);
+        background-image: linear-gradient(transparent, #000000);
         width: 100vw;
         height: 100vw;
         margin-top: -100vw;
-        z-index: 1;
+        z-index: -1;
     }
 
     .information{
@@ -40,52 +38,107 @@
         justify-content: center;
     }
 
+
     h1{
-        font-weight: 900;
-        color: black;
+        font-weight: 500;
+        color: white;
         font-size: 7vw;
+        margin: 10px;
+        margin-top: 10vw;
         text-align: center;
         font-family: Junebug;
     }
-    p{
-        font-weight: 900;
-        font-size: 4.5vw;
-        text-align: right;
-        color: #141414;
-        font-family: Junebug;
-        line-height: 2em;
-    }
-
-    h2{
-        color: grey;
-        font-size: 4vw;
+    .imdb{
+        width: 15vw;
+        max-height: 2.75vw;
+        font-size: 3.5vw;
+        margin: 5px;
+        padding: 2vw;
+        border-radius: 2.5px;
+        font-family: Junebug3;
+        background-color: #fcac00;
+        color: black;
         text-align: center;
         direction: rtl;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .youtube{
+        width: 15vw;
+        max-height: 2.75vw;
+        font-size: 3.5vw;
+        margin: 5px;
+        padding: 2vw;
+        border-radius: 2.5px;
         font-family: Junebug3;
-        margin: 2.5px;
-        padding: 1vw;
+        background-color: hsl(0, 0%, 100%);
+        color: black;
+        text-align: center;
+        direction: rtl;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon{
+        max-width: 10vw;
+        max-height: 10vw;
+        margin-right: 2.5vw;
+    }
+
+    .icon2{
+        max-width: 7vw;
+        max-height: 7vw;
+    }
+
+    .icon3{
+        max-width: 4vw;
+        max-height: 4vw;
+        margin-left: 2.5vw;
+    }
+
+    .agerating{
+        max-height: 2.5vw;
+        font-size: 4vw;
+        margin: 5px;
+        padding: 2vw;
+        border-radius: 2.5px;
+        font-family: Junebug3;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        text-align: center;
+        direction: rtl;
+        width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     h3{
-        color: black;
-        font-size: 5vw;
+        color: whitesmoke;
+        font-size: 3.5vw;
+        font-weight: 500;
+        margin: 5px;
         text-align: center;
         direction: rtl;
         font-family: Junebug3;
-        margin: 2.5vw;
     }
 
-    span{
+    p{
+        padding: 7.5vw;
         font-weight: 700;
-        color: black;
-        font-size: 5vw;
+        font-size: 3.5vw;
         text-align: center;
+        color: #aaaaaa;
         font-family: Junebug3;
-        margin: 1vw;
+        line-height: 2em;
     }
 
     .play{
-        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -96,30 +149,18 @@
         font-family: Junebug3;
         font-weight: 700;
         color: white;
-        font-size: 5vw;
+        font-size: 4vw;
         text-align: center;
         background-color: rgb(231, 0, 0);
-        width: 50vw;
-        height: 12.5vw;
+        width: 35vw;
+        height: 7.5vw;
         border: none;
         border-radius: 10px;
-        margin: 5vw;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .relateddiv{
-        display: flex;
-        overflow:scroll;
-        padding: 1vw;
-    }
-
-    .related{
-        width: 35vw;
-        height: 50vw;
-        margin-right: 5px;
-        border-radius: 5px;
-        object-fit: cover;
-        object-position: top;
-    }
 
     .trailer{
         position: fixed;
