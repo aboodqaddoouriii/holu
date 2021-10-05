@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FightClub</title>
+</head>
+<body>
+
+    <div class="main">
+        <img class="icon" src="Back.png" alt="Back">
+        <img class="icon" src="Like.png" alt="Like">
+    </div>
+
+    <div class="container">
+        <!-- Poster -->
+        <img class="postersmall" src="../$$$$$/Fences.webp">
+        <img class="poster" src="../$$$$$/Fences.webp">
+        <button id="close" class="button" onclick="lightbox_open();"></button>
+    </div>
+
+
+    <!-- Name -->
+    <h1 calss="name">Fences</h1>
+
+    
+    <div class="container">
+        <!--Duration-->
+        <div class="info2">
+            <h2>2h 19m</h2>
+        </div>
+        
+        <!--Category-->
+        <div class="info2">
+            <h2>دراما/تاريخي</h2>
+        </div>
+
+        <!--Year-->
+        <div class="info2">
+            <h2>2016</h2>
+        </div>
+    </div>
+    
+    
+    
+    <h4>لا يصلح لمن هم اقل من 13 عام</h4>
+    
+
+    <h3>القصة</h3>
+
+    <p>
+        تدور أحداث الفيلم في الخمسينات، حول تروي ماكسون (دينزل واشنطن)، الذي يحاول أن يهتم بأسرته ويتصالح مع ما يحدث في حياته السابقة من أحداث مؤسفة، وفي نفس الوقت يسعى ﻷن يكون سائقًا في إحدى شركات جمع القمامة التي يعمل بها.
+    </p>
+
+    <h3>الطاقم التمثيلي</h3>
+
+    <div class="info">
+        <!-- Actor One -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_9976d26029effba8c1e2b3c06736d9b43aef1e010b5777db8e0be8497a23558e.jpg" alt="Cast">
+            <span>
+                دينزل واشنطن
+            </span>
+        </div>
+        
+        <!-- Actor Two -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_8e2f1f27a46614e11f728a2b73f3060ea41913593d20f0e450007739610cd70f.jpg" alt="Cast">
+            <span>
+                فيولا ديفيس
+            </span>
+        </div>
+
+        <!-- Actor Three -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_747259e18121bba0a4b3d3703b92d3e1c55d4c294b050da12892f0262f578f6c.jpg" alt="Cast">
+            <span>
+                ستيفن هندرسون
+            </span>
+        </div>
+
+        <!-- Actor Four -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_5286369bc47b6f1c0f79f6c28dddcd109307d3251244e127a74f86c3226381bf.jpg" alt="Cast">
+            <span>
+                جوفان أديبو
+            </span>
+        </div>
+
+        <!-- Actor Five -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7ac6ef234ead4b27935c3897bcd76d916b7400b2717bb89a3e3b355af665a5f6.jpg" alt="Cast">
+            <span>
+                سانيا سيدني
+            </span>
+        </div>
+
+        <!-- Actor Six -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_44f68ad8a1d74efa3bc3c869f0d13e5347c257b419606a68ed0c5bf0e74b2ec4.jpg" alt="Cast">
+            <span>
+                راسيل هورنسبي
+            </span>
+        </div>
+
+        <!-- Actor Seven -->
+        <div>
+            <img class="actor" src="https://media.elcinema.com/uploads/_150x200_6870f94f86dbc21976b8b51b8fc66d0cc6fda45d15e6b4f7c75c2a14652dc3af.jpg" alt="Cast">
+            <span>
+                ميكلتي ويليمسون
+            </span>
+        </div>
+    </div>
+
+
+    <h3>افلام مشابهة</h3>
+
+    <div class="relateddiv">
+        
+        <div>
+            <img class="related" src="../$$$$$/.webp" onclick="window.location.href='/Info/Drama//page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/.webp" onclick="window.location.href='/Info/Drama//page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/.webp" onclick="window.location.href='/Info/Drama//page.html'" alt="Related"/>
+            <span></span>
+        </div>
+
+        <div>
+            <img class="related" src="../$$$$$/.webp" onclick="window.location.href='/Info/Drama//page.html'" alt="Related"/>
+            <span></span>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
