@@ -139,9 +139,8 @@
         margin-right: 15px;
     }
 
-
+    /* IMDb Text */
     h3{
-        position: absolute;
         z-index: 1;
         font-family: Junebug;
         display: flex;
@@ -162,30 +161,23 @@
         max-height: 10vw;
     }
 
-    .cast-team{
+    .Suggestion{
         display: flex;
         align-items: left;
         justify-content: left;
         overflow: auto;
     }
 
-    .cast-team{
-        display: flex;
-        align-items: left;
-        justify-content: left;
-        overflow: auto;
-    }
-
-    .actor{
+    .suggestion-poster{
         overflow-x: hidden;
-        width: 25vw;
-        height: 30vw;
+        width: 35vw;
+        height: 50vw;
         margin: 15px;
         border-radius: 10px;
         object-fit: cover;
         object-position: top;
+        box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.25);
     }
-
 
 
     .trailer{
