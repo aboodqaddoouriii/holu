@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Wonder</title>
+</head>
+<body>
+    
+    <div>
+        <img class="poster" src="../$$$$$/Wonder.webp">
+        <div class="color-overlay"></div>
+    </div>
+
+
+        <!--Name of The Project-->
+        <h1>Wonder</h1>
+
+        <div class="details">
+            <!--Year-->
+            <h2>2017</h2>
+            <h2 class="symbol">●</h2>
+            <!--Category-->
+            <h2>عائلي</h2>
+            <h2 class="symbol">●</h2>
+            <!--Duration-->
+            <h2>113 د</h2>
+            <h2 class="symbol">●</h2>
+            <!--Age Rating-->
+            <h2>+8</h2>
+        </div>
+
+        
+        <div class="btn-container">
+            <button class="play-button">شاهِد الان <img class="play" src="Play.png"></button>
+
+
+            <button onclick="location.href='https://www.youtube.com/watch?v=Ob7fPOzbmzE';"  class="down-youtube-button"><img class="youtube" src="Youtube.png"></button>
+            <button onclick="location.href='DownloadLink';"  class="down-youtube-button"><img class="download" src="Download.png"></button>
+        </div>
+
+        <p>
+            أغسطس ، صبي يعاني من تشوه نادر في الوجه ، يدخل الصف الخامس في مدرسة خاصة حيث يصادق جاك. يشكل الاثنان رابطًا قويًا أثناء مواجهة المتنمرين في صفهم.
+        </p>
+
+
+        <div class="cast-team">
+            <!-- Actor One -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_bf3a550cd6ecb756c8c56944c96410efc4dbbd9302aadccf5a79f1f7907cf531.jpg" alt="Cast">
+                <span>
+                    جيريمي رينر
+                </span>
+            </div>
+            
+            <!-- Actor Two -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_39ea7eaed38ec7ccc8328aa0187f0e87fa28574e1ea0839000589099a2a9ebb8.jpg" alt="Cast">
+                <span>
+                    هارولد بيرينو
+                </span>
+            </div>
+    
+            <!-- Actor Three -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f6ea76b3481b9ceb39dfc01e54f7390eb534bd55dd64c977d51a0f7dc5b63f9d.jpg" alt="Cast">
+                <span>
+                    روز بيرن
+                </span>
+            </div>
+    
+            <!-- Actor Four -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_2f7c14cb35b33e89410590f7c35f99b2df6cb0315571e67573461968489f2df6.jpg" alt="Cast">
+                <span>
+                    روبرت كارليل
+                </span>
+            </div>
+    
+            <!-- Actor Five -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_a9d6d6ad92261867d27a761aa4f3dd361441b08fcbb23a193e734c7a77abd31e.jpg" alt="Cast">
+                <span>
+                    جيريمي رينييه
+                </span>
+            </div>
+    
+            <!-- Actor Six -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_bd2ad77e7d8bcd5302ad2ad830d8b26800a6d0a10b5e56f1588954eb39cde5cc.jpg" alt="Cast">
+                <span>
+                    إيموجين بوتس
+                </span>
+            </div>
+    
+            <!-- Actor Seven -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_f10b91fa466ee759187fff0b9d54d5b30edd1eb4a30db2d0948ee573c41728d3.jpg" alt="Cast">
+                <span>
+                    إميلي بيتشام
+                </span>
+            </div>
+    
+            <!-- Actor Eight -->
+            <div>
+                <img class="actor" src="https://media.elcinema.com/uploads/_150x200_7d5d459444e8ca0148a3c790ad2d1f9b790397409154484457c4084ca79e15be.jpg" alt="Cast">
+                <span>
+                    إدريس إلبا
+                </span>
+            </div>
+        </div>
+
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h3>
+                8.0
+                <img class="imdb" src="imdb.png">
+            </h3>
+        </div>
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
