@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>The Nightingale</title>
+</head>
+<body>
+    
+    <div>
+        <img class="poster" src="../$$$$$/TheNightIngale.webp">
+        <div class="color-overlay"></div>
+    </div>
+
+
+        <!--Name of The Project-->
+        <h1>The Nightingale</h1>
+
+        <div class="details">
+            <!--Year-->
+            <h2>2018</h2>
+            <h2 class="symbol">●</h2>
+            <!--Category-->
+            <h2>دراما</h2>
+            <h2 class="symbol">●</h2>
+            <!--Duration-->
+            <h2>136 د</h2>
+            <h2 class="symbol">●</h2>
+            <!--Age Rating-->
+            <h2>+17</h2>
+        </div>
+
+        
+        <div class="btn-container">
+            <button class="play-button">شاهِد الان <img class="play" src="Play.png"></button>
+
+
+            <button onclick="location.href='https://www.youtube.com/watch?v=YuP8g_GQIgI';"  class="down-youtube-button"><img class="youtube" src="Youtube.png"></button>
+            <button onclick="location.href='DownloadLink';"  class="down-youtube-button"><img class="download" src="Download.png"></button>
+        </div>
+
+        <p>
+            تطارد كلير ، وهي شابة أيرلندية ، ضابطا بريطانيا عبر برية تسمانيا الوعرة وهي مصممة على الانتقام من عمل عنيف رهيب ارتكبه الرجل ضد أسرتها. في الطريق ، تستعين بخدمات متعقب السكان الأصليين بيلي ، الذي تميز بصدمة من ماضيه المليء بالعنف.
+        </p>
+
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <h3>
+                7.3
+                <img class="imdb" src="imdb.png">
+            </h3>
+        </div>
+
+
+
+
+    <div class="trailer">
+        <iframe class="movie"src="" title="Movie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<span class="close">&times;</span>
+	</div>
+
+    <script>
+		const button = document.querySelector("button");
+		const close = document.querySelector(".close");
+		const trailer = document.querySelector(".trailer");
+		const video = document.querySelector("video");
+
+		button.addEventListener('click', ()=>{
+			trailer.style.visibility = "visible";
+			trailer.style.opacity = 1;
+		});
+
+		close.addEventListener('click', ()=>{
+			trailer.style.visibility = "hidden";
+			trailer.style.opacity = 0;
+
+			video.pause();
+			video.currentTime = 0;
+		});
+	</script>
+</body>
+</html>
