@@ -131,11 +131,12 @@
         font-family: Junebug;
         color: grey;
         text-align: right;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 3.25vw;
         direction: rtl;
-        padding: 4vw;
+        padding: 2vw;
         margin-top: 20px;
+        margin-right: 15px;
     }
 
 
